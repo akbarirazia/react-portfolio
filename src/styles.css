@@ -1,5 +1,5 @@
 * {
-  /* margin: 0; */
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -10,6 +10,7 @@ body {
   padding: 0;
   overflow: hidden;
   font-family: "Croissant One", cursive;
+  background-color: rgb(34, 34, 34);
 }
 html,
 body,
@@ -17,23 +18,41 @@ body,
   height: 100%;
 }
 
-.spline-iframe {
-  pointer-events: auto;
-  /* position: absolute; */
-  z-index: -1;
-}
-
-.wrapper {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0);
-  z-index: 99;
-  color: white;
-}
 p {
   color: white;
 }
-button {
-  position: relative;
-  top: -400px;
+
+.flex {
+  display: flex;
+}
+.gap-1x {
+  gap: 1rem;
+}
+
+.gap-2x {
+  gap: 2rem;
+}
+.gap-3x {
+  gap: 3rem;
+}
+
+.gap-4x {
+  gap: 7rem;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-space-around {
+  justify-content: space-around;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.baseline {
+  justify-content: baseline;
+}
+.link {
+  text-decoration: none;
+  margin: 0 !important;
+  padding: 0;
 }

@@ -20,17 +20,19 @@
 @media only screen and (max-width: 767px) {
   .text-wrapper {
     position: relative;
-    top: -85%;
+    top: -80%;
     pointer-events: auto;
-    display: inline-block;
+    display: inline-flex;
+    flex-direction: column;
     margin-left: 1rem;
+    gap: 4rem;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .text-wrapper {
     position: relative;
-    top: -60%;
+    top: -55%;
     padding: 0;
   }
 }

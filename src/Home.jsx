@@ -2,13 +2,8 @@ import Spline from "@splinetool/react-spline"
 import { useRef, useEffect } from "react"
 import Who from "./Who"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-import Links from "./Links"
-import WhoMe from "./pages/WhoMe"
-import What from "./pages/What"
-import Where from "./pages/Where"
-import Home from "./Home"
 
-export default function App() {
+export default function Home() {
   const skull = useRef()
 
   function onLoad(spline) {
@@ -47,16 +42,16 @@ export default function App() {
 
   return (
     <>
-      <Router>
-        <Routes>
-          <Route path="/pages/whome" element={<WhoMe />} />
-          <Route path="/pages/what" element={<What />} />
-          <Route exact path="/pages/where" element={<Where />} />
-          <Route exact path="/" element={<Home />} />
-        </Routes>
+      <div className="wrapper">
+        <Spline
+          scene="https://prod.spline.design/479RT2NzHx8EkjTt/scene.splinecode"
+          onLoad={onLoad}
+          className="spline-iframe"
+        />
+        {/* <button onClick={moveObj}>click for the object to node</button> */}
+      </div>
 
-        <Links />
-      </Router>
+      <Who onClick={() => moveObj()} />
     </>
   )
 }
