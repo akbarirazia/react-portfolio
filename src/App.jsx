@@ -9,42 +9,6 @@ import Where from "./pages/Where"
 import Home from "./Home"
 
 export default function App() {
-  const skull = useRef()
-
-  function onLoad(spline) {
-    const obj = spline.findObjectById("e12b4707-7b84-4470-94c3-71fd766a03b6")
-
-    skull.current = obj
-  }
-
-  function moveObj() {
-    console.log(skull.current.rotation.x)
-    console.log(skull.current.rotation.y)
-    console.log(skull.current.rotation.z)
-    console.log(skull.current)
-    skull.current.scale.y = 50.3
-    skull.current.scale.z = 50.3
-    skull.current.scale.x = 50.3
-    // skull.current.position += 0
-    // skull.current.position.y += 0
-    // skull.current.position.z += 0
-    skull.current.rotation.z = 0
-    skull.current.rotation.x = 0
-    skull.current.rotation.y = 0
-
-    setTimeout(() => {
-      skull.current.rotation.x += -31
-      skull.current.scale.y += 10
-      skull.current.scale.z += 10
-      skull.current.scale.x += 10
-    }, 200)
-
-    skull.current.rotation.x += 31
-    skull.current.scale.y -= 10
-    skull.current.scale.z -= 10
-    skull.current.scale.x -= 10
-  }
-
   return (
     <>
       <Router>

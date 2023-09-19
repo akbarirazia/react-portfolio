@@ -10,7 +10,7 @@ import { Link } from "react-router-dom"
 function Links() {
   return (
     <div className="flex links-wrapper">
-      <Link path="/" className="link">
+      <Link path="/home" className="link">
         <p>Woman.of.God</p>
       </Link>
       <div className="links flex gap-1x">
