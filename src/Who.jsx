@@ -7,7 +7,7 @@ function Who({ onClick }) {
     <div className="flex justify-center gap-4x text-wrapper flex-wrap">
       <SingleWho text="What?" subtext="have I done" onClick={onClick} />
       <SingleWho text="Who?" subtext="am I" onClick={onClick} />
-      <SingleWho text="Where?" subtext="to contact me" onClick={onClick} />
+      <SingleWho text="Where?" subtext="in galaxy" onClick={onClick} />
     </div>
   )
 }

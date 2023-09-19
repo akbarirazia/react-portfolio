@@ -17,7 +17,8 @@
     "@splinetool/react-spline": "^2.2.1",
     "@splinetool/runtime": "^0.9.452",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "three": "^0.156.1"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^3.1.0-beta.0",

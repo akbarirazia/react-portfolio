@@ -1,12 +1,13 @@
 * {
-  margin: 0 !important;
-  padding: 0 !important;
+  margin: 0 !;
+  padding: 0;
 }
 body {
   margin: 0;
   height: 100vh;
   width: 100wv;
   padding: 0;
+  overflow: hidden;
 }
 html,
 body,

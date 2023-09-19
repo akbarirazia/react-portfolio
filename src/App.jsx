@@ -1,6 +1,7 @@
 import Spline from "@splinetool/react-spline"
 import { useRef, useEffect } from "react"
 import Who from "./Who"
+import Navbar from "./Navbar"
 
 export default function App() {
   const skull = useRef()
@@ -10,6 +11,7 @@ export default function App() {
 
     skull.current = obj
   }
+
   function moveObj() {
     // console.log(skull.current)
     setTimeout(() => {
