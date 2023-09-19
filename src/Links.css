@@ -30,6 +30,13 @@
   .links-wrapper {
     justify-content: space-between;
   }
+  .links-wrapper > * {
+    margin: 0;
+    font-size: larger;
+  }
+  .links-wrapper p {
+    font-size: x-large;
+  }
 }
 
 @media only screen and (min-width: 768px) {
