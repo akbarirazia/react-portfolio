@@ -20,7 +20,7 @@
 @media only screen and (max-width: 767px) {
   .text-wrapper {
     position: relative;
-    top: -80%;
+    top: -85%;
     pointer-events: auto;
     display: inline-block;
     margin-left: 1rem;
