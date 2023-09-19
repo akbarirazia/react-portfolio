@@ -19,6 +19,8 @@
 }
 .links-wrapper .links a {
   color: black;
+  display: flex;
+  place-items: center;
 }
 .links-wrapper .links a:hover {
   color: rgb(255, 101, 229);
@@ -32,7 +34,7 @@
   }
   .links-wrapper > * {
     margin: 0;
-    font-size: larger;
+    font-size: x-large;
   }
   .links-wrapper p {
     font-size: x-large;
