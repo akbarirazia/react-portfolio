@@ -1,7 +1,8 @@
 import Spline from "@splinetool/react-spline"
 import { useRef, useEffect } from "react"
 import Who from "./Who"
-import Navbar from "./Navbar"
+
+import Links from "./Links"
 
 export default function App() {
   const skull = useRef()
@@ -32,6 +33,7 @@ export default function App() {
         {/* <button onClick={moveObj}>click for the object to node</button> */}
       </div>
       <Who onClick={() => moveObj()} />
+      <Links />
     </>
   )
 }

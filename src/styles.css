@@ -1,5 +1,5 @@
 * {
-  margin: 0 !;
+  /* margin: 0; */
   padding: 0;
 }
 body {
@@ -8,6 +8,7 @@ body {
   width: 100wv;
   padding: 0;
   overflow: hidden;
+  font-family: "Croissant One", cursive;
 }
 html,
 body,

@@ -24,3 +24,6 @@
 .flex-wrap {
   flex-wrap: wrap;
 }
+.baseline {
+  justify-content: baseline;
+}

@@ -5,9 +5,9 @@ import SingleWho from "./SingleWho"
 function Who({ onClick }) {
   return (
     <div className="flex justify-center gap-4x text-wrapper flex-wrap">
-      <SingleWho text="What?" subtext="have I done" onClick={onClick} />
-      <SingleWho text="Who?" subtext="am I" onClick={onClick} />
-      <SingleWho text="Where?" subtext="in galaxy" onClick={onClick} />
+      <SingleWho text="What?" subtext="the hell" onClick={onClick} />
+      <SingleWho text="Who?" subtext="the hell" onClick={onClick} />
+      <SingleWho text="Where?" subtext="the hell" onClick={onClick} />
     </div>
   )
 }

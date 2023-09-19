@@ -1,0 +1,36 @@
+.links-wrapper {
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0%;
+  justify-content: space-around;
+  width: 100%;
+  font-family: "Kanit", sans-serif;
+}
+.links-wrapper > * {
+  margin: 0;
+  font-size: xx-large;
+}
+.links-wrapper p {
+  color: black;
+}
+.links-wrapper p:hover {
+  color: white;
+  cursor: pointer;
+}
+.links-wrapper .links a {
+  color: black;
+}
+.links-wrapper .links a:hover {
+  color: rgb(255, 101, 229);
+}
+.links-wrapper .links .green:hover {
+  color: rgb(64, 253, 47);
+}
+@media only screen and (max-width: 767px) {
+  .links-wrapper {
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+}
