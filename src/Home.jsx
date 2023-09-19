@@ -1,7 +1,7 @@
 import Spline from "@splinetool/react-spline"
 import { useRef, useEffect } from "react"
 import Who from "./Who"
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import "./Home.css"
 
 export default function Home() {
   const skull = useRef()

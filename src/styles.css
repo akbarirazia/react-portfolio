@@ -5,10 +5,10 @@
 }
 body {
   margin: 0;
-  height: 100vh;
+  min-height: 100vh;
   width: 100wv;
   padding: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
   font-family: "Croissant One", cursive;
   background-color: rgb(34, 34, 34);
 }
