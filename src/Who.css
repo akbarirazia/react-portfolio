@@ -19,13 +19,14 @@
 }
 @media only screen and (max-width: 767px) {
   .text-wrapper {
-    position: relative;
-    top: -80%;
+    position: absolute;
+    top: 25%;
     pointer-events: auto;
     display: inline-flex;
     flex-direction: column;
     margin-left: 1rem;
-    gap: 4rem;
+    gap: 3.5rem;
+    z-index: 99;
   }
 }
 
@@ -34,5 +35,6 @@
     position: relative;
     top: -55%;
     padding: 0;
+    gap: 9rem;
   }
 }

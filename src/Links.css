@@ -1,10 +1,10 @@
 .links-wrapper {
-  justify-content: space-between;
   position: fixed;
   bottom: 0%;
-  justify-content: space-around;
-  width: 100%;
   font-family: "Kanit", sans-serif;
+  width: 100%;
+  display: grid;
+  place-items: center;
 }
 .links-wrapper > * {
   margin: 0;
@@ -30,7 +30,8 @@
 }
 @media only screen and (max-width: 767px) {
   .links-wrapper {
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
   }
   .links-wrapper > * {
     margin: 0;

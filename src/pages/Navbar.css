@@ -1,0 +1,24 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Kanit", sans-serif;
+  padding: 0.5rem 0.5rem;
+  font-size: larger;
+}
+
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+  gap: 1rem;
+}
+.navbar ul li a {
+  color: #682ae9;
+  text-decoration: none;
+}
+.navbar p {
+  /* color: chartreuse; */
+  background: linear-gradient(to right, hotpink, chartreuse);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}

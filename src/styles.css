@@ -39,11 +39,15 @@ p {
 .gap-4x {
   gap: 7rem;
 }
+
 .justify-center {
   justify-content: center;
 }
 .justify-space-around {
   justify-content: space-around;
+}
+.justify-between {
+  justify-content: space-between;
 }
 .flex-wrap {
   flex-wrap: wrap;
@@ -55,4 +59,14 @@ p {
   text-decoration: none;
   margin: 0 !important;
   padding: 0;
+  display: inline;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
 }
