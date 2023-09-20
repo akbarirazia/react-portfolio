@@ -5,7 +5,9 @@ import "./Navbar.css"
 function Navbar() {
   return (
     <div className="navbar container">
-      <p>Razia.Akbari()</p>
+      <p>
+        <Link to="/">akbarirazia()</Link>
+      </p>
       <ul>
         <li>
           <Link to="/pages/what">.what()</Link>

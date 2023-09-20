@@ -2,8 +2,8 @@
   display: flex;
   justify-content: space-between;
   font-family: "Kanit", sans-serif;
-  padding: 0.5rem 0.5rem;
-  font-size: larger;
+  margin-top: 0.5rem;
+  font-size: x-large;
 }
 
 .navbar ul {
@@ -21,4 +21,10 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
+}
+@media only screen and (max-width: 786px) {
+  .navbar {
+    font-size: large;
+    padding: 0.5rem 0.5rem;
+  }
 }
