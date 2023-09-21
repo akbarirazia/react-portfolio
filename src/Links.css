@@ -6,6 +6,11 @@
   display: grid;
   place-items: center;
 }
+.links-wrapper div {
+  backdrop-filter: blur(7.5px);
+  padding: 0 0.5rem;
+  border-radius: 25px;
+}
 .links-wrapper > * {
   margin: 0;
   font-size: xx-large;
@@ -46,6 +51,9 @@
   }
   .links-wrapper .links {
     margin-right: 0.5rem;
+  }
+  .links-wrapper div {
+    border-radius: 0px;
   }
 }
 

@@ -10,7 +10,7 @@ import { Link } from "react-router-dom"
 function Links() {
   return (
     <div className="links-wrapper ">
-      <div className=" container flex justify-between">
+      <div className="container flex justify-between">
         <Link to="/" className="link">
           <p>WoMan.of.God</p>
         </Link>
