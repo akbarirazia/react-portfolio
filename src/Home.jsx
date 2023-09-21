@@ -115,7 +115,7 @@ export default function Home() {
   return (
     <>
       <div className="toggle">
-        <div className="container end">
+        <div className="container bar">
           <AkbariRazia />
           <FormGroup>
             <FormControlLabel

@@ -78,17 +78,7 @@ p {
   display: grid;
   place-content: center;
 }
-.toggle {
-  position: fixed;
-  top: 0%;
-  font-family: "Kanit", sans-serif;
-  width: 100%;
-}
-.end {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+
 .dark-mode {
   background-color: rgb(34, 34, 34);
   transition: ease-out 1s;

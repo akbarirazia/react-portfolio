@@ -20,6 +20,7 @@
 }
 .links-wrapper p:hover {
   background: linear-gradient(to right, rgb(255, 115, 22), chartreuse);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   /* font-weight: bold; */

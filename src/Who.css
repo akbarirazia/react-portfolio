@@ -38,5 +38,6 @@
     top: -55%;
     padding: 0;
     gap: 9rem;
+    flex-wrap: wrap;
   }
 }

@@ -1,6 +1,7 @@
 .name p {
   /* color: chartreuse; */
   background: linear-gradient(to right, hotpink, chartreuse);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
@@ -9,6 +10,6 @@
 @media only screen and (max-width: 786px) {
   .name p {
     font-size: large;
-    padding: 0.5rem 0.5rem;
+    /* padding: 0.5rem 0.5rem; */
   }
 }
