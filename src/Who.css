@@ -8,7 +8,9 @@
   box-shadow: inset 0 0 0 0 #31302b;
   transition: all ease 0.5s;
   cursor: pointer;
+  pointer-events: auto;
 }
+
 .text-wrapper p:hover {
   box-shadow: inset 160px 0px 0 0px #5fe73c;
 }
@@ -21,7 +23,7 @@
   .text-wrapper {
     position: absolute;
     top: 25%;
-    pointer-events: auto;
+    pointer-events: none;
     display: inline-flex;
     flex-direction: column;
     margin-left: 1rem;

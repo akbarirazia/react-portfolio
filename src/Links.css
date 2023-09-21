@@ -14,7 +14,10 @@
   color: black;
 }
 .links-wrapper p:hover {
-  color: white;
+  background: linear-gradient(to right, rgb(255, 115, 22), chartreuse);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* font-weight: bold; */
   cursor: pointer;
 }
 .links-wrapper .links a {
@@ -29,10 +32,10 @@
   color: rgb(64, 253, 47);
 }
 @media only screen and (max-width: 767px) {
-  .links-wrapper {
-    /* display: flex;
-    justify-content: space-between; */
-  }
+  /* .links-wrapper {
+    display: flex;
+    justify-content: space-between;
+  } */
   .links-wrapper > * {
     margin: 0;
     font-size: x-large;

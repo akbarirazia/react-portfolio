@@ -1,13 +1,15 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import "./Navbar.css"
+import AkbariRazia from "./AkbariRazia"
 
 function Navbar() {
   return (
     <div className="navbar container">
-      <p>
+      <AkbariRazia />
+      {/* <p>
         <Link to="/">akbarirazia()</Link>
-      </p>
+      </p> */}
       <ul>
         <li>
           <Link to="/pages/what">.what()</Link>

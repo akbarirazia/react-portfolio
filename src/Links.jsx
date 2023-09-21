@@ -12,7 +12,7 @@ function Links() {
     <div className="links-wrapper ">
       <div className=" container flex justify-between">
         <Link to="/" className="link">
-          <p>Woman.of.God</p>
+          <p>WoMan.of.God</p>
         </Link>
         <div className="links flex gap-1x">
           <a

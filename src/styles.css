@@ -9,8 +9,8 @@ body {
   width: 100wv;
   padding: 0;
   /* overflow: hidden; */
-  font-family: "Croissant One", cursive;
-  background-color: rgb(34, 34, 34);
+  transition: linear 1s;
+  background-color: aliceblue;
 }
 html,
 body,
@@ -71,4 +71,25 @@ p {
   .container {
     width: 100%;
   }
+}
+.center {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-content: center;
+}
+.toggle {
+  position: fixed;
+  top: 0%;
+  font-family: "Kanit", sans-serif;
+  width: 100%;
+}
+.end {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dark-mode {
+  background-color: rgb(34, 34, 34);
+  transition: ease-out 1s;
 }
