@@ -19,10 +19,11 @@
   color: black;
 }
 .links-wrapper p:hover {
-  background: linear-gradient(to right, rgb(255, 115, 22), chartreuse);
+  background: linear-gradient(to right, hotpink, chartreuse, #682ae9);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
   /* font-weight: bold; */
   cursor: pointer;
 }

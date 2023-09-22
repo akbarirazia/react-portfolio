@@ -1,9 +1,18 @@
-import React from "react"
+import React, { useEffect, useRef } from "react"
 import "./Who.css"
 import SingleWho from "./SingleWho"
 import { Link } from "react-router-dom"
+import { gsap } from "gsap/all"
 
 function Who({ onClick }) {
+  // const what = useRef(null)
+  // const who = useRef(null)
+  // const where = useRef(null)
+  // console.log(what)
+  // useEffect(() => {
+  //   gsap.from(what, { y: 100, duration: 3, ease: "power2.out" })
+  // }, [])
+
   return (
     <div className="flex justify-center text-wrapper ">
       <Link to="/pages/what" className="link">

@@ -1,6 +1,6 @@
 .name p {
   /* color: chartreuse; */
-  background: linear-gradient(to right, hotpink, chartreuse);
+  background: linear-gradient(to right, hotpink, chartreuse, #682ae9);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

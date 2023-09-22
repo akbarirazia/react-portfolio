@@ -1,0 +1,38 @@
+.skills {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.skill-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
+  /* margin-bottom: 4rem; */
+}
+.skills img {
+  width: 2rem;
+  height: 2rem;
+
+  /* display: block; */
+  /* padding: 0.5rem 1rem; */
+}
+.skills span {
+  margin: 1rem;
+  padding: 0.8rem 1.5rem;
+  display: block;
+  border: 4px solid chartreuse;
+  border-radius: 15px;
+  box-shadow: 0px 0px 5px black;
+}
+.skills .hotpink {
+  border-color: hotpink;
+}
+.skills .purple {
+  border-color: #682ae9;
+}
+.tailwind {
+  width: 2.5rem !important;
+}

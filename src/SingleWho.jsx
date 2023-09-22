@@ -1,8 +1,8 @@
 import React from "react"
 
-function SingleWho({ text, subtext, onClick }) {
+function SingleWho({ text, subtext, onClick, refs }) {
   return (
-    <p onClick={onClick}>
+    <p onClick={onClick} ref={refs}>
       {text} <br />
       <sub>{subtext}</sub>
     </p>
