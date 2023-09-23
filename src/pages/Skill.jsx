@@ -100,11 +100,11 @@ function Skill() {
             </span>
           </div>
         </div>
-        <h3 style={{ textAlign: "center" }}>
+        <h3 style={{ textAlign: "center", margin: "0 1rem" }}>
           The little things I learned over the internet
         </h3>
         <br />
-        <h4 style={{ textAlign: "center" }}>
+        <h4 style={{ textAlign: "center", margin: "0 1rem" }}>
           But there is more to my skills (as I have a ph.D from university of
           life 😎)
         </h4>

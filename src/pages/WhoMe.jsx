@@ -119,10 +119,13 @@ function WhoMe() {
         <div className="about">
           {/* <h1>Here is a little generics I know about her</h1> */}
           <p ref={para0}>
-            Oh boy, let me tell you, as an INFJ/INTJ, the most dreaded questions
-            I get is "Who are you?", "Describe yourself". I mean, I've dedicated
-            my life to figuring it out, so its my live long goal. I can't give
-            you a proper answer before I find it out.
+            Oh boy, let me tell you, as an{" "}
+            <span className="colorful" style={{ fontWeight: "bold" }}>
+              INFJ/INTJ
+            </span>
+            , the most dreaded questions I get is "Who are you?", "Describe
+            yourself". I mean, I've dedicated my life to figuring it out, so its
+            a live long goal. I can't give a proper answer before I find it out.
           </p>{" "}
           <br />
           <p ref={para1}>
