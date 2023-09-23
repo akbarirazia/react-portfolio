@@ -36,7 +36,7 @@ export default function Home() {
       },
     },
     "& .MuiSwitch-thumb": {
-      backgroundColor: theme.palette.mode === "dark" ? "#003892" : "#000000",
+      backgroundColor: theme.palette.mode === "dark" ? "#003892" : " #682ae9",
       width: 32,
       height: 32,
       "&:before": {
@@ -61,7 +61,10 @@ export default function Home() {
   }))
 
   //function for toggling off the dark mode
-  const [isDark, setIsDark] = useState(true)
+  const [isDark, setIsDark] = useState(
+    localStorage.getItem("isDark") === "true" || false
+  )
+
   useEffect(() => {
     const body = document.body
     if (isDark) {
@@ -69,8 +72,9 @@ export default function Home() {
     } else {
       body.classList.remove("dark-mode")
     }
+    localStorage.setItem("isDark", isDark)
   }, [isDark])
-  //handling the change
+
   const handleChange = () => {
     setIsDark(!isDark)
   }

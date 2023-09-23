@@ -11,66 +11,90 @@ function WhoMe() {
   const para0 = useRef(null)
   const para1 = useRef(null)
   const para2 = useRef(null)
+  const para3 = useRef(null)
+  const firstBlock = useRef(null)
+  const secondBlock = useRef(null)
+  const thirdBlock = useRef(null)
   const heart = useRef(null)
+  // useEffect(() => {
+  //   const body = document.body
+  //   if (localStorage.getItem("isDark")) {
+  //     body.classList.add("dark-mode")
+  //     console.log("this means the item in localStorage is true")
+  //   } else {
+  //     body.classList.remove("dark-mode")
+  //   }
+  //   // console.log(localStorage.getItem("isDark"))
+  //   // localStorage.setItem("isDark", isDark)
+  // }, [])
 
-  console.log(heart)
-  console.log(para0)
+  // console.log(heart)
+  // console.log(para0)
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger)
 
-    gsap.fromTo(
-      para0.current,
-      { x: 100, opacity: 0 },
-      {
-        x: 0,
-        opacity: 1,
-        duration: 1,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: para0.current,
-          // start: "top 90%",
-          // end: "bottom 10%",
-          // markers: true,
-          toggleActions: "restart none none none",
-        },
-      }
-    )
+    const animation = (element, duration) => {
+      gsap.fromTo(
+        element.current,
+        { x: 100, opacity: 0 },
+        {
+          x: 0,
+          opacity: 1,
+          duration: duration,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: para0.current,
+            // start: "top 10%",
+            // end: "bottom 20%",
+            // markers: true,
+            toggleActions: "restart none none none",
+          },
+        }
+      )
+    }
+    animation(para0, 1)
+    animation(para1, 2)
+    animation(para2, 3)
+    animation(para3, 3)
+    animation(firstBlock, 4)
+    animation(secondBlock, 2)
+    animation(thirdBlock, 3)
 
-    gsap.fromTo(
-      para1.current,
-      { x: 100, opacity: 0 },
-      {
-        x: 0,
-        opacity: 1,
-        duration: 2,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: para1.current,
-          // start: "top 80%",
-          // end: "bottom 10%",
-          // markers: true,
-          toggleActions: "restart none none none",
-        },
-      }
-    )
+    // gsap.fromTo(
+    //   para1.current,
+    //   { x: 100, opacity: 0 },
+    //   {
+    //     x: 0,
+    //     opacity: 1,
+    //     duration: 2,
+    //     ease: "power3.out",
+    //     scrollTrigger: {
+    //       trigger: para1.current,
+    //       // start: "top 80%",
+    //       // end: "bottom 10%",
+    //       // markers: true,
+    //       toggleActions: "restart none none none",
+    //     },
+    //   }
+    // )
 
-    gsap.fromTo(
-      para2.current,
-      { x: 100, opacity: 0 },
-      {
-        x: 0,
-        opacity: 1,
-        duration: 3,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: para2.current,
-          // start: "top 90%",
-          // end: "bottom 20%",
-          // markers: true,
-          toggleActions: "restart none none none",
-        },
-      }
-    )
+    // gsap.fromTo(
+    //   para2.current,
+    //   { x: 100, opacity: 0 },
+    //   {
+    //     x: 0,
+    //     opacity: 1,
+    //     duration: 3,
+    //     ease: "power3.out",
+    //     scrollTrigger: {
+    //       trigger: para2.current,
+    //       // start: "top 90%",
+    //       // end: "bottom 20%",
+    //       // markers: true,
+    //       toggleActions: "restart none none none",
+    //     },
+    //   }
+    // )
     // gsap.fromTo(
     //   para0.current,
     //   { x: 100, duration: 1, ease: "power3.out" },
@@ -110,7 +134,7 @@ function WhoMe() {
       <br />
       <div className="container section-wrapper">
         <div className="img-wrapper">
-          <p className="flip-text">But who is she?</p>
+          <p className="flip-text">who is she?</p>
 
           <img src={image} />
           <p className="flip-text">If only I knew. . .</p>
@@ -184,7 +208,12 @@ function WhoMe() {
       </div>
       <br />
       <br />
-      <Skill />
+      <Skill
+        para={para3}
+        firstBlock={firstBlock}
+        secondBlock={secondBlock}
+        thirdBlock={thirdBlock}
+      />
     </>
   )
 }

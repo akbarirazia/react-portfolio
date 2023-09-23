@@ -1,6 +1,8 @@
 .wrapper {
-  height: 50vh;
+  height: 100vh;
+  /* background-color: black; */
 }
 .earth {
   height: 100%;
+  /* background-color: black; */
 }

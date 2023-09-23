@@ -15,7 +15,7 @@ import { TweenLite } from "gsap/gsap-core"
 import { TimelineMax } from "gsap/gsap-core"
 import { Power1 } from "gsap"
 
-function Skill() {
+function Skill({ para, firstBlock, secondBlock, thirdBlock }) {
   useEffect(() => {
     const tlCan = new TimelineMax({ repeat: -1 })
     /*Can Animation*/
@@ -59,7 +59,7 @@ function Skill() {
     <div className="container">
       <div className=" skill-wrapper">
         <div className="skills">
-          <div className="first">
+          <div className="first" ref={firstBlock}>
             <span className="hotpink span">
               <img src={html} alt="" />
             </span>
@@ -70,7 +70,7 @@ function Skill() {
               <img src={js} alt="" />
             </span>
           </div>
-          <div className="second">
+          <div className="second" ref={secondBlock}>
             <span className="span">
               <img src={react} alt="" />
             </span>
@@ -88,7 +88,7 @@ function Skill() {
               />
             </span>
           </div>
-          <div className="third">
+          <div className="third" ref={thirdBlock}>
             <span className="hotpink span">
               <img src={spline} alt="" />
             </span>
@@ -100,14 +100,16 @@ function Skill() {
             </span>
           </div>
         </div>
-        <h3 style={{ textAlign: "center", margin: "0 1rem" }}>
-          The little things I learned over the internet
-        </h3>
-        <br />
-        <h4 style={{ textAlign: "center", margin: "0 1rem" }}>
-          But there is more to my skills (as I have a ph.D from university of
-          life 😎)
-        </h4>
+        <div ref={para} style={{ marginLeft: "1rem", marginRight: "1rem" }}>
+          <h3 style={{ textAlign: "center" }}>
+            The little things I learned over the internet
+          </h3>
+          <br />
+          <h4 style={{ textAlign: "center" }}>
+            But there is more to my skills (as I have a ph.D from university of
+            life 😎)
+          </h4>
+        </div>
         <br />
 
         <a href={resume} download>
@@ -124,6 +126,7 @@ function Skill() {
               cursor: "pointer",
               color: "white",
               textShadow: "0px 0px 5px #682ae9 ",
+              boxShadow: "0px 0px 5px #682ae9 ",
             }}
           >
             Download Resume

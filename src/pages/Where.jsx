@@ -7,13 +7,13 @@ import { CircularProgress } from "@mui/material"
 function Where() {
   return (
     <>
-      <div>
-        <Navbar />
+      <Navbar />
+      <div className="container">
         <div className="wrapper">
-          <Spline
+          {/* <Spline
             scene="https://prod.spline.design/VPOrxeUHegxoZgU4/scene.splinecode"
             className="earth"
-          />
+          /> */}
         </div>
       </div>
     </>
