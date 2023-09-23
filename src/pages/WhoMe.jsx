@@ -6,6 +6,7 @@ import { useRef } from "react"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/all"
 import Skill from "./Skill"
+import Animation from "./components animation/Animation"
 
 function WhoMe() {
   const para0 = useRef(null)
@@ -31,34 +32,35 @@ function WhoMe() {
   // console.log(heart)
   // console.log(para0)
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger)
+    // gsap.registerPlugin(ScrollTrigger)
 
-    const animation = (element, duration) => {
-      gsap.fromTo(
-        element.current,
-        { x: 100, opacity: 0 },
-        {
-          x: 0,
-          opacity: 1,
-          duration: duration,
-          ease: "power3.out",
-          scrollTrigger: {
-            trigger: para0.current,
-            // start: "top 10%",
-            // end: "bottom 20%",
-            // markers: true,
-            toggleActions: "restart none none none",
-          },
-        }
-      )
-    }
-    animation(para0, 1)
-    animation(para1, 2)
-    animation(para2, 3)
-    animation(para3, 3)
-    animation(firstBlock, 4)
-    animation(secondBlock, 2)
-    animation(thirdBlock, 3)
+    // const animation = (element, duration) => {
+    //   gsap.fromTo(
+    //     element.current,
+    //     { x: 100, opacity: 0 },
+    //     {
+    //       x: 0,
+    //       opacity: 1,
+    //       duration: duration,
+    //       ease: "power3.out",
+    //       scrollTrigger: {
+    //         trigger: element.current,
+    //         // start: "top 10%",
+    //         // end: "bottom 20%",
+    //         // markers: true,
+    //         toggleActions: "restart none none none",
+    //       },
+    //     }
+    //   )
+    // }
+    Animation(para0, 1, 100)
+    // animation(para0, 1)
+    Animation(para1, 2, -100)
+    Animation(para2, 3, 100)
+    Animation(para3, 3, -100)
+    Animation(firstBlock, 4, 100)
+    Animation(secondBlock, 2, -100)
+    Animation(thirdBlock, 3, -150)
 
     // gsap.fromTo(
     //   para1.current,
