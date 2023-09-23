@@ -4,16 +4,17 @@ gsap.registerPlugin(ScrollTrigger)
 export default Animation = (
   element,
   duration,
-  direction,
+  x,
   mode = "restart",
-  y = 0
+  ystart,
+  yend = 0
 ) => {
   gsap.fromTo(
     element.current,
-    { x: direction, opacity: 0, y: y },
+    { x: x, opacity: 0, y: ystart },
     {
       x: 0,
-      y: 0,
+      y: yend,
       opacity: 1,
       duration: duration,
       ease: "power3.out",

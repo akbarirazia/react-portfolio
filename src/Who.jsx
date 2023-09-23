@@ -12,8 +12,8 @@ function Who({ onClick }) {
   // console.log(what)
   useEffect(() => {
     Animation(what, 1, 0, "play", -50)
-    Animation(where, 1, 0, "play", -50)
     Animation(who, 1, 0, "play", 50)
+    Animation(where, 1, 0, "play", -50)
   }, [])
 
   return (

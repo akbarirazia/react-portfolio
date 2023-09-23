@@ -29,6 +29,7 @@ p {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-weight: bolder;
 }
 .flex {
   display: flex;
@@ -87,7 +88,7 @@ p {
 
 .dark-mode {
   background-color: rgb(34, 34, 34);
-  color: #fdfdfb;
+  color: #fdfdfb !important;
   transition: ease-out 1s;
 }
 /* Hide the default scrollbar */

@@ -7,6 +7,7 @@ import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/all"
 import Skill from "./Skill"
 import Animation from "./components animation/Animation"
+import HeartBeatEffect from "./components animation/HeartBeatEffect"
 
 function WhoMe() {
   const para0 = useRef(null)
@@ -115,19 +116,7 @@ function WhoMe() {
     //   { x: 0, duration: 3, ease: "power3.out" }
     // )
     // gsap.to(para2.current, )
-
-    gsap.fromTo(
-      heart.current,
-      {
-        visible: true,
-        scale: 1,
-      },
-      {
-        scale: 1.3,
-        repeat: -1,
-        yoyo: true,
-      }
-    )
+    HeartBeatEffect(heart)
   })
 
   return (
@@ -151,13 +140,14 @@ function WhoMe() {
             </span>
             , the most dreaded questions I get is "Who are you?", "Describe
             yourself". I mean, I've dedicated my life to figuring it out, so its
-            a live long goal. I can't give a proper answer before I find it out.
+            a live long goal. I can't give a proper answer before I find it out
+            myself.
           </p>{" "}
           <br />
           <p ref={para1}>
             I started off as a medical student, but got banned for some sick
-            reasons. Oops! But then I remembered my love for tech and now I'm
-            juggling this crazy journey. Who knows, maybe I'll become a{" "}
+            reasons. But then I remembered my love for tech and now I'm juggling
+            this crazy journey. Who knows, maybe I'll become a{" "}
             <span className="colorful" style={{ fontWeight: "bold" }}>
               frontend web developer
             </span>
