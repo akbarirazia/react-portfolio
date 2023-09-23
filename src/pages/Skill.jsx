@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useRef } from "react"
 import "./Skill.css"
 import html from "/src/assets/html.png"
 import css from "/src/assets/css.png"
@@ -23,7 +23,7 @@ function Skill() {
       //move top left
       .to(" .span", 3, {
         y: "-=10",
-        x: "+=20",
+        x: "+=15",
         rotation: "-=3",
         ease: Power1.easeInOut,
       })
@@ -38,22 +38,23 @@ function Skill() {
 
       .to(".span", 3, { y: "-=10", rotation: "+=3", ease: Power1.easeInOut })
 
-      .to(".span", 3, { y: "+=10", rotation: "+=2", ease: Power1.easeInOut })
+      .to(".span", 3, { y: "+=5", rotation: "+=2", ease: Power1.easeInOut })
 
       .to(".span", 3, { y: "-=20", ease: Power1.easeInOut })
 
-      .to(".span", 3, { y: "+=10", ease: Power1.easeInOut })
+      .to(".span", 3, { y: "+=5", ease: Power1.easeInOut })
 
       .to(".span", 3, { y: "-=5", ease: Power1.easeInOut })
 
-      .to(".span", 3, { y: "+=10", ease: Power1.easeInOut })
+      .to(".span", 3, { y: "+=7", ease: Power1.easeInOut })
 
       .to(".span", 2, { y: "-=10", ease: Power1.easeInOut })
 
-      .to(".span", 2, { y: "+=10", ease: Power1.easeInOut })
+      .to(".span", 2, { y: "+=6", ease: Power1.easeInOut })
 
     TweenLite.to(tlCan, 2, { ease: Power1.easeInOut })
   }, [])
+
   return (
     <div className="container">
       <div className=" skill-wrapper">
@@ -114,12 +115,15 @@ function Skill() {
             style={{
               padding: ".8rem",
               borderRadius: "5px",
-              borderColor: "transparent",
+              border: "none",
+              marginTop: "0.5rem",
+
               background:
-                "linear-gradient(to left, hotpink 10%, chartreuse 50%, #682ae9)",
+                "linear-gradient(45deg, hotpink , chartreuse , #682ae9 )",
               fontFamily: "Montserrat",
               cursor: "pointer",
               color: "white",
+              textShadow: "0px 0px 5px #682ae9 ",
             }}
           >
             Download Resume
