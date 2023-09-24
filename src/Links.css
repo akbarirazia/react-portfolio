@@ -5,6 +5,7 @@
   width: 100%;
   display: grid;
   place-items: center;
+  z-index: 99999;
 }
 .links-wrapper div {
   backdrop-filter: blur(7.5px);

@@ -1,51 +1,27 @@
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  /* min-height: 100%; */
-  /* overflow: auto; */
-  pointer-events: auto;
-
-  /* width: 80%; */
-}
-/* .wrapper .container {
-  min-height: 100vh;
-} */
-.wrapper h2,
-.wrapper p {
-  text-align: center;
-  margin: 0 1rem;
-  /* color: black; */
-  text-shadow: 0px 0px 5px black;
-}
-.wrapper .container {
-  margin-top: 5rem;
-
-  /* height: 90vh; */
-}
-.heaven {
-  margin-top: 15rem;
-  height: 25rem;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: end;
-  z-index: -1;
-  position: relative;
-  bottom: 0;
-}
 .background {
   background-image: url("/src/assets/heaven.png");
-  margin: 0;
+  /* margin: 0; */
   min-height: 100vh;
   width: 100%;
   background-size: cover;
   background-position: center;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   z-index: -1;
-  position: fixed;
+  /* position: fixed; */
+  /* pointer-events: auto; */
   /* scroll-behavior: ; */
-
+  /* padding-bottom: 3rem; */
   top: 0;
+}
+.fell {
+  height: 100vh;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  text-align: center;
+  padding-top: 2rem;
+}
+.spacer {
+  height: 4rem;
 }

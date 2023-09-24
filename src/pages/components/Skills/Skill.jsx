@@ -14,8 +14,9 @@ import resume from "/src/assets/Razia Akbari's CV.pdf"
 import { TweenLite } from "gsap/gsap-core"
 import { TimelineMax } from "gsap/gsap-core"
 import { Power1 } from "gsap"
+import Button from "../Button"
 
-function Skill({ para, firstBlock, secondBlock, thirdBlock }) {
+function Skill({ para, firstBlock, secondBlock, thirdBlock, para1 }) {
   useEffect(() => {
     const tlCan = new TimelineMax({ repeat: -1 })
     /*Can Animation*/
@@ -100,12 +101,12 @@ function Skill({ para, firstBlock, secondBlock, thirdBlock }) {
             </span>
           </div>
         </div>
-        <div ref={para} style={{ marginLeft: "1rem", marginRight: "1rem" }}>
-          <h3 style={{ textAlign: "center" }}>
+        <div style={{ marginLeft: "1rem", marginRight: "1rem" }}>
+          <h3 style={{ textAlign: "center" }} ref={para}>
             The little things I learned over the internet
           </h3>
           <br />
-          <h4 style={{ textAlign: "center" }}>
+          <h4 style={{ textAlign: "center" }} ref={para1}>
             But there is more to my skills (as I have a ph.D from university of
             life 😎)
           </h4>
@@ -113,24 +114,7 @@ function Skill({ para, firstBlock, secondBlock, thirdBlock }) {
         <br />
 
         <a href={resume} download>
-          <button
-            style={{
-              padding: ".8rem",
-              borderRadius: "5px",
-              border: "none",
-              marginTop: "0.5rem",
-
-              background:
-                "linear-gradient(45deg, hotpink , chartreuse , #682ae9 )",
-              fontFamily: "Montserrat",
-              cursor: "pointer",
-              color: "white",
-              textShadow: "0px 0px 5px #682ae9 ",
-              boxShadow: "0px 0px 5px #682ae9 ",
-            }}
-          >
-            Download Resume
-          </button>
+          <Button>Download Resume</Button>
         </a>
         <br />
         <br />

@@ -1,17 +1,32 @@
+import { useEffect, useState } from "react"
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet"
-import "/node_modules/leaflet/dist/leaflet.css"
+import "leaflet/dist/leaflet.css"
 import "./Map.css"
 
 export default function Map() {
+  const [position, setPosition] = useState([51.505, -0.09])
+
+  useEffect(() => {
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        setPosition([position.coords.latitude, position.coords.longitude])
+      },
+      (error) => {
+        console.error(error)
+      }
+    )
+  }, [])
+
   return (
-    <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false}>
+    <MapContainer center={position} zoom={13} scrollWheelZoom={false}>
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
       />
-      <Marker position={[51.505, -0.09]}>
+      <Marker position={position}>
         <Popup>
-          A pretty CSS3 popup. <br /> Easily customizable.
+          This is the exact location <br />
+          where I was dropped.
         </Popup>
       </Marker>
     </MapContainer>

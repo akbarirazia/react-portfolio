@@ -14,6 +14,7 @@ function WhoMe() {
   const para1 = useRef(null)
   const para2 = useRef(null)
   const para3 = useRef(null)
+  const para5 = useRef(null)
   const firstBlock = useRef(null)
   const secondBlock = useRef(null)
   const thirdBlock = useRef(null)
@@ -59,6 +60,7 @@ function WhoMe() {
     Animation(para1, 2, -100)
     Animation(para2, 3, 100)
     Animation(para3, 3, -100)
+    Animation(para5, 2, 100)
     Animation(firstBlock, 4, 100)
     Animation(secondBlock, 2, -100)
     Animation(thirdBlock, 3, -150)
@@ -205,6 +207,7 @@ function WhoMe() {
         firstBlock={firstBlock}
         secondBlock={secondBlock}
         thirdBlock={thirdBlock}
+        para1={para5}
       />
     </>
   )

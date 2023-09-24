@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   font-family: "Kanit", sans-serif;
-  margin-top: 0.5rem;
+  padding-top: 0.5rem;
   font-size: x-large;
   background-color: transparent;
 }
