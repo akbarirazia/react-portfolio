@@ -7,12 +7,15 @@ export default Animation = (
   x,
   mode = "restart",
   ystart,
-  yend = 0
+  yend = 0,
+  delay = 0,
+  opacity = 0
 ) => {
   gsap.fromTo(
     element.current,
-    { x: x, opacity: 0, y: ystart },
+    { x: x, opacity: opacity, y: ystart },
     {
+      delay: delay,
       x: 0,
       y: yend,
       opacity: 1,

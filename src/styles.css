@@ -28,6 +28,7 @@ body,
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bolder;
+  text-shadow: none !important;
 }
 .flex {
   display: flex;

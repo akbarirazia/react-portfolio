@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import "./Navbar.css"
-import AkbariRazia from "./AkbariRazia"
+import AkbariRazia from "./AkbariRazia/AkbariRazia.jsx"
 
 function Navbar() {
   return (

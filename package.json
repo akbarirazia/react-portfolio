@@ -20,9 +20,11 @@
     "@splinetool/react-spline": "^2.2.1",
     "@splinetool/runtime": "^0.9.452",
     "gsap": "^3.12.2",
+    "leaflet": "^1.9.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",
+    "react-leaflet": "^4.2.1",
     "react-router-dom": "^6.16.0",
     "three": "^0.156.1"
   },

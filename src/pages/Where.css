@@ -3,27 +3,49 @@
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  height: 100vh;
+  /* min-height: 100%; */
+  /* overflow: auto; */
+  pointer-events: auto;
+
+  /* width: 80%; */
 }
+/* .wrapper .container {
+  min-height: 100vh;
+} */
 .wrapper h2,
 .wrapper p {
   text-align: center;
+  margin: 0 1rem;
   /* color: black; */
+  text-shadow: 0px 0px 5px black;
 }
+.wrapper .container {
+  margin-top: 5rem;
 
+  /* height: 90vh; */
+}
+.heaven {
+  margin-top: 15rem;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: end;
+  z-index: -1;
+  position: relative;
+  bottom: 0;
+}
 .background {
   background-image: url("/src/assets/heaven.png");
   margin: 0;
-  height: 100%;
+  min-height: 100vh;
   width: 100%;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
-  /* z-index: 99; */
-  position: absolute;
-  pointer-events: auto;
+  /* background-attachment: fixed; */
+  z-index: -1;
+  position: fixed;
+  /* scroll-behavior: ; */
+
   top: 0;
-}
-body {
-  margin: 0 !important;
 }

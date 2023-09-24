@@ -1,11 +1,11 @@
 import React, { useEffect } from "react"
-import Navbar from "./Navbar"
+import Navbar from "./components/Navbar/Navbar"
 import image from "/src/assets/razia_back.png"
 import "./WhoMe.css"
 import { useRef } from "react"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/all"
-import Skill from "./Skill"
+import Skill from "./components/Skills/Skill"
 import Animation from "./components animation/Animation"
 import HeartBeatEffect from "./components animation/HeartBeatEffect"
 

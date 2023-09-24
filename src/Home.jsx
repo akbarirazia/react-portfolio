@@ -8,7 +8,7 @@ import FormGroup from "@mui/material/FormGroup"
 import FormControlLabel from "@mui/material/FormControlLabel"
 import Switch from "@mui/material/Switch"
 import { useState } from "react"
-import AkbariRazia from "./pages/AkbariRazia"
+import AkbariRazia from "./pages/components/Navbar/AkbariRazia/AkbariRazia"
 
 export default function Home() {
   //dark mode material ui code
