@@ -5,7 +5,7 @@
   width: 100%;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   z-index: -1;
   /* position: fixed; */
   /* pointer-events: auto; */
@@ -21,6 +21,34 @@
   align-items: center; */
   text-align: center;
   padding-top: 2rem;
+}
+.mars {
+  padding: 0rem 2rem;
+  text-align: center;
+}
+.touch {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center;
+  align-items: center; */
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.map {
+  width: 24rem;
+  min-height: 24rem;
+  margin: 0 auto;
+}
+
+.contact {
+  width: 24rem;
+  order: 1;
+  margin: 0 auto;
+  /* background-color: black; */
+}
+.inputs {
+  min-height: 24rem;
+  margin-top: 0rem;
 }
 .spacer {
   height: 4rem;

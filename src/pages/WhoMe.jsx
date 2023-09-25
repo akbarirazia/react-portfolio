@@ -130,7 +130,7 @@ function WhoMe() {
           <p className="flip-text">who is she?</p>
 
           <img src={image} />
-          <p className="flip-text">If only I knew. . .</p>
+          <p className="flip-text">If wish I knew. . .</p>
         </div>
 
         <div className="about">
@@ -142,7 +142,7 @@ function WhoMe() {
             </span>
             , the most dreaded questions I get is "Who are you?", "Describe
             yourself". I mean, I've dedicated my life to figuring it out, so its
-            a live long goal. I can't give a proper answer before I find it out
+            a live long goal. can't give a proper answer before I find it out
             myself.
           </p>{" "}
           <br />

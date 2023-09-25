@@ -6,12 +6,19 @@ import Animation from "./components animation/Animation"
 import Map from "./Map/Map"
 import Button from "./components/Button"
 import Spline from "@splinetool/react-spline"
+import { TextField } from "@mui/material"
+import ContactForm from "./ContactForm/ContactForm"
+import HeartBeatEffect from "./components animation/HeartBeatEffect"
 
 function Where() {
   const heaven = useRef(null)
   const back = useRef(null)
   const right = useRef(null)
   const left = useRef(null)
+  const beat = useRef(null)
+  const name = useRef(null)
+  const email = useRef(null)
+  const msg = useRef(null)
   useEffect(() => {
     // console.log(heaven)
     Animation(heaven, 1, 0, "play", -200, 100)
@@ -19,6 +26,11 @@ function Where() {
     Animation(back, 3, -50)
     Animation(right, 3, 50)
     Animation(left, 3, -50)
+    HeartBeatEffect(beat)
+    Animation(name, 3, 100)
+    Animation(email, 3, -50)
+    Animation(msg, 3, 0, "restart", 100)
+    // Animation()
   })
   return (
     <>
@@ -32,26 +44,45 @@ function Where() {
             </h2>
             <Spline scene="https://prod.spline.design/VPOrxeUHegxoZgU4/scene.splinecode" />
           </div>
-          <div className="fell">
+          <div className="mars">
             <p ref={back}>
-              End of 2002 when I was dropped on earth and ever since want to go
+              End of 2002, when I was dropped on earth and ever since want to go
               back
             </p>
             <p ref={right}>
               My location just in between
-              <span className="colorful"> venus and mars</span>
+              <span className="colorful"> Venus and Mars</span>
             </p>
             <p ref={left}>
               {" "}
               But hey, there is an even easier way to get in touch with me
             </p>
           </div>
-
-          <div>
-            <p>Exact Location</p>
-            <Map />
+          <br />
+          <div className="touch">
+            <div className="contact">
+              <p>Contact Form</p>
+              <br />
+              <div className="inputs">
+                <ContactForm name={name} email={email} msg={msg} />
+              </div>
+            </div>
+            <div className="map">
+              <p>Exact Location</p>
+              <Map />
+            </div>
           </div>
-
+          <br /> <br />
+          <p style={{ textAlign: "center" }}>
+            Made with{" "}
+            <span
+              ref={beat}
+              style={{ display: "inline-block", color: "white" }}
+            >
+              🤍
+            </span>{" "}
+            in 2023
+          </p>
           <div className="spacer"></div>
         </div>
       </div>
