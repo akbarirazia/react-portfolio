@@ -8,3 +8,9 @@
   margin-bottom: 1rem;
   /* z-index: -1; */
 }
+
+@media screen and (max-width: 786px) {
+  .leaflet-container {
+    width: 90%;
+  }
+}

@@ -72,7 +72,7 @@ function Where() {
               <Map />
             </div>
           </div>
-          <br /> <br />
+          <br />
           <p style={{ textAlign: "center" }}>
             Made with{" "}
             <span
