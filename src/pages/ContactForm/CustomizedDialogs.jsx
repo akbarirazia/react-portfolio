@@ -73,7 +73,7 @@ export default function CustomizedDialogs({ userName, formData }) {
                 style={{ width: "100%", height: "15rem" }}
               />
             </div>
-            JK!
+            Just Kidding!
             <br />
             {userName}, Shine✨!
           </Typography>

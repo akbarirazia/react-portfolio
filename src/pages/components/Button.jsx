@@ -13,8 +13,8 @@ function Button({ children, type = "button", onClick }) {
         fontFamily: "Montserrat",
         cursor: "pointer",
         color: "white",
-        textShadow: "0px 0px 5px #682ae9 ",
-        boxShadow: "0px 0px 5px #682ae9 ",
+        textShadow: "0px 0px 2px #682ae9 ",
+        boxShadow: "0px 0px 2px #682ae9 ",
       }}
       onClick={onClick}
     >
