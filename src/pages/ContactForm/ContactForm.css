@@ -9,7 +9,7 @@ textarea {
   border: none;
   background-color: aliceblue;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial;
-  box-shadow: 0px 0px 15px #682ae9;
+  box-shadow: 0px 0px 5px #682ae9;
 }
 .btn button {
   margin: 0 !important;

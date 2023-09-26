@@ -1,6 +1,6 @@
 import React from "react"
 
-function Button({ children }) {
+function Button({ children, type = "button", onClick }) {
   return (
     <button
       style={{
@@ -16,6 +16,7 @@ function Button({ children }) {
         textShadow: "0px 0px 5px #682ae9 ",
         boxShadow: "0px 0px 5px #682ae9 ",
       }}
+      onClick={onClick}
     >
       {children}
     </button>

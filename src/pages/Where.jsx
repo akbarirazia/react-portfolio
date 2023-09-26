@@ -64,7 +64,7 @@ function Where() {
               <p>Contact Form</p>
               <br />
               <div className="inputs">
-                <ContactForm name={name} email={email} msg={msg} />
+                <ContactForm username={name} useremail={email} msg={msg} />
               </div>
             </div>
             <div className="map">
@@ -73,7 +73,7 @@ function Where() {
             </div>
           </div>
           <br />
-          <p style={{ textAlign: "center" }}>
+          <p style={{ textAlign: "center", marginTop: "1rem" }}>
             Made with{" "}
             <span
               ref={beat}
