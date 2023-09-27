@@ -130,7 +130,7 @@ function WhoMe() {
           <p className="flip-text">who is she?</p>
 
           <img src={image} />
-          <p className="flip-text">If wish I knew. . .</p>
+          <p className="flip-text">I wish I knew. . .</p>
         </div>
 
         <div className="about">
