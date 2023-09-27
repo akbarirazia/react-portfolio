@@ -75,7 +75,7 @@ export default function CustomizedDialogs({ userName, formData }) {
             </div>
             Just Kidding!
             <br />
-            {userName}, Shine✨!
+            <strong>{userName}</strong>, Shine✨!
           </Typography>
         </DialogContent>
         <DialogActions>
