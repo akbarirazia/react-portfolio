@@ -8,6 +8,7 @@ import { ScrollTrigger } from "gsap/all"
 import Skill from "./components/Skills/Skill"
 import Animation from "./components animation/Animation"
 import HeartBeatEffect from "./components animation/HeartBeatEffect"
+import TimeLine from "./components/TimeLine/TimeLine"
 
 function WhoMe() {
   const para0 = useRef(null)
@@ -209,6 +210,12 @@ function WhoMe() {
         thirdBlock={thirdBlock}
         para1={para5}
       />
+      <h2 style={{ textAlign: "center", marginBottom: "2rem" }}>
+        <span className="colorful">Experiences</span>
+      </h2>
+      <TimeLine />
+      <br />
+      <br />
     </>
   )
 }
