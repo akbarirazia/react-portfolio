@@ -61,14 +61,18 @@ function Where() {
           <br />
           <div className="touch">
             <div className="contact">
-              <p>Contact Form</p>
+              <p>
+                <span className="colorful">Contact Form</span>
+              </p>
               <br />
               <div className="inputs">
                 <ContactForm username={name} useremail={email} msg={msg} />
               </div>
             </div>
             <div className="map">
-              <p>Exact Location</p>
+              <p>
+                <span className="colorful">Exact Location</span>
+              </p>
               <Map />
             </div>
           </div>

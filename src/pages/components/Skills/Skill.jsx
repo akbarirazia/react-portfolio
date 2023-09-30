@@ -33,7 +33,7 @@ function Skill({ para, firstBlock, secondBlock, thirdBlock, para1 }) {
 
       //move down right
       .to(".span", 2, {
-        y: "+=10",
+        y: "+=5",
         x: "-=20",
         rotation: "-=5",
         ease: Power1.easeInOut,
@@ -41,19 +41,19 @@ function Skill({ para, firstBlock, secondBlock, thirdBlock, para1 }) {
 
       .to(".span", 3, { y: "-=10", rotation: "+=3", ease: Power1.easeInOut })
 
-      .to(".span", 3, { y: "+=5", rotation: "+=2", ease: Power1.easeInOut })
+      .to(".span", 3, { y: "+=15", rotation: "+=2", ease: Power1.easeInOut })
 
-      .to(".span", 3, { y: "-=20", ease: Power1.easeInOut })
+      .to(".span", 3, { y: "-=10", ease: Power1.easeInOut })
 
-      .to(".span", 3, { y: "+=5", ease: Power1.easeInOut })
+      .to(".span", 3, { y: "+=15", ease: Power1.easeInOut })
 
       .to(".span", 3, { y: "-=5", ease: Power1.easeInOut })
 
-      .to(".span", 3, { y: "+=7", ease: Power1.easeInOut })
+      .to(".span", 3, { y: "+=17", ease: Power1.easeInOut })
 
-      .to(".span", 2, { y: "-=10", ease: Power1.easeInOut })
+      .to(".span", 2, { y: "-=3", ease: Power1.easeInOut })
 
-      .to(".span", 2, { y: "+=6", ease: Power1.easeInOut })
+      .to(".span", 2, { y: "+=16", ease: Power1.easeInOut })
 
     TweenLite.to(tlCan, 2, { ease: Power1.easeInOut })
   }, [])
@@ -180,16 +180,27 @@ function Skill({ para, firstBlock, secondBlock, thirdBlock, para1 }) {
           </div>
         </div>
         <div style={{ marginLeft: "1rem", marginRight: "1rem" }}>
+          <div ref={para}>
+            <small
+              style={{
+                textAlign: "center",
+                display: "block",
+                marginBottom: "0.5rem",
+              }}
+            >
+              Skills-O-Meter <br />
+              (source? trust me bro)
+            </small>
+          </div>
           <CustomizedProgressBars value={value} />
           <br />
-          <h3 style={{ textAlign: "center" }} ref={para}>
-            The little things I learned over the internet
-          </h3>
 
-          <h5 style={{ textAlign: "center" }} ref={para1}>
-            But there is more to my skills (as I have a ph.D from university of
-            life 😎)
-          </h5>
+          <div ref={para1} style={{ textAlign: "center" }}>
+            <small>
+              But there is more to my skills (as I have a ph.D from university
+              of life 😎)
+            </small>
+          </div>
         </div>
         <br />
 

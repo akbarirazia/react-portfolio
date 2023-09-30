@@ -21,8 +21,6 @@ const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
   },
 }))
 
-// Inspired by the former Facebook spinners.
-
 export default function CustomizedProgressBars({ value }) {
   return (
     <div style={{ width: "80%", margin: "0 auto" }}>

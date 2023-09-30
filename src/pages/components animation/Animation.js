@@ -1,3 +1,4 @@
+import { VisibilityRounded } from "@mui/icons-material"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/all"
 gsap.registerPlugin(ScrollTrigger)
@@ -13,8 +14,14 @@ export default Animation = (
 ) => {
   gsap.fromTo(
     element.current,
-    { x: x, opacity: opacity, y: ystart },
     {
+      x: x,
+      opacity: opacity,
+      y: ystart,
+      display: "hidden",
+    },
+    {
+      display: "visible",
       delay: delay,
       x: 0,
       y: yend,

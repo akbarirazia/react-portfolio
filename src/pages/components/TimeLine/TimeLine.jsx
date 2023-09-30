@@ -32,13 +32,13 @@ const experiences = [
 ]
 function TimeLine() {
   return (
-    <div class="tl">
+    <div className="tl">
       <SingleTl
         cls={"tl-left"}
         title={"Web Developer"}
         year={"2023 - present"}
         description={
-          "During my tenure as a Web Developer at Cosmino Productions, I played a critical role in desigining, building, maintaining, and deploying their website for one of their projects. Employing my expertise development, I ensured that the website boasted a responsive design, delivering seamless user experiences across multiple devices."
+          "During my tenure as a Web Developer at Cosmino Productions, I played a critical role in desigining, building, maintaining, and deploying their website for one of their projects. Employing my expertise in development, I ensured that the website boasted a responsive design, delivering seamless user experiences across multiple devices."
         }
       />
       <SingleTl

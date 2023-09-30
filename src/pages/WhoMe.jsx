@@ -225,9 +225,17 @@ function WhoMe() {
       <TimeLine />
       <br />
       <br />
-      <h2 style={{ textAlign: "center", margin: "2rem auto" }}>
-        <span className="colorful">Skills</span>
-      </h2>
+      <div className="container">
+        <h2 style={{ textAlign: "center", margin: "1rem auto" }}>
+          <span className="colorful">Skills</span>
+        </h2>
+        <small className="small">
+          How about "I'm a self-taught expert in Googling solutions" or "like a
+          magician, except instead of pulling rabbits out of hats, I pull
+          solutions out of Stack Overflow"? Or maybe "I'm a master of Ctrl+C and
+          Ctrl+V, but don't tell anyone"?
+        </small>
+      </div>
       <Skill
         para={para3}
         firstBlock={firstBlock}
@@ -235,6 +243,7 @@ function WhoMe() {
         thirdBlock={thirdBlock}
         para1={para5}
       />
+      <br />
     </>
   )
 }
