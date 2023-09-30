@@ -89,7 +89,21 @@
     width: 100%;
     padding: 1rem 2rem;
   }
+  .small {
+    width: 80% !important;
+    display: block;
+    text-align: justify !important;
+    /* color: red; */
+    /* margin: 0 !important; */
+  }
 }
 body {
   overflow-x: hidden;
+}
+
+.small {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 }

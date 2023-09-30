@@ -204,12 +204,30 @@ function WhoMe() {
       <br />
       <br />
 
-      <h2 style={{ textAlign: "center", marginBottom: "2rem" }}>
-        <span className="colorful">Experiences</span>
-      </h2>
+      <div className="container" style={{ marginBottom: "2rem" }}>
+        <h2 style={{ textAlign: "center", marginBottom: "1rem" }}>
+          <span className="colorful">Experiences</span>
+        </h2>
+        <small
+          // style={{
+          //   width: "30rem",
+          //   display: "block",
+          //   margin: "0 auto",
+          //   textAlign: "center",
+          // }}
+          className="small"
+        >
+          I've dabbled in so many professions, I could probably diagnose your
+          computer's HR issues while performing a web development surgery. Just
+          kidding... or am I?
+        </small>
+      </div>
       <TimeLine />
       <br />
       <br />
+      <h2 style={{ textAlign: "center", margin: "2rem auto" }}>
+        <span className="colorful">Skills</span>
+      </h2>
       <Skill
         para={para3}
         firstBlock={firstBlock}
