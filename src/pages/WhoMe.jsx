@@ -203,6 +203,13 @@ function WhoMe() {
       </div>
       <br />
       <br />
+
+      <h2 style={{ textAlign: "center", marginBottom: "2rem" }}>
+        <span className="colorful">Experiences</span>
+      </h2>
+      <TimeLine />
+      <br />
+      <br />
       <Skill
         para={para3}
         firstBlock={firstBlock}
@@ -210,12 +217,6 @@ function WhoMe() {
         thirdBlock={thirdBlock}
         para1={para5}
       />
-      <h2 style={{ textAlign: "center", marginBottom: "2rem" }}>
-        <span className="colorful">Experiences</span>
-      </h2>
-      <TimeLine />
-      <br />
-      <br />
     </>
   )
 }

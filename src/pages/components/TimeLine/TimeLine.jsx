@@ -1,5 +1,8 @@
 import "./TimLine.css"
 import SingleTl from "./SingleTl"
+import { useEffect, useRef } from "react"
+// import { Animation } from "./pages/components animation/Animation.js"
+// import Animation from "../../components animation/Animation"
 
 const experiences = [
   {
