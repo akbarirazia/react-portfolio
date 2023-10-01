@@ -1,0 +1,5 @@
+@media screen and (max-width: 786px) {
+  .filter {
+    padding: 0 0.5rem !important;
+  }
+}

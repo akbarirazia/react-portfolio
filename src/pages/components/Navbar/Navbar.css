@@ -1,6 +1,7 @@
 .navbar {
   display: flex;
   justify-content: space-between;
+  /* font-family: "Anton", sans-serif; */
   font-family: "Kanit", sans-serif;
   padding-top: 0.5rem;
   font-size: x-large;

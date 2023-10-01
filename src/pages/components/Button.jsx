@@ -7,7 +7,6 @@ function Button({ children, type = "button", onClick }) {
         padding: ".8rem",
         borderRadius: "5px",
         border: "none",
-        marginTop: "0.5rem",
 
         background: "linear-gradient(45deg, hotpink , chartreuse , #682ae9 )",
         fontFamily: "Montserrat",
