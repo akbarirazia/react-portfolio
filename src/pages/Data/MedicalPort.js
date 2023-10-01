@@ -1,4 +1,4 @@
-import test from "../../images/Testosterone.jpg"
+import test from "../../images/testosterone.jpg"
 import glycogen from "../../images/glycogen.jpg"
 import genetics from "../../images/genetics.jpg"
 import bones from "../../images/bones.jpg"
