@@ -2,11 +2,12 @@ import React, { useEffect, useState } from "react"
 import Navbar from "./components/Navbar/Navbar"
 import { medicalportfolio } from "./Data/MedicalPort"
 import { projects } from "./Data/WebDev"
-import FilterBar from "./components/FilterBar/FilterBar"
+
 import "./What.css"
 
 import SearchBar from "./components/FilterBar/SearchBar"
 import Cards from "./components/Cards/Cards"
+import DropDown from "./components/FilterBar/DropDown"
 
 function What() {
   const combinedData = [...medicalportfolio, ...projects]
@@ -30,6 +31,7 @@ function What() {
     return array
   }
   shuffle(combinedData)
+  const [array, setArray] = useState(combinedData)
   // console.log(combinedData)
   // const [data, setData] = useState([])
   // useEffect(() => {
@@ -39,17 +41,39 @@ function What() {
   // }, [])
 
   // console.log(data)
+  function handleFilter(option) {
+    // console.log(option)
+    if (option === "All Portfolios") {
+      setArray(combinedData)
+    } else if (option === "Web Development") {
+      setArray(projects)
+    } else {
+      setArray(medicalportfolio)
+    }
+  }
   return (
     <div>
       <Navbar />
       <div className="container">
-        <FilterBar />
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            marginTop: "1.5rem",
+            padding: "0",
+          }}
+          className="filter"
+        >
+          <SearchBar />
+          <DropDown onFilter={handleFilter} />
+        </div>
         {/* <Cards /> */}
         <div
           className="flex flex-wrap gap-2x card-container"
           style={{ justifyContent: "space-evenly" }}
         >
-          {combinedData.map((data, index) => (
+          {array.map((data, index) => (
             <Cards
               key={index}
               title={data.title}

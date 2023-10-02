@@ -2,11 +2,12 @@ import React, { useState } from "react"
 import Button from "../Button"
 import "./DropDown.css"
 
-function DropDown() {
+function DropDown({ onFilter }) {
   const [option, setOption] = useState("All Portfolios")
   // console.log();
   function handleClick(event) {
     setOption(event.target.dataset.value)
+    onFilter(event.target.dataset.value)
     // console.log(event.target.dataset.value)
   }
   return (

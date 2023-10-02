@@ -8,6 +8,11 @@
     display: flex;
   }
 }
+@media screen and (max-width: 786px) {
+  .filter {
+    padding: 0 0.5rem !important;
+  }
+}
 
 /* @media screen and (max-width: 1086px) {
   .card-container {

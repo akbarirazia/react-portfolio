@@ -1,7 +1,6 @@
 import React from "react"
 import "./Cards.css"
 import Tags from "./Tags"
-import { withTheme } from "styled-components"
 
 function Cards({ title, description, img, tags, link }) {
   const isDark = localStorage.getItem("isDark") === "true"
