@@ -77,7 +77,7 @@ function What() {
       title={data.title}
       description={data.description}
       link={data.link}
-      img={img}
+      // img={img}
       tags={data.tags}
       delay={index}
     />
