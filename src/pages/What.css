@@ -1,7 +1,23 @@
 .card-container {
   margin: 1rem 0rem;
 }
-
+.card-container a {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 0.3rem;
+  text-decoration: none;
+  color: #682ae9 !important;
+}
+.card-container a span {
+  display: block;
+}
+.card-container a :last-child {
+  margin-top: 0.05rem;
+}
+.card-container a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.4rem;
+}
 @media screen and (max-width: 786px) {
   .card-container {
     justify-content: center !important;

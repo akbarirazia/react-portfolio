@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react"
 import "./Cards.css"
 import Tags from "./Tags"
 import Animation from "../../components animation/Animation"
+import { HiOutlineLink } from "react-icons/hi"
 
 function Cards({ title, description, img, tags, link, delay }) {
   const isDark = localStorage.getItem("isDark") === "true"
@@ -32,7 +33,12 @@ function Cards({ title, description, img, tags, link, delay }) {
             {description}
           </p>
           <div>
-            <a href={link}>View Project</a>
+            <a href={link}>
+              <span>View Project </span>
+              <span>
+                <HiOutlineLink />
+              </span>
+            </a>
           </div>
         </div>
         <div className="px-6 py-4">
