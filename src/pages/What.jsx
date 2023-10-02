@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from "react"
 import Navbar from "./components/Navbar/Navbar"
-import { medicalportfolio } from "./Data/MedicalPort"
-import { projects } from "./Data/WebDev"
+import { medicalportfolio } from "../Data/MedicalPort"
+import { projects } from "../Data/WebDev"
 
 import "./What.css"
 
