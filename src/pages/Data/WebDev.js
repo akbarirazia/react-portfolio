@@ -10,9 +10,9 @@ export const projects = [
     title: "Ay Kash -Under The Starry Afghan Sky",
     imageSrc: AyKash,
     description:
-      "‘Ay Kash / ای کاش / If Only’ is a theatre, art and activism performance / exhibition featuring the artwork, films, poetry and stories of eleven young women based in Herat and Kabul, Afghanistan coming to Berlin, Germany in September 2023 and then available to tour worldwide. A project initiated by the Under the Starry Afghan Sky and Cosmino Productions.",
+      "‘Ay Kash / ای کاش / If Only’ is a theatre, art and activism performance / exhibition featuring the artwork, films, poetry and stories of eleven young women based Afghanistan coming to Berlin, Germany in September 2023 and then available to tour worldwide. A project initiated by the Cosmino Productions.",
     link: "http://www.underthestarryafghansky.com/",
-    tags: ["Tailwindcss", "JavaScript", "HTML"],
+    tags: ["Tailwindcss", "JS", "HTML"],
   },
   {
     title: "Invoice App",
@@ -28,7 +28,7 @@ export const projects = [
     description:
       "An elegant and responsive bookstore landing page, created using Tailwind CSS. This static project brings a sophisticated touch to book lovers worldwide. With its visually pleasing design, optimized for all screen sizes. The combination of Tailwind CSS's sleek styling and the static nature of the website ensures fast loading times and a seamless browsing experience.",
     link: "https://akbarirazia.github.io/Bookstore-Landing-Page/",
-    tags: ["Tailwindcss", "Responsive", "Landing Page"],
+    tags: ["Tailwindcss", "RWD", "HTML"],
   },
   {
     title: "Personal Portfolio",
@@ -36,7 +36,7 @@ export const projects = [
     description:
       "My personal portfolio! the page you are at right now. This project was created using tailwindcss for its responsive design and JavaScript for the certain functionalities in the page. It contains my personal portfolio and contact information along with my resume.",
     link: "https://akbarirazia.github.io/portfolio/",
-    tags: ["Tailwindcss", "HTML", "Responsive"],
+    tags: ["Tailwindcss", "HTML", "RWD"],
   },
   {
     title: "Responsive Album",

@@ -93,7 +93,8 @@
   margin-right: -0.5 rem !important ;
 }
 .gray img {
-  filter: grayscale(1);
+  /* filter: blur(0.7); */
+  filter: grayscale(0.8);
   /* transition: ease-in-out 0.5s; */
   cursor: pointer;
 }
@@ -113,9 +114,10 @@
 .tag {
   cursor: pointer;
   background: linear-gradient(45deg, hotpink, chartreuse, #682ae9);
-  color: black;
+  /* color: black; */
+  color: white;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 1);
 }
 .tag:hover {
-  color: white;
-  text-shadow: 0px 0px 3px rgba(0, 0, 0, 1);
+  color: rgb(7, 6, 6);
 }

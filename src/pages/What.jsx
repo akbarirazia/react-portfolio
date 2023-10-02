@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, { useEffect, useMemo, useState } from "react"
 import Navbar from "./components/Navbar/Navbar"
 import { medicalportfolio } from "./Data/MedicalPort"
 import { projects } from "./Data/WebDev"
@@ -51,6 +51,35 @@ function What() {
       setArray(medicalportfolio)
     }
   }
+  const [query, setQuery] = useState("")
+
+  const filteredProjects = useMemo(
+    () =>
+      array.filter((project) =>
+        project.title.toLowerCase().includes(query.toLowerCase())
+      ),
+    [array, query]
+  )
+  function handleChange(e) {
+    console.log(e.target.value)
+    // setArray((prev) => {
+    //   return prev.filter((arr) =>
+    //     arr.title.toLowerCase().includes(e.target.value)
+    //   )
+    // })
+  }
+  const finalProject = filteredProjects.map((data, index) => (
+    <Cards
+      key={index}
+      title={data.title}
+      description={data.description}
+      link={data.link}
+      img={data.imageSrc}
+      tags={data.tags}
+      delay={index}
+    />
+  ))
+  console.log(finalProject.length)
   return (
     <div>
       <Navbar />
@@ -65,7 +94,7 @@ function What() {
           }}
           className="filter"
         >
-          <SearchBar />
+          <SearchBar onchange={(e) => setQuery(e.target.value)} value={query} />
           <DropDown onFilter={handleFilter} />
         </div>
         {/* <Cards /> */}
@@ -73,18 +102,16 @@ function What() {
           className="flex flex-wrap gap-2x card-container"
           style={{ justifyContent: "space-evenly" }}
         >
-          {array.map((data, index) => (
-            <Cards
-              key={index}
-              title={data.title}
-              description={data.description}
-              link={data.link}
-              img={data.imageSrc}
-              tags={data.tags}
-            />
-          ))}
+          {finalProject.length == 0 ? (
+            <div style={{ marginTop: "2rem" }}>No Project Found</div>
+          ) : (
+            finalProject
+          )}
         </div>
       </div>
+      <br />
+      <br />
+      <br />
     </div>
   )
 }
