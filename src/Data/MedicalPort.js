@@ -1,10 +1,10 @@
-import test from "../assets/images/testosterone.jpg"
-import glycogen from "../assets/images/glycogen.jpg"
+import test from "../assets/testosterone.jpg"
+import glycogen from "../assets/glycogen.jpg"
 
-import bones from "../assets/images/bones.jpg"
-import female from "../assets/images/female.jpg"
-import fast from "../assets/images/fast.jpg"
-import eye from "../assets/images/eye.jpg"
+import bones from "../assets/bones.jpg"
+import female from "../assets/female.jpg"
+import fast from "../assets/fast.jpg"
+import eye from "../assets/eye.jpg"
 
 export const medicalportfolio = [
   {

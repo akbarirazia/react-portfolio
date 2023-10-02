@@ -1,9 +1,9 @@
-import portfolio from "../assets/images/port.jpg"
-import game from "../assets/images/game.jpg"
-import invoice from "../assets/images/invoice.jpg"
-import album from "../assets/images/album.jpg"
-import bookstore from "../assets/images/bookstore.jpg"
-import AyKash from "../assets/images/AyKash.jpg"
+import portfolio from "../assets/port.jpg"
+import game from "../assets/game.jpg"
+import invoice from "../assets/invoice.jpg"
+import album from "../assets/album.jpg"
+import bookstore from "../assets/bookstore.jpg"
+import AyKash from "../assets/AyKash.jpg"
 
 export const projects = [
   {
