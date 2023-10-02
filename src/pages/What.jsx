@@ -4,11 +4,12 @@ import Navbar from "./components/Navbar/Navbar"
 import { projects } from "../Data/WebDev"
 
 import "./What.css"
+import img from "../assets/game.jpg"
 
 import SearchBar from "./components/FilterBar/SearchBar"
 import Cards from "./components/Cards/Cards"
 import DropDown from "./components/FilterBar/DropDown"
-import img from "../assets/meme.jpg"
+// import img from "../assets/meme.jpg"
 
 function What() {
   // const combinedData = [...medicalportfolio, ...projects]
@@ -76,7 +77,7 @@ function What() {
       title={data.title}
       description={data.description}
       link={data.link}
-      img={data.imageSrc}
+      img={img}
       tags={data.tags}
       delay={index}
     />
