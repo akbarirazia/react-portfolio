@@ -21,7 +21,7 @@
     "@mui/styled-engine-sc": "^5.14.10",
     "@rollup/plugin-image": "^3.0.2",
     "@splinetool/react-spline": "^2.2.1",
-    "@splinetool/runtime": "^0.9.452",
+    "@splinetool/runtime": "^0.9.457",
     "gsap": "^3.12.2",
     "leaflet": "^1.9.4",
     "react": "^18.2.0",

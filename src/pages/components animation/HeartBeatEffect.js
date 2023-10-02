@@ -4,7 +4,6 @@ const HeartBeatEffect = (element) => {
   gsap.fromTo(
     element.current,
     {
-      visible: true,
       scale: 1,
     },
     {

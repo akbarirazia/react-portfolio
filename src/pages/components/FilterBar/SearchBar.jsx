@@ -1,16 +1,16 @@
 import React from "react"
 import "./SearchBar.css"
-import Button from "../Button"
+
 function SearchBar({ onchange, value }) {
   return (
     <>
       <div
-        class="searchBox"
+        className="searchBox"
         style={{ display: "flex", justifyContent: "center" }}
       >
         <input
           value={value}
-          class="searchInput"
+          className="searchInput"
           type="text"
           name=""
           placeholder="Search"
