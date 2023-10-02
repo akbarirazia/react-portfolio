@@ -10,7 +10,11 @@
 }
 @media screen and (max-width: 786px) {
   .filter {
-    padding: 0 0.5rem !important;
+    padding: 0 1.2rem !important;
+  }
+  .filter button,
+  input {
+    padding: 0.5rem !important;
   }
 }
 
