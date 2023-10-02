@@ -5,11 +5,11 @@ import Navbar from "./components/Navbar/Navbar"
 
 import "./What.css"
 // import img from [projects.imageSrc]
-import portfolio from "../assets/port.jpg"
-import game from "../assets/game.jpg"
-import invoice from "../assets/invoice.jpg"
-import album from "../assets/album.jpg"
-import bookstore from "../assets/bookstore.jpg"
+import portfolio from "../assets/port.JPG"
+import game from "../assets/game.JPG"
+import invoice from "../assets/invoice.JPG"
+import album from "../assets/album.JPG"
+import bookstore from "../assets/bookstore.JPG"
 import AyKash from "../assets/AyKash.jpg"
 
 import SearchBar from "./components/FilterBar/SearchBar"
