@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar/Navbar"
 import { projects } from "../Data/WebDev"
 
 import "./What.css"
-import img from "../assets/starrysky.jpg"
+import img from "../assets/Java.png"
 
 import SearchBar from "./components/FilterBar/SearchBar"
 import Cards from "./components/Cards/Cards"
