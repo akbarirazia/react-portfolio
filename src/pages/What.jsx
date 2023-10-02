@@ -41,17 +41,17 @@ function What() {
   // // }, [])
 
   // // console.log(data)
-  // function handleFilter(option) {
-  //   // console.log(option)
-  //   if (option === "All Portfolios") {
-  //     setArray(combinedData)
-  //   } else if (option === "Web Development") {
-  //     setArray(projects)
-  //   } else {
-  //     setArray(medicalportfolio)
-  //   }
-  // }
-  // const [query, setQuery] = useState("")
+  function handleFilter(option) {
+    // console.log(option)
+    if (option === "All Portfolios") {
+      setArray(combinedData)
+    } else if (option === "Web Development") {
+      setArray(projects)
+    } else {
+      setArray(medicalportfolio)
+    }
+  }
+  const [query, setQuery] = useState("")
 
   // const filteredProjects = useMemo(
   //   () =>
@@ -83,7 +83,7 @@ function What() {
   return (
     <div>
       <Navbar />
-      {/* <div className="container">
+      <div className="container">
         <div
           style={{
             display: "flex",
@@ -97,8 +97,8 @@ function What() {
           <SearchBar onchange={(e) => setQuery(e.target.value)} value={query} />
           <DropDown onFilter={handleFilter} />
         </div>
-        
-        <div
+
+        {/* <div
           className="flex flex-wrap gap-2x card-container"
           style={{ justifyContent: "space-evenly" }}
         >
@@ -107,11 +107,11 @@ function What() {
           ) : (
             finalProject
           )}
-        </div>
+        </div> */}
       </div>
       <br />
       <br />
-      <br /> */}
+      <br />
     </div>
   )
 }

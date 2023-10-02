@@ -1,6 +1,6 @@
 import test from "../images/testosterone.jpg"
 import glycogen from "../images/glycogen.jpg"
-// import genetics from "../../images/genetics.JPG"
+
 import bones from "../images/bones.jpg"
 import female from "../images/female.jpg"
 import fast from "../images/fast.jpg"
