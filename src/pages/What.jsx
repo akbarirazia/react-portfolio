@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar/Navbar"
 import { projects } from "../Data/WebDev"
 
 import "./What.css"
-import img from "../assets/starrysky.jpg"
+import img from "../assets/game.jpg"
 
 import SearchBar from "./components/FilterBar/SearchBar"
 import Cards from "./components/Cards/Cards"
@@ -114,6 +114,7 @@ function What() {
       </div>
       <br />
       <br />
+      <img src={img} alt="" />
       <br />
     </div>
   )
