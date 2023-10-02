@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from "react"
 import Navbar from "./components/Navbar/Navbar"
 // import { medicalportfolio } from "../Data/MedicalPort"
-// import { projects } from "../Data/WebDev"
+import { projects } from "../Data/WebDev"
 
 import "./What.css"
 
@@ -32,6 +32,7 @@ function What() {
   // }
   // shuffle(combinedData)
   // const [array, setArray] = useState(combinedData)
+  const [array, setArray] = useState(projects)
   // // console.log(combinedData)
   // // const [data, setData] = useState([])
   // // useEffect(() => {
@@ -53,32 +54,32 @@ function What() {
   }
   const [query, setQuery] = useState("")
 
-  // const filteredProjects = useMemo(
-  //   () =>
-  //     array.filter((project) =>
-  //       project.title.toLowerCase().includes(query.toLowerCase())
-  //     ),
-  //   [array, query]
-  // )
-  // function handleChange(e) {
-  //   console.log(e.target.value)
-  //   // setArray((prev) => {
-  //   //   return prev.filter((arr) =>
-  //   //     arr.title.toLowerCase().includes(e.target.value)
-  //   //   )
-  //   // })
-  // }
-  // const finalProject = filteredProjects.map((data, index) => (
-  //   <Cards
-  //     key={index}
-  //     title={data.title}
-  //     description={data.description}
-  //     link={data.link}
-  //     img={data.imageSrc}
-  //     tags={data.tags}
-  //     delay={index}
-  //   />
-  // ))
+  const filteredProjects = useMemo(
+    () =>
+      array.filter((project) =>
+        project.title.toLowerCase().includes(query.toLowerCase())
+      ),
+    [array, query]
+  )
+  function handleChange(e) {
+    console.log(e.target.value)
+    //   // setArray((prev) => {
+    //   //   return prev.filter((arr) =>
+    //   //     arr.title.toLowerCase().includes(e.target.value)
+    //   //   )
+    //   // })
+  }
+  const finalProject = filteredProjects.map((data, index) => (
+    <Cards
+      key={index}
+      title={data.title}
+      description={data.description}
+      link={data.link}
+      img={data.imageSrc}
+      tags={data.tags}
+      delay={index}
+    />
+  ))
   // console.log(finalProject.length)
   return (
     <div>
@@ -98,7 +99,7 @@ function What() {
           <DropDown onFilter={handleFilter} />
         </div>
 
-        {/* <div
+        <div
           className="flex flex-wrap gap-2x card-container"
           style={{ justifyContent: "space-evenly" }}
         >
@@ -107,7 +108,7 @@ function What() {
           ) : (
             finalProject
           )}
-        </div> */}
+        </div>
       </div>
       <br />
       <br />
