@@ -6,9 +6,9 @@ import Switch from "@mui/material/Switch"
 
 function Toggle() {
   const MaterialUISwitch = styled(Switch)(({ theme }) => ({
-    width: 62,
+    width: 60,
     height: 34,
-    padding: 7,
+    padding: 9,
     "& .MuiSwitch-switchBase": {
       margin: 1,
       padding: 0,
@@ -30,8 +30,8 @@ function Toggle() {
     },
     "& .MuiSwitch-thumb": {
       backgroundColor: theme.palette.mode === "dark" ? "#003892" : " #682ae9",
-      width: 32,
-      height: 32,
+      width: 29,
+      height: 29,
       "&:before": {
         content: "''",
         position: "absolute",
