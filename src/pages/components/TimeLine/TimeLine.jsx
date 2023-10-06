@@ -27,7 +27,7 @@ const experiences = [
     title: "HR and Liaison Intern ",
     year: "2020 - 2021",
     description:
-      "As a Liaison Officer at PLD's (Project Lockdown), I collaborated with Senior HR members and provided valuable assistance in various tasks. My responsibilities included recording and reporting employee issues for efficient resolution by Senior HR members, conducting employee satisfaction survies, wrinting news-letters and so on. Throughout my role, I maintained professionalism and prioritized confidentiality.",
+      "As a Liaison Officer at PLD's (Project Lockdown), I collaborated with Senior HR members and provided valuable assistance in various tasks. My responsibilities included recording and reporting employee issues for efficient resolution by Senior HR members, conducting employee satisfaction survies, writing news-letters and so on. Throughout my role, I maintained professionalism and prioritized confidentiality.",
   },
 ]
 function TimeLine() {

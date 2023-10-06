@@ -130,7 +130,7 @@ function WhoMe() {
         <div className="img-wrapper">
           <p className="flip-text">who is she?</p>
 
-          <img src={image} />
+          <img src={image} draggable={false} />
           <p className="flip-text">I wish I knew. . .</p>
         </div>
 
@@ -166,7 +166,6 @@ function WhoMe() {
             <span
               style={{
                 borderBottom: "3px solid #682ae9",
-                paddingBottom: "0.09rem",
               }}
             >
               poetry
@@ -175,19 +174,16 @@ function WhoMe() {
             <span
               style={{
                 borderBottom: "3px solid chartreuse",
-                paddingBottom: "0.09rem",
               }}
             >
               old music
             </span>
-            , and technology. I have a killer sense of
+            , and technology. I have a killer sense of{" "}
             <span
               style={{
                 borderBottom: "3px solid hotpink",
-                paddingBottom: "0.09rem",
               }}
             >
-              {" "}
               humor
             </span>
             . So, if you're looking for a good laugh, hit me up!
