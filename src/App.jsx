@@ -29,6 +29,7 @@ export default function App() {
     } else {
       body.classList.remove("dark-mode")
     }
+
     // localStorage.setItem("isDark", isDark)
   }, [])
 

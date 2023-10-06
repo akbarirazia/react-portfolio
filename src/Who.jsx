@@ -17,7 +17,7 @@ function Who({ onClick }) {
   }, [])
 
   return (
-    <div className="flex justify-center text-wrapper ">
+    <div className="flex container text-wrapper ">
       <Link to="/pages/what" className="link">
         <SingleWho
           text="What?"
