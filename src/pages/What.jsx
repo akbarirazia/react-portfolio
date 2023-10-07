@@ -34,15 +34,7 @@ function What() {
   shuffle(combinedData)
   const [array, setArray] = useState(combinedData)
   // const [array, setArray] = useState(medicalportfolio)
-  // // console.log(combinedData)
-  // // const [data, setData] = useState([])
-  // // useEffect(() => {
-  // //   fetch("https://api.github.com/users/akbarirazia/repos")
-  // //     .then((response) => response.json())
-  // //     .then((data) => setData(data))
-  // // }, [])
 
-  // // console.log(data)
   function handleFilter(option) {
     // console.log(option)
     if (option === "All Portfolios") {
@@ -62,14 +54,7 @@ function What() {
       ),
     [array, query]
   )
-  function handleChange(e) {
-    console.log(e.target.value)
-    //   // setArray((prev) => {
-    //   //   return prev.filter((arr) =>
-    //   //     arr.title.toLowerCase().includes(e.target.value)
-    //   //   )
-    //   // })
-  }
+
   const finalProject = filteredProjects.map((data, index) => (
     <Cards
       key={index}

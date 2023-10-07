@@ -21,23 +21,18 @@ function Who({ onClick }) {
       <Link to="/pages/what" className="link">
         <SingleWho
           text="What?"
-          subtext="the hell"
+          subtext="Project"
           onClick={onClick}
           refs={what}
         />
       </Link>
       <Link to="/pages/whome" className="link">
-        <SingleWho
-          text="Who?"
-          subtext="the hell"
-          onClick={onClick}
-          refs={who}
-        />
+        <SingleWho text="Who?" subtext="About" onClick={onClick} refs={who} />
       </Link>
       <Link to="/pages/where" className="link">
         <SingleWho
           text="Where?"
-          subtext="the hell"
+          subtext="Contact"
           onClick={onClick}
           refs={where}
         />

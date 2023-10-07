@@ -40,10 +40,9 @@
   color: rgb(64, 253, 47);
 }
 @media only screen and (max-width: 767px) {
-  /* .links-wrapper {
-    display: flex;
-    justify-content: space-between;
-  } */
+  .links-wrapper {
+    position: fixed;
+  }
   .links-wrapper > * {
     margin: 0;
     font-size: x-large;

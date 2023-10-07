@@ -34,4 +34,7 @@
   .bar :first-child {
     margin-left: 0.2rem;
   }
+  .bar :last-child {
+    margin-right: 0.2rem;
+  }
 }
