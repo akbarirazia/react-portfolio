@@ -62,3 +62,6 @@
 .spacer {
   height: 4rem;
 }
+.mars small {
+  display: block;
+}

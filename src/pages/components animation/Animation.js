@@ -1,4 +1,3 @@
-import { VisibilityRounded } from "@mui/icons-material"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/all"
 gsap.registerPlugin(ScrollTrigger)
@@ -30,12 +29,9 @@ export default Animation = (
       ease: "power3.out",
       scrollTrigger: {
         trigger: element.current,
-        // start: "top 10%",
-        // end: "bottom 20%",
-        // markers: true,
+
         toggleActions: `${mode} none none none`,
       },
     }
   )
-  // console.log(`${mode} none none none`)
 }

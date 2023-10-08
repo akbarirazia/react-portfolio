@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar/Navbar"
 
 import "./Where.css"
 import Animation from "./components animation/Animation"
+import { Rotation } from "./components animation/Rotation"
 import Map from "./Map/Map"
 import Button from "./components/Button"
 import Spline from "@splinetool/react-spline"
@@ -27,10 +28,13 @@ function Where() {
     Animation(right, 3, 50)
     Animation(left, 3, -50)
     HeartBeatEffect(beat)
-    Animation(name, 1, 100)
+    Animation(name, 1, 50)
     Animation(email, 1.2, -50)
     Animation(msg, 1.3, 0, "restart", 100)
     // Animation()
+    // Rotation(name)
+    // Rotation(email)
+    // Rotation(msg)
   })
   return (
     <>
@@ -45,18 +49,18 @@ function Where() {
             <Spline scene="https://prod.spline.design/VPOrxeUHegxoZgU4/scene.splinecode" />
           </div>
           <div className="mars">
-            <p ref={back}>
+            <small ref={back}>
               End of 2002, when I was dropped on earth and ever since want to go
               back
-            </p>
-            <p ref={right}>
+            </small>
+            <small ref={right}>
               My location just in between
               <span className="colorful"> Venus and Mars</span>
-            </p>
-            <p ref={left}>
+            </small>
+            <small ref={left}>
               {" "}
               But hey, there is an even easier way to get in touch with me
-            </p>
+            </small>
           </div>
           <br />
           <div className="touch">
