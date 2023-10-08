@@ -1,13 +1,9 @@
-import React, { useEffect, useRef, useState } from "react"
+import React, { useEffect, useRef } from "react"
 import Navbar from "./components/Navbar/Navbar"
-
 import "./Where.css"
 import Animation from "./components animation/Animation"
-import { Rotation } from "./components animation/Rotation"
 import Map from "./Map/Map"
-import Button from "./components/Button"
 import Spline from "@splinetool/react-spline"
-import { TextField } from "@mui/material"
 import ContactForm from "./ContactForm/ContactForm"
 import HeartBeatEffect from "./components animation/HeartBeatEffect"
 
@@ -21,7 +17,6 @@ function Where() {
   const email = useRef(null)
   const msg = useRef(null)
   useEffect(() => {
-    // console.log(heaven)
     Animation(heaven, 1, 0, "play", -200, 100)
     Animation(heaven, 1, 0, "play", 100, 0, 1, 1)
     Animation(back, 3, -50)
@@ -31,10 +26,6 @@ function Where() {
     Animation(name, 1, 50)
     Animation(email, 1.2, -50)
     Animation(msg, 1.3, 0, "restart", 100)
-    // Animation()
-    // Rotation(name)
-    // Rotation(email)
-    // Rotation(msg)
   })
   return (
     <>
