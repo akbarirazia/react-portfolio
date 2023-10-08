@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import Button from "../Button"
 import "./DropDown.css"
+import { FaChevronDown } from "react-icons/fa"
 
 function DropDown({ onFilter }) {
   const [option, setOption] = useState("All Portfolios")
@@ -12,7 +13,14 @@ function DropDown({ onFilter }) {
   }
   return (
     <div className="dropdown">
-      <Button>{option}</Button>
+      <Button>
+        <div className="chevron">
+          {option}{" "}
+          <span>
+            <FaChevronDown style={{ display: "block" }} />
+          </span>
+        </div>
+      </Button>
       <div className="dropdown-content">
         <a data-value="All Portfolios" onClick={handleClick}>
           All Portfolios
