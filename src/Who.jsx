@@ -11,9 +11,9 @@ function Who({ onClick }) {
   const where = useRef(null)
   // console.log(what)
   useEffect(() => {
-    Animation(what, 1, 0, "play", -50)
-    Animation(who, 1, 0, "play", 50)
-    Animation(where, 1, 0, "play", -50)
+    Animation(what, 1, 0, "restart", -50)
+    Animation(who, 1, 0, "restart", 50)
+    Animation(where, 1, 0, "restart", -50)
   }, [])
 
   return (
