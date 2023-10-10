@@ -2,11 +2,13 @@ import React from "react"
 import { Link } from "react-router-dom"
 import "./Navbar.css"
 import AkbariRazia from "./AkbariRazia/AkbariRazia.jsx"
+import Toggle from "../Toggle"
 
 function Navbar() {
   return (
     <div className="navbar container">
-      <AkbariRazia />
+      <Toggle />
+      {/* <AkbariRazia /> */}
       {/* <p>
         <Link to="/">akbarirazia()</Link>
       </p> */}

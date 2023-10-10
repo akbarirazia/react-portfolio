@@ -5,8 +5,12 @@ function SingleWho({ text, subtext, onClick, refs }) {
     <p onClick={onClick} ref={refs}>
       {text} <br />
       <sub
-        style={{ fontSize: "1.2rem", marginRight: "1rem" }}
-        className="colorful"
+        style={{
+          fontSize: "1.2rem",
+          marginRight: "1rem",
+          color: "black",
+          textShadow: "0px 0px 0px black",
+        }}
       >
         {subtext}
       </sub>

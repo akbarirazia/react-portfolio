@@ -13,7 +13,7 @@ function SingleTl({ cls, title, year, description }) {
   }, [])
   return (
     <div className={`tl-container ${cls}`}>
-      <div className="tl-content" style={isDark ? styleObj : {}} ref={box9}>
+      <div className="tl-content div" ref={box9}>
         <h3 className="colorful">{title}</h3>
         <h6>
           <i>{year}</i>

@@ -16,12 +16,13 @@
   content: "";
   position: absolute;
   z-index: -1;
-  background-color: black;
+  background: linear-gradient(45deg, #682ae9, hotpink);
   inset: 0;
   scale: 0 1;
   transform-origin: top;
   transition: scale 450ms;
 }
+
 .text-wrapper p:hover::after,
 .text-wrapper p:focus-visible::after {
   transform-origin: bottom;
@@ -36,10 +37,11 @@
   color: #31302b !important;
 } */
 
-.text-wrapper p sub {
+/* .text-wrapper p sub {
   font-size: 2rem;
   text-align: center;
-}
+  box-shadow: none !important;
+} */
 @media only screen and (max-width: 767px) {
   .text-wrapper {
     position: absolute;
