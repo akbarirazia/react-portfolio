@@ -23,4 +23,7 @@
     font-size: large;
     padding: 0.5rem 0.5rem;
   }
+  .navbar .MuiFormGroup-root {
+    padding-left: 0.3rem;
+  }
 }

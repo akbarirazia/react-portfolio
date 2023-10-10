@@ -7,10 +7,11 @@ function SingleWho({ text, subtext, onClick, refs }) {
       <sub
         style={{
           fontSize: "1.2rem",
-          marginRight: "1rem",
+          marginLeft: "1rem",
           color: "black",
-          textShadow: "0px 0px 0px black",
+          textShadow: "none",
         }}
+        // className="colorful"
       >
         {subtext}
       </sub>

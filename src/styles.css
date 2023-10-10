@@ -94,7 +94,7 @@ body,
 .dark {
   background-color: black !important;
   color: white !important;
-  /* transition: ease 1s; */
+  /* transition: 1s; */
 }
 /* Hide the default scrollbar */
 ::-webkit-scrollbar {

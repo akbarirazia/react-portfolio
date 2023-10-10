@@ -16,13 +16,19 @@
   content: "";
   position: absolute;
   z-index: -1;
-  background: linear-gradient(45deg, #682ae9, hotpink);
+  /* background: linear-gradient(45deg, #682ae9, hotpink); */
+  background-color: chartreuse;
   inset: 0;
   scale: 0 1;
   transform-origin: top;
   transition: scale 450ms;
 }
-
+.text-wrapper :first-child p::after {
+  background-color: hotpink;
+}
+.text-wrapper :last-child p::after {
+  background-color: #682ae9;
+}
 .text-wrapper p:hover::after,
 .text-wrapper p:focus-visible::after {
   transform-origin: bottom;
