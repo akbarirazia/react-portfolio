@@ -4,7 +4,7 @@ import "./DropDown.css"
 import { FaChevronDown } from "react-icons/fa"
 
 function DropDown({ onFilter }) {
-  const [option, setOption] = useState("All Portfolios")
+  const [option, setOption] = useState("Web Development")
   // console.log();
   function handleClick(event) {
     setOption(event.target.dataset.value)

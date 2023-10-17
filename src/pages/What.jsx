@@ -32,7 +32,7 @@ function What() {
     return array
   }
   shuffle(combinedData)
-  const [array, setArray] = useState(combinedData)
+  const [array, setArray] = useState(projects)
   // const [array, setArray] = useState(medicalportfolio)
 
   function handleFilter(option) {
