@@ -9,9 +9,10 @@ body {
   width: 100wv;
   padding: 0;
   /* overflow: hidden; */
-  transition: linear 1s;
+
   background-color: aliceblue;
   font-family: "Montserrat", "Helvetica Neue";
+  transition: ease-in-out 0.5s;
 }
 html,
 body,
@@ -94,7 +95,7 @@ body,
 .dark {
   background-color: black !important;
   color: white !important;
-  /* transition: 1s; */
+  transition: ease-out 1s;
 }
 /* Hide the default scrollbar */
 ::-webkit-scrollbar {

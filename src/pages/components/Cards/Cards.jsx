@@ -23,7 +23,7 @@ function Cards({ title, description, img, tags, link, delay }) {
           <img className="w-full" src={img} alt={title} />
           <div className="px-6 py-4">
             <div className="font-bold text-xl mb-2 card colorful">{title}</div>
-            <p className="text-gray-700 text-base div">{description}</p>
+            <p className="text-gray-700 text-base ">{description}</p>
             <div>
               <a href={link}>
                 <span>View Project </span>
