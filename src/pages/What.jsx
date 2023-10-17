@@ -8,7 +8,6 @@ import "./What.css"
 import SearchBar from "./components/FilterBar/SearchBar"
 import Cards from "./components/Cards/Cards"
 import DropDown from "./components/FilterBar/DropDown"
-import img from "../assets/meme.jpg"
 
 function What() {
   const combinedData = [...medicalportfolio, ...projects]
@@ -69,7 +68,7 @@ function What() {
   // console.log(finalProject.length)
   return (
     <div>
-      <Navbar />
+      <Navbar option={handleFilter} />
       <div className="container">
         <div
           style={{

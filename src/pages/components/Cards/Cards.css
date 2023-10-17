@@ -1,10 +1,3 @@
-/* .flex {
-  display: flex;
-}
-
-.justify-center {
-  justify-content: center;
-} */
 .card {
   background-color: white;
 }
@@ -58,9 +51,9 @@
 .mb-2 {
   margin-bottom: 0.5rem;
 }
-.text-gray-700 {
+/* .text-gray-700 {
   color: #000;
-}
+} */
 .text-base {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -102,15 +95,6 @@
 .gray img:hover {
   filter: grayscale(0);
 }
-/* #photography {
-  color: #4a5568 !important ;
-}
-#travel {
-  color: #4a5568 !important ;
-}
-#winter {
-  color: #4a5568 !important ;
-} */
 
 .tag {
   cursor: pointer;
@@ -127,54 +111,4 @@
   padding: 2px;
   max-width: 21rem;
   border-radius: 5px;
-}
-
-/* .cont:before {
-  z-index: -1;
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%; */
-/* left: 10px; */
-/* top: 0; */
-/* background-image: linear-gradient(43deg, #682ae9 46%, blue); */
-/* filter: blur(5px);
-  background-color: #682ae9; */
-/* animation: move 3s ease infinite; */
-/* } */
-/* @keyframes move {
-  0% {
-    background-image: linear-gradient(
-      43deg,
-      hotpink 0%,
-      #682ae9 46%,
-      chartreuse 100%
-    );
-  }
-  50% {
-    background-image: linear-gradient(
-      43deg,
-      chartreuse 0%,
-      #682ae9 46%,
-      hotpink 100%
-    );
-  }
-  100% {
-    background-image: linear-gradient(
-      43deg,
-      chartreuse 0%,
-      hotpink 46%,
-      #682ae9 46%
-    );
-  }
-} */
-
-.grad {
-  /* background-color: #0b090a; */
-  /* padding: 30px; */
-  /* color: white; */
-  /* font-size: 35px;
-  font-family: arial;
-  text-align: center; */
-  /* color: white !important; */
 }

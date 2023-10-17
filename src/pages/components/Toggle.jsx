@@ -4,7 +4,7 @@ import FormGroup from "@mui/material/FormGroup"
 import FormControlLabel from "@mui/material/FormControlLabel"
 import Switch from "@mui/material/Switch"
 
-function Toggle() {
+function Toggle({ option }) {
   const MaterialUISwitch = styled(Switch)(({ theme }) => ({
     width: 60,
     height: 34,
@@ -74,7 +74,7 @@ function Toggle() {
       })
     }
     localStorage.setItem("isDark", isDark)
-  }, [isDark])
+  }, [isDark, option])
 
   const handleChange = () => {
     setIsDark(!isDark)

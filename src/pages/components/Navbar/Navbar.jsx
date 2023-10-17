@@ -4,10 +4,10 @@ import "./Navbar.css"
 import AkbariRazia from "./AkbariRazia/AkbariRazia.jsx"
 import Toggle from "../Toggle"
 
-function Navbar() {
+function Navbar({ option }) {
   return (
     <div className="navbar container">
-      <Toggle />
+      <Toggle option={option} />
       {/* <AkbariRazia /> */}
       {/* <p>
         <Link to="/">akbarirazia()</Link>
