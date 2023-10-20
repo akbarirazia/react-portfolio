@@ -35,7 +35,7 @@ function What() {
   // const [array, setArray] = useState(medicalportfolio)
 
   function handleFilter(option) {
-    // console.log(option)
+    console.log(option)
     if (option === "All Portfolios") {
       setArray(combinedData)
     } else if (option === "Web Development") {
