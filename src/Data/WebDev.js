@@ -27,7 +27,7 @@ export const projects = [
     title: "My Avatar",
     imageSrc: Avatar,
     description:
-      "This project is under construction. A fully 3D website containing animations from maximo. The project was built using various 3D tools such as blender, THREE.Js, Three Fibers, ReactJS and etc.",
+      "This project is under construction and it aims to portray my avatar (no I'm not a gamer). A fully 3D website containing animations from maximo. The project was built using various 3D tools such as blender, THREE.Js, Three Fibers, Three Drei, leva, ReactJS and etc. Tailwindcss will be used to ensure the responsive design of the page.",
     link: "https://my-avatar-xi.vercel.app/",
     tags: ["ReactJS", "ThreeJS", "blender"],
   },
@@ -43,7 +43,7 @@ export const projects = [
     title: "Personal Portfolio",
     imageSrc: portfolio,
     description:
-      "My personal portfolio! the page you are at right now. This project was created using tailwindcss for its responsive design and JavaScript for the certain functionalities in the page. It contains my personal portfolio and contact information along with my resume.",
+      "My ex-personal portfolio! not the page you are at right now. This project was created using tailwindcss for its responsive design and JavaScript for the certain functionalities in the page. It contains my personal portfolio and contact information along with my resume.",
     link: "https://akbarirazia.github.io/portfolio/",
     tags: ["Tailwindcss", "HTML", "RWD"],
   },

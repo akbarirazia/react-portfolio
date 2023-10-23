@@ -12,7 +12,7 @@ function Tags({ children, index, style }) {
       ref={tag}
       style={style}
     >
-      #{children}
+      <small>#{children}</small>
     </span>
   )
 }
