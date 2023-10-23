@@ -4,6 +4,7 @@ import invoice from "../assets/invoice.JPG"
 import album from "../assets/album.JPG"
 import bookstore from "../assets/bookstore.JPG"
 import AyKash from "../assets/AyKash.jpg"
+import Avatar from "../assets/avatar.jpg"
 
 export const projects = [
   {
@@ -23,6 +24,14 @@ export const projects = [
     tags: ["Vanilla", "Bootstrap", "JS"],
   },
   {
+    title: "My Avatar",
+    imageSrc: Avatar,
+    description:
+      "This project is under construction. A fully 3D website containing animations from maximo. The project was built using various 3D tools such as blender, THREE.Js, Three Fibers, ReactJS and etc.",
+    link: "https://my-avatar-xi.vercel.app/",
+    tags: ["ReactJS", "ThreeJS", "blender"],
+  },
+  {
     title: "Bookstore Landing Page",
     imageSrc: bookstore,
     description:
@@ -38,14 +47,15 @@ export const projects = [
     link: "https://akbarirazia.github.io/portfolio/",
     tags: ["Tailwindcss", "HTML", "RWD"],
   },
-  {
-    title: "Responsive Album",
-    imageSrc: album,
-    description:
-      "A responsive static album with Bootstrap is a web page that showcases a collection of images or media in an organized and visually appealing manner. It is built using the Bootstrap framework, which provides a set of pre-designed CSS and JavaScript components for creating responsive and mobile-friendly websites.",
-    link: "https://akbarirazia.github.io/responsive-album-bootstrap/",
-    tags: ["Bootstrap", "Clone", "HTML"],
-  },
+  // {
+  //   title: "Responsive Album",
+  //   imageSrc: album,
+  //   description:
+  //     "A responsive static album with Bootstrap is a web page that showcases a collection of images or media in an organized and visually appealing manner. It is built using the Bootstrap framework, which provides a set of pre-designed CSS and JavaScript components for creating responsive and mobile-friendly websites.",
+  //   link: "https://akbarirazia.github.io/responsive-album-bootstrap/",
+  //   tags: ["Bootstrap", "Clone", "HTML"],
+  // },
+
   {
     title: "Rock, Paper, Scissors Game",
     imageSrc: game,
