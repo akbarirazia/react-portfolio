@@ -4,7 +4,7 @@ import invoice from "../assets/invoice.JPG"
 import album from "../assets/album.JPG"
 import bookstore from "../assets/bookstore.JPG"
 import AyKash from "../assets/AyKash.jpg"
-import Avatar from "../assets/avatar.jpg"
+import Avatar from "../assets/avatar.JPG"
 
 export const projects = [
   {
