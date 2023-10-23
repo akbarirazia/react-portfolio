@@ -27,7 +27,7 @@ export const projects = [
     title: "My Avatar",
     imageSrc: Avatar,
     description:
-      "This project is under construction and it aims to portray my avatar (no I'm not a gamer). A fully 3D website containing animations from maximo. The project was built using various 3D tools such as blender, THREE.Js, Three Fibers, Three Drei, leva, ReactJS and etc. Tailwindcss will be used to ensure the responsive design of the page.",
+      "This project is under construction and it aims to portray my avatar (no I'm not a gamer). A fully 3D website containing animations from mixamo. The project was built using various 3D tools such as blender, THREE.Js, Three Fibers, Three Drei, leva, ReactJS and etc. Tailwindcss will be used to ensure the responsive design of the page.",
     link: "https://my-avatar-xi.vercel.app/",
     tags: ["ReactJS", "ThreeJS", "blender"],
   },
