@@ -45,8 +45,9 @@ function Where() {
               back
             </small>
             <small ref={right}>
-              My location just in between
-              <span className="colorful"> Venus and Mars</span>
+              My friend, I'm stuck in between
+              <span className="colorful"> Venus and Mars</span>{" "}
+              <span style={{ fontSize: "1.1rem" }}>😭</span>
             </small>
             <small ref={left}>
               {" "}

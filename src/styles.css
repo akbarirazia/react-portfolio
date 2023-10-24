@@ -24,7 +24,7 @@ body,
   color: black;
 } */
 .colorful {
-  background: linear-gradient(to right, hotpink, chartreuse, #682ae9);
+  background: linear-gradient(to right, hotpink, rgb(0, 230, 0), #682ae9);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
