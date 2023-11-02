@@ -7,7 +7,7 @@ export const Rotation = (element) => {
     { rotation: -90 },
     {
       rotation: 0,
-      duration: 2,
+      duration: 3,
       ease: "power2.out",
       scrollTrigger: {
         trigger: element,

@@ -18,7 +18,7 @@ function Where() {
   const msg = useRef(null)
   useEffect(() => {
     Animation(heaven, 1, 0, "play", -200, 100)
-    Animation(heaven, 1, 0, "play", 100, 0, 1, 1)
+    Animation(heaven, 2, 0, "play", 100, 0, 1, 1)
     Animation(back, 3, -50)
     Animation(right, 3, 50)
     Animation(left, 3, -50)
@@ -40,7 +40,14 @@ function Where() {
             <Spline scene="https://prod.spline.design/VPOrxeUHegxoZgU4/scene.splinecode" />
           </div>
           <div className="mars">
-            <small ref={back}>
+            <small className="small">
+              End of 2002, when I was dropped on earth and ever since want to go
+              back. My friend, I'm stuck in between
+              <span className="colorful"> Venus and Mars</span>{" "}
+              <span style={{ fontSize: "1.1rem" }}>😭</span>. But hey, there is
+              an even easier way to get in touch with me
+            </small>
+            {/* <small ref={back}>
               End of 2002, when I was dropped on earth and ever since want to go
               back
             </small>
@@ -52,7 +59,7 @@ function Where() {
             <small ref={left}>
               {" "}
               But hey, there is an even easier way to get in touch with me
-            </small>
+            </small> */}
           </div>
           <br />
           <div className="touch">
