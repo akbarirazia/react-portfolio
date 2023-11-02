@@ -189,7 +189,7 @@ function Skill({ para, firstBlock, secondBlock, thirdBlock, para1 }) {
               }}
             >
               Skills-O-Meter <br />
-              (Shady? trust me bro)
+              (Shady? See me!)
             </small>
           </div>
           <CustomizedProgressBars value={value} />
