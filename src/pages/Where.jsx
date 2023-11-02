@@ -19,8 +19,8 @@ function Where() {
   useEffect(() => {
     Animation(heaven, 1, 0, "play", -200, 100)
     Animation(heaven, 2, 0, "play", 100, 0, 1, 1)
-    Animation(back, 3, -50)
-    Animation(right, 3, 50)
+    Animation(back, 3, -150)
+    Animation(right, 3, 150)
     Animation(left, 3, -50)
     HeartBeatEffect(beat)
     Animation(name, 1, 50)
@@ -40,7 +40,7 @@ function Where() {
             <Spline scene="https://prod.spline.design/VPOrxeUHegxoZgU4/scene.splinecode" />
           </div>
           <div className="mars">
-            <small className="small">
+            <small className="small" ref={left}>
               End of 2002, when I was dropped on earth and ever since want to go
               back. My friend, I'm stuck in between
               <span className="colorful"> Venus and Mars</span>{" "}
@@ -64,7 +64,7 @@ function Where() {
           <br />
           <div className="touch">
             <div className="contact">
-              <p>
+              <p ref={back}>
                 <span className="colorful">Contact Form</span>
               </p>
               <br />
@@ -73,7 +73,7 @@ function Where() {
               </div>
             </div>
             <div className="map">
-              <p>
+              <p ref={right}>
                 <span className="colorful">Exact Location</span>
               </p>
               <Map />
