@@ -107,7 +107,7 @@ body,
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, hotpink, yellow, chartreuse, #682ae9);
+  background: linear-gradient(to bottom, hotpink, chartreuse, #682ae9);
   border-radius: 5px;
 }
 
