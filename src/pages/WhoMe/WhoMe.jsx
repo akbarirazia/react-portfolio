@@ -47,6 +47,7 @@ function WhoMe() {
       setContent(modal.current.content2)
       setTitle(modal.current.title2)
     }
+
     modal.current.open()
   }
 
@@ -95,6 +96,7 @@ function WhoMe() {
               style={{
                 borderBottom: "3px solid #682ae9",
               }}
+              className="pointer"
               onClick={() => handleClick("poetry")}
             >
               poetry
@@ -105,6 +107,7 @@ function WhoMe() {
                 borderBottom: "3px solid chartreuse",
               }}
               onClick={() => handleClick("music")}
+              className="pointer"
             >
               old music
             </span>
@@ -113,6 +116,7 @@ function WhoMe() {
               style={{
                 borderBottom: "3px solid hotpink",
               }}
+              className="pointer"
               onClick={() => handleClick("humor")}
             >
               humor
