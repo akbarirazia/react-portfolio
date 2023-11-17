@@ -29,24 +29,43 @@
 }
 .touch {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   /* justify-content: center;
   align-items: center; */
-  gap: 2rem;
+
   margin-top: 2rem;
 }
 .map {
-  width: 24rem;
+  width: 70%;
   min-height: 24rem;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
-@media screen and (max-width: 767px) {
+.mapDiv {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  padding-top: 2rem;
+  width: 100%;
+}
+@media screen and (max-width: 1000px) {
   .inputs {
     width: 90%;
     margin: 0 auto;
   }
+  .contact,
+  .mapDiv {
+    width: 24rem !important;
+  }
+  .contact {
+    min-height: 24rem !important;
+  }
   .touch {
     text-align: center;
+    flex-wrap: wrap;
+    gap: 1rem;
   }
   .mars {
     padding: 0rem 0.1rem;
@@ -55,14 +74,17 @@
 }
 
 .contact {
-  width: 24rem;
+  width: 30%;
   order: 1;
   margin: 0 auto;
-  /* background-color: black; */
+  background-color: white;
+  box-shadow: 0px 0px 5px black;
+  min-height: 80vh;
+  padding: 1rem 0.5rem;
 }
 .inputs {
   min-height: 24rem;
-  margin-top: 0rem;
+  margin-top: 0.6rem;
 }
 .spacer {
   height: 4rem;

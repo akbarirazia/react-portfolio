@@ -62,7 +62,7 @@ function ContactForm({ username, useremail, msg }) {
         name="message"
         id=""
         cols="30"
-        rows="12"
+        rows="13"
         placeholder="Your message"
         ref={msg}
         onChange={handleChange}

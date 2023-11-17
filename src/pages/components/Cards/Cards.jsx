@@ -3,8 +3,6 @@ import "./Cards.css"
 import Tags from "./Tags"
 import Animation from "../../components animation/Animation"
 import { HiOutlineLink } from "react-icons/hi"
-import { Rating } from "@mui/material"
-import RadioGroupRating from "./Rating"
 
 function Cards({ title, description, img, tags, link, delay }) {
   const isDark = localStorage.getItem("isDark") === "true"

@@ -40,14 +40,7 @@ function Where() {
             <Spline scene="https://prod.spline.design/VPOrxeUHegxoZgU4/scene.splinecode" />
           </div>
           <div className="mars">
-            <small className="small" ref={left}>
-              End of 2002, when I was dropped on earth and ever since want to go
-              back. My friend, I'm stuck in between
-              <span className="colorful"> Venus and Mars</span>{" "}
-              <span style={{ fontSize: "1.1rem" }}>😭</span>. But hey, there is
-              an even easier way to get in touch with me
-            </small>
-            {/* <small ref={back}>
+            <small ref={back}>
               End of 2002, when I was dropped on earth and ever since want to go
               back
             </small>
@@ -59,16 +52,16 @@ function Where() {
             <small ref={left}>
               {" "}
               But hey, there is an even easier way to get in touch with me
-            </small> */}
+            </small>
           </div>
           <br />
           <div className="touch">
-            <div className="contact">
+            <div className="contact div">
               <p ref={back}>
-                <span className="colorful">Contact Form</span>
+                <span className="colorful">Say Helloo!</span>
               </p>
               <br />
-              <div className="inputs">
+              <div className="inputs ">
                 <ContactForm username={name} useremail={email} msg={msg} />
               </div>
             </div>
@@ -76,7 +69,9 @@ function Where() {
               <p ref={right}>
                 <span className="colorful">Exact Location</span>
               </p>
-              <Map />
+              <div className="mapDiv">
+                <Map />
+              </div>
             </div>
           </div>
           <br />

@@ -14,4 +14,18 @@
   .leaflet-container {
     width: 90%;
   }
+  .iframe {
+    height: 24rem;
+    width: 24rem;
+    margin-bottom: 1rem;
+    border-radius: 5px 5px 5px 5px;
+    /* width: 19rem; */
+  }
+}
+
+.iframe {
+  display: block;
+  box-shadow: 0px 0px 5px black;
+  border: none;
+  border-radius: 5px 0 0 5px;
 }

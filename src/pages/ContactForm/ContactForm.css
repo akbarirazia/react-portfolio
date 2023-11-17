@@ -7,7 +7,7 @@ textarea {
   padding: 3%;
   border-radius: 5px;
   border: none;
-  background-color: rgba(0, 0, 0, 0.09);
+  background-color: rgba(221, 221, 221, 0.09);
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial;
   box-shadow: 0px 0px 5px black;
 }

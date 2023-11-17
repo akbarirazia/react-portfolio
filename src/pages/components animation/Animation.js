@@ -5,7 +5,7 @@ export default Animation = (
   element,
   duration,
   x,
-  mode = "play",
+  mode = "restart",
   ystart,
   yend = 0,
   delay = 0,
