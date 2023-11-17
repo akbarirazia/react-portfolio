@@ -1,11 +1,12 @@
-import "./Modal.css"
+import "./Modal.scss"
 import { forwardRef, useImperativeHandle, useRef } from "react"
 import photo from "../../../assets/poetry.jpg"
+
 const MyModal = forwardRef(function MyModal({ content, title }, ref) {
   const dialog = useRef()
   useImperativeHandle(ref, () => ({
     // pass the prop through the ref
-    content: <img src={photo} style={{ height: "24rem", width: "24rem" }} />,
+    content: <img src={photo} height="100%" width="100%" />,
     title: "How is better the Rumi?",
     open() {
       dialog.current.showModal()
@@ -18,11 +19,14 @@ const MyModal = forwardRef(function MyModal({ content, title }, ref) {
   }
   return (
     <dialog ref={dialog} id="dialog">
-      <h2>{title}</h2>
-      <p>{content}</p>
-      <button onClick={handleClick} aria-label="close" class="x">
-        ❌
-      </button>
+      <div className="top">
+        <h3>{title}</h3>{" "}
+        <button onClick={handleClick} aria-label="close" className="x">
+          ❌
+        </button>
+      </div>
+
+      <div className="content">{content}</div>
     </dialog>
   )
 })

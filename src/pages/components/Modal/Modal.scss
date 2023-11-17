@@ -9,22 +9,34 @@ dialog {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
   background: white;
-  min-width: 50%;
-  min-height: 50%;
-
-  padding-top: 2rem;
-  border-radius: 20px;
+  width: 24rem;
+  height: 24rem;
+  overflow: hidden;
+  padding-top: 1rem;
+  border-radius: 15px;
   border: 0;
   box-shadow: 0 5px 30px 0 rgb(0 0 0 / 10%);
   animation: fadeIn 1s ease both;
   &::backdrop {
     animation: fadeIn 1s ease both;
-    background: rgb(255 255 255 / 40%);
+    background: rgba(255, 255, 255, 0);
     z-index: 2;
 
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(5px);
+  }
+  .top {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    h3 {
+      font-weight: 600;
+      font-size: 1rem !important;
+      padding-bottom: 1rem;
+      text-align: center;
+    }
   }
   .x {
     filter: grayscale(1);
@@ -41,21 +53,20 @@ dialog {
       transform: scale(1.1);
     }
   }
-  h2 {
-    font-weight: 600;
-    font-size: 2rem;
-    padding-bottom: 1rem;
-    text-align: center;
-  }
-  p {
+
+  .content {
     margin: 0 auto;
     display: flex;
     justify-content: center;
-  }
 
-  img {
-    display: block;
-    margin: 0 auto;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  dialog {
+    width: 19rem;
+    height: 19rem;
   }
 }
 

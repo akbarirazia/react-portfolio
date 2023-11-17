@@ -28,7 +28,7 @@ function WhoMe() {
     // animation(para0, 1)
     Animation(para1, 2, -100)
     Animation(para2, 3, 100)
-    Animation(para3, 3, -100)
+    Animation(para3, 4, -50)
     Animation(para5, 2, 100)
     Animation(firstBlock, 4, 100)
     Animation(secondBlock, 2, -100)
