@@ -70,6 +70,7 @@ function What() {
   return (
     <div>
       <Navbar option={handleFilter} />
+
       <div className="container">
         <div
           style={{
@@ -98,7 +99,6 @@ function What() {
       </div>
       <br />
       <br />
-
       <Github />
       <br />
       <br />

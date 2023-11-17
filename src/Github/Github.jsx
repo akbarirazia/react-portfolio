@@ -17,9 +17,9 @@ export default function Github() {
           <span className="colorful">Github Calendar</span>
         </h2>
         <small className="small">
-          You see Those rectus muscle trippin'? How about we call it my biggest
-          flex so far? and it all started on May of 2023, I was set on a long
-          journey 🦾.
+          Check out these muscles! 💪 Talk about a major flex! 🦾 It was May
+          2023 when I dumped Python and Java and fell head over heels for
+          JavaScript! 😆
         </small>
         <br /> <br />
         <div className="github">
