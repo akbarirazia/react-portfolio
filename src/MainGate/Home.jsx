@@ -1,10 +1,10 @@
 import Spline from "@splinetool/react-spline"
 import { useRef, useEffect } from "react"
-import Who from "./Who"
+import Who from "../Who/Who"
 import "./Home.css"
 import * as React from "react"
-import AkbariRazia from "./pages/components/Navbar/AkbariRazia/AkbariRazia"
-import Toggle from "./pages/components/Toggle"
+import AkbariRazia from "../pages/components/Navbar/AkbariRazia/AkbariRazia"
+import Toggle from "../pages/components/Toggle"
 
 export default function Home() {
   //the skulll movements

@@ -1,13 +1,14 @@
-import React, { useEffect } from "react"
-import Navbar from "./components/Navbar/Navbar"
+import React, { useEffect, useImperativeHandle, useState } from "react"
+import Navbar from "../components/Navbar/Navbar"
 import image from "/src/assets/razia_back.png"
 import "./WhoMe.css"
 import { useRef } from "react"
+import MyModal from "../components/Modal/Modal"
 
-import Skill from "./components/Skills/Skill"
-import Animation from "./components animation/Animation"
-import HeartBeatEffect from "./components animation/HeartBeatEffect"
-import TimeLine from "./components/TimeLine/TimeLine"
+import Skill from "../components/Skills/Skill"
+import Animation from "../components animation/Animation"
+import HeartBeatEffect from "../components animation/HeartBeatEffect"
+import TimeLine from "../components/TimeLine/TimeLine"
 
 function WhoMe() {
   const para0 = useRef(null)
@@ -15,11 +16,13 @@ function WhoMe() {
   const para2 = useRef(null)
   const para3 = useRef(null)
   const para5 = useRef(null)
+  const modal = useRef()
   const firstBlock = useRef(null)
   const secondBlock = useRef(null)
   const thirdBlock = useRef(null)
   const heart = useRef(null)
-
+  const [content, setContent] = useState("")
+  const [title, setTitle] = useState("")
   useEffect(() => {
     Animation(para0, 1, 100)
     // animation(para0, 1)
@@ -33,9 +36,16 @@ function WhoMe() {
     HeartBeatEffect(heart)
   })
 
+  function handleClick() {
+    setContent(modal.current.content)
+    setTitle(modal.current.title)
+    modal.current.open()
+  }
+
   return (
     <>
       <Navbar />
+      <MyModal ref={modal} content={content} title={title} />
       <br />
       <div className="container section-wrapper">
         <div className="img-wrapper">
@@ -53,8 +63,8 @@ function WhoMe() {
             </span>
             , the most dreaded questions I get is "Who are you?", "Describe
             yourself". I mean, I've dedicated my life to figuring it out, so its
-            a live long goal. can't give a proper answer before I find it out
-            myself.
+            a live long goal. How can I provide a proper answer before I find it
+            out myself?
           </p>{" "}
           <br />
           <p ref={para1}>
@@ -77,6 +87,7 @@ function WhoMe() {
               style={{
                 borderBottom: "3px solid #682ae9",
               }}
+              onClick={handleClick}
             >
               poetry
             </span>

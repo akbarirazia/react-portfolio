@@ -1,11 +1,11 @@
 import React, { useEffect, useRef } from "react"
-import Navbar from "./components/Navbar/Navbar"
+import Navbar from "../components/Navbar/Navbar"
 import "./Where.css"
-import Animation from "./components animation/Animation"
-import Map from "./Map/Map"
+import Animation from "../components animation/Animation"
+import Map from "../Map/Map"
 import Spline from "@splinetool/react-spline"
-import ContactForm from "./ContactForm/ContactForm"
-import HeartBeatEffect from "./components animation/HeartBeatEffect"
+import ContactForm from "../ContactForm/ContactForm"
+import HeartBeatEffect from "../components animation/HeartBeatEffect"
 
 function Where() {
   const heaven = useRef(null)

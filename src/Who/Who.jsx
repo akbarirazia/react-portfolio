@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from "react"
 import "./Who.css"
-import SingleWho from "./SingleWho"
+import SingleWho from "./SingleWho/SingleWho"
 import { Link } from "react-router-dom"
 import { gsap } from "gsap/all"
-import Animation from "./pages/components animation/Animation"
+import Animation from "../pages/components animation/Animation"
 
 function Who({ onClick }) {
   const what = useRef(null)

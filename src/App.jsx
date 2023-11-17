@@ -1,17 +1,11 @@
-import Spline from "@splinetool/react-spline"
 import { useRef, useEffect, useState } from "react"
-import Who from "./Who"
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  useLocation,
-} from "react-router-dom"
-import Links from "./Links"
-import WhoMe from "./pages/WhoMe"
-import What from "./pages/What"
-import Where from "./pages/Where"
-import Home from "./Home"
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import Links from "./Links/Links"
+import WhoMe from "./pages/WhoMe/WhoMe"
+import What from "./pages/What/What"
+import Where from "./pages/Where/Where"
+import Home from "./MainGate/Home"
 import { CircularProgress } from "@mui/material"
 
 export default function App() {

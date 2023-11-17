@@ -1,13 +1,13 @@
 import React, { useEffect, useMemo, useState } from "react"
-import Navbar from "./components/Navbar/Navbar"
-import { medicalportfolio } from "../Data/MedicalPort"
-import { projects } from "../Data/WebDev"
+import Navbar from "../components/Navbar/Navbar"
+import { medicalportfolio } from "../../Data/MedicalPort"
+import { projects } from "../../Data/WebDev"
 
 import "./What.css"
 
-import SearchBar from "./components/FilterBar/SearchBar"
-import Cards from "./components/Cards/Cards"
-import DropDown from "./components/FilterBar/DropDown"
+import SearchBar from "../components/FilterBar/SearchBar"
+import Cards from "../components/Cards/Cards"
+import DropDown from "../components/FilterBar/DropDown"
 
 function What() {
   const combinedData = [...medicalportfolio, ...projects]

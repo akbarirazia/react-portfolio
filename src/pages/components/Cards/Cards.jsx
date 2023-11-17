@@ -3,6 +3,8 @@ import "./Cards.css"
 import Tags from "./Tags"
 import Animation from "../../components animation/Animation"
 import { HiOutlineLink } from "react-icons/hi"
+import { Rating } from "@mui/material"
+import RadioGroupRating from "./Rating"
 
 function Cards({ title, description, img, tags, link, delay }) {
   const isDark = localStorage.getItem("isDark") === "true"
@@ -31,6 +33,7 @@ function Cards({ title, description, img, tags, link, delay }) {
                   <HiOutlineLink />
                 </span>
               </a>
+              {/* <RadioGroupRating /> */}
             </div>
           </div>
           <div className="px-6 py-4">
