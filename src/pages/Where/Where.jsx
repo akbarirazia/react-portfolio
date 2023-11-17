@@ -25,7 +25,7 @@ function Where() {
     HeartBeatEffect(beat)
     Animation(name, 1, 50)
     Animation(email, 1.2, -50)
-    Animation(msg, 1.3, 0, "restart", 100)
+    Animation(msg, 1.3, 0, "play", 100)
   })
   return (
     <>
