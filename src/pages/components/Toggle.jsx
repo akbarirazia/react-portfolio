@@ -62,7 +62,7 @@ function Toggle({ option }) {
     const divs = document.querySelectorAll(".div")
     if (isDark) {
       body.classList.add("dark-mode")
-      console.log(divs)
+
       divs.forEach((div) => {
         div.classList.add("dark")
       })

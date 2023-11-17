@@ -78,7 +78,7 @@
   order: 1;
   margin: 0 auto;
   background-color: white;
-  box-shadow: 0px 0px 5px black;
+  box-shadow: 0px 0px 3px black;
   min-height: 80vh;
   padding: 1rem 0.5rem;
 }

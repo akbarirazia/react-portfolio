@@ -40,6 +40,9 @@ function Where() {
             <Spline scene="https://prod.spline.design/VPOrxeUHegxoZgU4/scene.splinecode" />
           </div>
           <div className="mars">
+            <h2 style={{ textAlign: "center", marginBottom: "1rem" }}>
+              <span className="colorful">My Whereabouts</span>
+            </h2>
             <small ref={back}>
               End of 2002, when I was dropped on earth and ever since want to go
               back
