@@ -41,18 +41,15 @@ function Where() {
           </div>
           <div className="mars">
             <h2 style={{ textAlign: "center", marginBottom: "1rem" }}>
-              <span className="colorful">My Whereabouts</span>
+              <span className="colorful ">My Whereabouts</span>
             </h2>
-            <small ref={back}>
+            <small ref={back} className="small">
               End of 2002, when I was dropped on earth and ever since want to go
-              back
-            </small>
-            <small ref={right}>
-              My friend, I'm stuck in between
+              back. My friend, I'm stuck in between
               <span className="colorful"> Venus and Mars</span>{" "}
               <span style={{ fontSize: "1.1rem" }}>😭</span>
             </small>
-            <small ref={left}>
+            <small ref={left} className="small">
               {" "}
               But hey, there is an even easier way to get in touch with me
             </small>
