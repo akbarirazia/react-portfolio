@@ -32,7 +32,7 @@ function Skill({ para, firstBlock, secondBlock, thirdBlock, para1 }) {
       })
 
       //move down right
-      .to(".span", 2, {
+      .to(".span", 4, {
         y: "+=5",
         x: "-=20",
         rotation: "-=5",
@@ -55,7 +55,7 @@ function Skill({ para, firstBlock, secondBlock, thirdBlock, para1 }) {
 
       .to(".span", 2, { y: "+=16", ease: Power1.easeInOut })
 
-    TweenLite.to(tlCan, 2, { ease: Power1.easeInOut })
+    TweenLite.to(tlCan, 5, { ease: Power1.easeInOut })
   }, [])
   function handleMouseOver(e) {
     const item = e.target.alt

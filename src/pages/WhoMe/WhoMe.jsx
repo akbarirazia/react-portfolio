@@ -30,9 +30,9 @@ function WhoMe() {
     Animation(para2, 3, 100)
     Animation(para3, 4, -50)
     Animation(para5, 2, 100)
-    Animation(firstBlock, 4, 100)
-    Animation(secondBlock, 2, -100)
-    Animation(thirdBlock, 3, -150)
+    Animation(firstBlock, 5, 50)
+    Animation(secondBlock, 3, -50)
+    Animation(thirdBlock, 4, -100)
     HeartBeatEffect(heart)
   })
 
