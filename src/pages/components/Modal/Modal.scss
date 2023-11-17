@@ -4,7 +4,7 @@
 
 /*Dialog Styles*/
 dialog {
-  position: fixed;
+  position: absolute;
 
   top: 50%;
   left: 50%;
@@ -23,6 +23,7 @@ dialog {
     animation: fadeIn 1s ease both;
     background: rgba(255, 255, 255, 0);
     z-index: 2;
+    overflow-x: hidden !important;
 
     backdrop-filter: blur(5px);
   }
@@ -65,8 +66,9 @@ dialog {
 
 @media screen and (max-width: 786px) {
   dialog {
-    width: 50%;
-    height: 19rem;
+    width: 80%;
+    min-height: 40%;
+    overflow-x: hidden !important;
   }
 }
 

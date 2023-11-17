@@ -36,9 +36,17 @@ function WhoMe() {
     HeartBeatEffect(heart)
   })
 
-  function handleClick() {
-    setContent(modal.current.content)
-    setTitle(modal.current.title)
+  function handleClick(string) {
+    if (string == "poetry") {
+      setContent(modal.current.content)
+      setTitle(modal.current.title)
+    } else if (string == "humor") {
+      setContent(modal.current.content1)
+      setTitle(modal.current.title1)
+    } else {
+      setContent(modal.current.content2)
+      setTitle(modal.current.title2)
+    }
     modal.current.open()
   }
 
@@ -87,7 +95,7 @@ function WhoMe() {
               style={{
                 borderBottom: "3px solid #682ae9",
               }}
-              onClick={handleClick}
+              onClick={() => handleClick("poetry")}
             >
               poetry
             </span>
@@ -96,6 +104,7 @@ function WhoMe() {
               style={{
                 borderBottom: "3px solid chartreuse",
               }}
+              onClick={() => handleClick("music")}
             >
               old music
             </span>
@@ -104,6 +113,7 @@ function WhoMe() {
               style={{
                 borderBottom: "3px solid hotpink",
               }}
+              onClick={() => handleClick("humor")}
             >
               humor
             </span>

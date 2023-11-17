@@ -29,11 +29,11 @@
 }
 @media (max-width: 786px) {
   .skills span {
-    margin: 0.5rem;
-    padding: 0.5rem 1rem;
+    margin: 0.7rem;
+    padding: 0.6rem 1.3Srem;
   }
   .skill-wrapper {
-    margin-top: 0rem;
+    margin-top: 1rem;
     min-height: 80vh;
   }
 }
