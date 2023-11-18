@@ -47,7 +47,7 @@ function Where() {
               End of 2002, when I was dropped on earth and ever since want to go
               back. My friend, I'm stuck in between
               <span className="colorful"> Venus and Mars</span>{" "}
-              <span style={{ fontSize: "1.1rem" }}>😭</span>
+              <span style={{ fontSize: "1.1rem" }}>😑</span>
             </small>
             <small ref={left} className="small">
               {" "}

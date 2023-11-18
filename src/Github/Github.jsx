@@ -12,14 +12,14 @@ export default function Github() {
   console.log(isDark)
   return (
     <>
-      <div className="container ">
+      <div className="container">
         <h2 style={{ textAlign: "center", marginBottom: "1rem" }}>
           <span className="colorful">Github Calendar</span>
         </h2>
         <small className="small">
-          Check out these muscles! 💪 Talk about a major flex! 🦾 It was May
-          2023 when I dumped Python and Java and fell head over heels for
-          JavaScript! 😆
+          Check out these muscles! Talk about a major flex! 🦾 It was May 2023
+          when I dumped Python and Java and fell head over heels for JavaScript!
+          😆
         </small>
         <br /> <br />
         <div className="github">
@@ -27,11 +27,11 @@ export default function Github() {
             username="akbarirazia"
             theme={{
               light: ["hsl(0, 0%, 92%)", "rebeccapurple"],
-              dark: ["hsl(0, 0%, 22%)", "hsl(225,92%,77%)"],
+              dark: ["hsl(0, 0%, 22%)", "hsl(225,82%,77%)"],
             }}
             colorScheme={dark ? "dark" : "light"}
-            showWeekdayLabels="true"
-            style={{ color: "" }}
+            // showWeekdayLabels="true"
+            blockSize={14}
           />
         </div>
         <br /> <br />

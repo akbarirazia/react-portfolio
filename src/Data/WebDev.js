@@ -11,7 +11,7 @@ export const projects = [
     title: "Ay Kash -Under The Starry Afghan Sky",
     imageSrc: AyKash,
     description:
-      "‘Ay Kash / ای کاش / If Only’ is a theatre, art and activism performance / exhibition featuring the artwork, films, poetry and stories of eleven young women based Afghanistan coming to Berlin, Germany in September 2023 and then available to tour worldwide. A project initiated by the Cosmino Productions.",
+      "Ay Kash is a theatre and art performance featuring the work of eleven young women from Afghanistan.",
     link: "http://www.underthestarryafghansky.com/",
     tags: ["Tailwindcss", "JS", "HTML"],
   },
@@ -19,7 +19,7 @@ export const projects = [
     title: "Invoice App",
     imageSrc: invoice,
     description:
-      "An invoice is a commercial document issued by a seller to a buyer that itemizes the products, services, or goods provided, along with their respective quantities and prices. It serves as a formal request for payment for the goods or services rendered. This project was created using bootstrap for its responsive design and JavaScript for its functionalities.",
+      "Invoice App is a project that creates invoices for goods or services using Bootstrap for responsive design and JavaScript for functionality.",
     link: "https://akbarirazia.github.io/invoice-app/",
     tags: ["Vanilla", "Bootstrap", "JS"],
   },
@@ -27,7 +27,7 @@ export const projects = [
     title: "My Avatar",
     imageSrc: Avatar,
     description:
-      "This project is under construction and it aims to portray my avatar (no I'm not a gamer). A fully 3D website containing animations from mixamo. The project was built using various 3D tools such as blender, THREE.Js, Three Fibers, Three Drei, leva, ReactJS and etc. Tailwindcss will be used to ensure the responsive design of the page.",
+      "My Avatar is a 3D website portraying the creator's avatar using various 3D tools such as Blender, Three JS, and React JS.",
     link: "https://my-avatar-xi.vercel.app/",
     tags: ["ReactJS", "ThreeJS", "blender"],
   },
@@ -35,7 +35,7 @@ export const projects = [
     title: "Bookstore Landing Page",
     imageSrc: bookstore,
     description:
-      "An elegant and responsive bookstore landing page, created using Tailwind CSS. This static project brings a sophisticated touch to book lovers worldwide. With its visually pleasing design, optimized for all screen sizes. The combination of Tailwind CSS's sleek styling and the static nature of the website ensures fast loading times and a seamless browsing experience.",
+      "Bookstore Landing Page is a responsive landing page for book lovers worldwide, created using Tailwind CSS.",
     link: "https://akbarirazia.github.io/Bookstore-Landing-Page/",
     tags: ["Tailwindcss", "RWD", "HTML"],
   },
@@ -43,7 +43,7 @@ export const projects = [
     title: "Personal Portfolio",
     imageSrc: portfolio,
     description:
-      "My ex-personal portfolio! not the page you are at right now. This project was created using tailwindcss for its responsive design and JavaScript for the certain functionalities in the page. It contains my personal portfolio and contact information along with my resume.",
+      "Personal Portfolio is a portfolio page containing personal information and contact details, created using Tailwind CSS and JavaScript.",
     link: "https://akbarirazia.github.io/portfolio/",
     tags: ["Tailwindcss", "HTML", "RWD"],
   },
@@ -60,7 +60,7 @@ export const projects = [
     title: "Rock, Paper, Scissors Game",
     imageSrc: game,
     description:
-      "Rock, Paper, Scissors Game: A JavaScript-based game where players compete against the computer by choosing between rock, paper, or scissors. Test your strategy and luck in this classic hand gesture showdown!",
+      "Rock, Paper, Scissors Game is a classic hand gesture game using JavaScript to play against the computer.",
     link: "https://3w17p8.csb.app/",
     tags: ["Game", "JavaScript", "HTML"],
   },
