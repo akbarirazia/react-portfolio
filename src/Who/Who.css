@@ -55,6 +55,7 @@
     pointer-events: none;
     display: inline-flex;
     flex-direction: column;
+    direction: ltr;
     /* margin: 0 1rem; */
     padding: 0 1rem;
     gap: 3.5rem;

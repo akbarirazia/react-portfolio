@@ -3,39 +3,37 @@ import SingleTl from "./SingleTl"
 import { useEffect, useRef } from "react"
 // import { Animation } from "./pages/components animation/Animation.js"
 // import Animation from "../../components animation/Animation"
+import { useTranslation } from "react-i18next"
 
-const experiences = [
-  {
-    title: "Web Developer",
-    year: "2023 - present",
-    description:
-      "During my tenure as a Web Developer at Cosmino Productions, I played a critical role in desigining, building, maintaining, and deploying their website for one of their projects. Employing my expertise development, I ensured that the website boasted a responsive design, delivering seamless user experiences across multiple devices.",
-  },
-  {
-    title: "HR Team Leader",
-    year: "2023",
-    description:
-      "In my role at Gao Tek Inc., I handle HR tasks such as recruitment, employee records, new hire orientations, performance management, and employee relations. I also respond to employee inquiries, coordinate training  programs, and provide administrative support to the HR department. Additionally, I ensure compliance with HR policies and assist with projects as needed.",
-  },
-  {
-    title: "Medical Intern",
-    year: "2022",
-    description:
-      "As a medical intern at Medbound, I performed medical research on various topics, such as 'Testosterone's effect on male behaviour', 'FAST scan in trauma' (focused assessment sonography in trauma), (computerized tomography) CT Scan, etc.. and had the opportunity of holding discussion forms with professional doctors. ",
-  },
-  {
-    title: "HR and Liaison Intern ",
-    year: "2020 - 2021",
-    description:
-      "As a Liaison Officer at PLD's (Project Lockdown), I collaborated with Senior HR members and provided valuable assistance in various tasks. My responsibilities included recording and reporting employee issues for efficient resolution by Senior HR members, conducting employee satisfaction survies, writing news-letters and so on. Throughout my role, I maintained professionalism and prioritized confidentiality.",
-  },
-]
 function TimeLine() {
+  const { t } = useTranslation()
+  const experiences = [
+    {
+      title: t("ABOUT_PAGE.EXPERIENCE.EX_1.TITLE"),
+      year: "2023 - present",
+      description: t("ABOUT_PAGE.EXPERIENCE.EX_1.DESCRIPTION"),
+    },
+    {
+      title: t("ABOUT_PAGE.EXPERIENCE.EX_2.TITLE"),
+      year: "2023",
+      description: t("ABOUT_PAGE.EXPERIENCE.EX_2.DESCRIPTION"),
+    },
+    {
+      title: t("ABOUT_PAGE.EXPERIENCE.EX_3.TITLE"),
+      year: "2022",
+      description: t("ABOUT_PAGE.EXPERIENCE.EX_3.DESCRIPTION"),
+    },
+    {
+      title: t("ABOUT_PAGE.EXPERIENCE.EX_4.TITLE"),
+      year: "2020 - 2021",
+      description: t("ABOUT_PAGE.EXPERIENCE.EX_4.DESCRIPTION"),
+    },
+  ]
   return (
     <div className="tl">
       <SingleTl
         cls={"tl-left"}
-        title={"Web Developer"}
+        title={t("ABOUT_PAGE.EXPERIENCE.EX_1.TITLE")}
         year={"2023 - present"}
         description={experiences[0].description}
       />

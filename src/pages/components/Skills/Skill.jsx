@@ -16,8 +16,10 @@ import { TimelineMax } from "gsap/gsap-core"
 import { Power1 } from "gsap"
 import Button from "../Button"
 import CustomizedProgressBars from "../CustomizedProgressBars"
+import { useTranslation } from "react-i18next"
 
 function Skill({ para, firstBlock, secondBlock, thirdBlock, para1 }) {
+  const { t } = useTranslation()
   const [value, setValue] = useState(0)
   useEffect(() => {
     const tlCan = new TimelineMax({ repeat: -1 })
@@ -188,24 +190,20 @@ function Skill({ para, firstBlock, secondBlock, thirdBlock, para1 }) {
                 marginBottom: "0.5rem",
               }}
             >
-              Skills-O-Meter <br />
-              (Shady? See me!)
+              {t("ABOUT_PAGE.SKILL.SUB_1")}
             </small>
           </div>
           <CustomizedProgressBars value={value} />
           <br />
 
           <div ref={para1} style={{ textAlign: "center" }}>
-            <small>
-              But there is more to my skills (as I have a ph.D from university
-              of life 😎)
-            </small>
+            <small>{t("ABOUT_PAGE.SKILL.SUB_2")}</small>
           </div>
         </div>
         <br />
 
         <a href={resume} download>
-          <Button>Download Resume</Button>
+          <Button>{t("ABOUT_PAGE.SKILL.BUTTON")}</Button>
         </a>
         <br />
         <br />

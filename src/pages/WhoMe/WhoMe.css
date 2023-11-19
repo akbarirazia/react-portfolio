@@ -41,7 +41,7 @@
 .flip-text {
   writing-mode: vertical-lr;
   color: black;
-  font-family: "Montserrat", "Helvet";
+  /* font-family: "Montserrat", "Helvet"; */
   text-align: center;
   font-size: xx-large;
   /* margin-left: 5rem; */
@@ -58,12 +58,11 @@
 }
 .about {
   width: 40%;
-  font-family: "Montserrat", "Helvet";
+  /* font-family: "Montserrat", "Helvet"; */
   display: grid;
   place-content: center;
   margin: 0 auto;
   text-align: justify;
-  line-height: 1.2345rem;
 }
 .about h1 {
   text-align: center;

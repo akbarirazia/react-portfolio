@@ -1,0 +1,63 @@
+{
+  "HOME_PAGE": {
+    "WHO": {
+      "TITLE": "Who?",
+      "SUB_TITLE": "About"
+    },
+    "WHAT": {
+      "TITLE": "What?",
+      "SUB_TITLE": "Project"
+    },
+    "WHERE": {
+      "TITLE": "Where?",
+      "SUB_TITLE": "Contact"
+    }
+  },
+  "ABOUT_PAGE": {
+    "WHO_IS_SHE": "Who is she?",
+    "I_WISH_I_KNEW": "I wish I knew...",
+    "DESCRIPTION": {
+      "PART_1": "Oh boy, let me tell you, as an",
+      "PART_1_2": " INFJ/INTJ",
+      "PART_2": ", the most dreaded questions I get is \"Who are you?\", \"Describe yourself\". I mean, I've dedicated my life to figuring it out, so its a live long goal. How can I provide a proper answer before I find it out myself?",
+      "PART_3": "I started off as a medical student, but got banned for some sick reasons. But then I remembered my love for tech and now I'm juggling this crazy journey. Who knows, maybe I'll become a",
+      "PART_4": ", or even a full stack web developer! Shoot, I might even become a 3D modeling/designing expert (smth I fell for recently, everyday I fall for smth new...). I'm all over the place, but I give 100% to everything I do."
+    },
+    "LAST": {
+      "PART_5": "I'm a chill and fun individual, madly in love with human psychology (obsessed with MBTI), ",
+      "PART_6": "poetry",
+      "PART_7": "old music",
+      "PART_8": "and technology. I have a killer sense of ",
+      "PART_9": "humor.",
+      "PART_10": " So, if you're looking for a good laugh, hit me up!",
+      "RAZIA_AKBARI": "Razia Akbari"
+    },
+    "EXPERIENCE": {
+      "TITLE": "Experience",
+      "SUB_TITLE": "I've dabbled in so many professions, I could probably diagnose your computer's HR issues while performing a web development surgery. Just kidding... or am I?",
+      "EX_1": {
+        "TITLE": "Web developer",
+        "DESCRIPTION": "During my tenure as a Web Developer at Cosmino Productions, I played a critical role in desigining, building, maintaining, and deploying their website for one of their projects. Employing my expertise development, I ensured that the website boasted a responsive design, delivering seamless user experiences across multiple devices."
+      },
+      "EX_2": {
+        "TITLE": "HR Team Leader",
+        "DESCRIPTION": "In my role at Gao Tek Inc., I handle HR tasks such as recruitment, employee records, new hire orientations, performance management, and employee relations. I also respond to employee inquiries, coordinate training programs, and provide administrative support to the HR department. Additionally, I ensure compliance with HR policies and assist with projects as needed."
+      },
+      "EX_3": {
+        "TITLE": "Medical Intern",
+        "DESCRIPTION": "As a medical intern at Medbound, I performed medical research on various topics, such as 'Testosterone's effect on male behaviour', 'FAST scan in trauma' (focused assessment sonography in trauma), (computerized tomography) CT Scan, etc.. and had the opportunity of holding discussion forms with professional doctors."
+      },
+      "EX_4": {
+        "TITLE": "HR and Liaison Intern",
+        "DESCRIPTION": "As a Liaison Officer at PLD's (Project Lockdown), I collaborated with Senior HR members and provided valuable assistance in various tasks. My responsibilities included recording and reporting employee issues for efficient resolution by Senior HR members, conducting employee satisfaction survies, writing news-letters and so on. Throughout my role, I maintained professionalism and prioritized confidentiality."
+      }
+    },
+    "SKILL": {
+      "TITLE": "Skills",
+      "SUB_TITLE": "How about \"I'm a self-taught expert in Googling solutions\" or \"like a magician, except instead of pulling rabbits out of hats, I pull solutions out of Stack Overflow\"? Or maybe \"I'm a master of Ctrl+C and Ctrl+V, but don't tell anyone\"?",
+      "SUB_1": "Skills-O-Meter",
+      "SUB_2": "But there is more to my skills (as I have a ph.D from university of life 😎)",
+      "BUTTON": "Download Resume"
+    }
+  }
+}

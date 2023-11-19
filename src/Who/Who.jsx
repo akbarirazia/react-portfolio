@@ -4,8 +4,10 @@ import SingleWho from "./SingleWho/SingleWho"
 import { Link } from "react-router-dom"
 import { gsap } from "gsap/all"
 import Animation from "../pages/components animation/Animation"
+import { useTranslation } from "react-i18next"
 
 function Who({ onClick }) {
+  const { t } = useTranslation()
   const what = useRef(null)
   const who = useRef(null)
   const where = useRef(null)
@@ -17,22 +19,27 @@ function Who({ onClick }) {
   }, [])
 
   return (
-    <div className="flex container text-wrapper ">
+    <div className="flex container text-wrapper " style={{ direction: "ltr" }}>
       <Link to="/pages/what" className="link">
         <SingleWho
-          text="What?"
-          subtext="Project"
+          text={t("HOME_PAGE.WHAT.TITLE")}
+          subtext={t("HOME_PAGE.WHAT.SUB_TITLE")}
           onClick={onClick}
           refs={what}
         />
       </Link>
       <Link to="/pages/whome" className="link">
-        <SingleWho text="Who?" subtext="About" onClick={onClick} refs={who} />
+        <SingleWho
+          text={t("HOME_PAGE.WHO.TITLE")}
+          subtext={t("HOME_PAGE.WHO.SUB_TITLE")}
+          onClick={onClick}
+          refs={who}
+        />
       </Link>
       <Link to="/pages/where" className="link">
         <SingleWho
-          text="Where?"
-          subtext="Contact"
+          text={t("HOME_PAGE.WHERE.TITLE")}
+          subtext={t("HOME_PAGE.WHERE.SUB_TITLE")}
           onClick={onClick}
           refs={where}
         />

@@ -21,6 +21,16 @@ body,
   height: 100%;
 }
 
+.fa-font {
+  font-family: "Cairo";
+  // text-align: right;
+  line-height: 1.5rem;
+  p,
+  small {
+    direction: rtl;
+  }
+}
+
 /* p {
   color: black;
 } */

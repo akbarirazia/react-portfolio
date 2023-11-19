@@ -1,16 +1,17 @@
-import React, { useEffect, useImperativeHandle, useState } from "react"
+import React, { useEffect, useState } from "react"
 import Navbar from "../components/Navbar/Navbar"
 import image from "/src/assets/razia_back.png"
 import "./WhoMe.css"
 import { useRef } from "react"
 import MyModal from "../components/Modal/Modal"
-
+import { useTranslation } from "react-i18next"
 import Skill from "../components/Skills/Skill"
 import Animation from "../components animation/Animation"
 import HeartBeatEffect from "../components animation/HeartBeatEffect"
 import TimeLine from "../components/TimeLine/TimeLine"
 
 function WhoMe() {
+  const { t } = useTranslation()
   const para0 = useRef(null)
   const para1 = useRef(null)
   const para2 = useRef(null)
@@ -58,40 +59,31 @@ function WhoMe() {
       <br />
       <div className="container section-wrapper">
         <div className="img-wrapper">
-          <p className="flip-text">who is she?</p>
+          <p className="flip-text">{t("ABOUT_PAGE.WHO_IS_SHE")}</p>
 
           <img src={image} draggable={false} />
-          <p className="flip-text">I wish I knew. . .</p>
+          <p className="flip-text">{t("ABOUT_PAGE.I_WISH_I_KNEW")}</p>
         </div>
 
         <div className="about">
           <p ref={para0}>
-            Oh boy, let me tell you, as an{" "}
+            {t("ABOUT_PAGE.DESCRIPTION.PART_1")}{" "}
             <span className="colorful" style={{ fontWeight: "bold" }}>
-              INFJ/INTJ
+              {t("ABOUT_PAGE.DESCRIPTION.PART_1_2")}
             </span>
-            , the most dreaded questions I get is "Who are you?", "Describe
-            yourself". I mean, I've dedicated my life to figuring it out, so its
-            a live long goal. How can I provide a proper answer before I find it
-            out myself?
+            {t("ABOUT_PAGE.DESCRIPTION.PART_2")}
           </p>{" "}
           <br />
           <p ref={para1}>
-            I started off as a medical student, but got banned for some sick
-            reasons. But then I remembered my love for tech and now I'm juggling
-            this crazy journey. Who knows, maybe I'll become a{" "}
+            {t("ABOUT_PAGE.DESCRIPTION.PART_3")}{" "}
             <span className="colorful" style={{ fontWeight: "bold" }}>
               frontend web developer
-            </span>
-            , or even a full stack web developer! Shoot, I might even become a
-            3D modeling/designing expert (smth I fell for recently, everyday I
-            fall for smth new...). I'm all over the place, but I give 100% to
-            everything I do.
+            </span>{" "}
+            {t("ABOUT_PAGE.DESCRIPTION.PART_4")}
           </p>
           <br />
           <p ref={para2}>
-            I'm a chill and fun individual, madly in love with human psychology
-            (obsessed with MBTI),{" "}
+            {t("ABOUT_PAGE.LAST.PART_5")}
             <span
               style={{
                 borderBottom: "3px solid #682ae9",
@@ -99,9 +91,8 @@ function WhoMe() {
               className="pointer"
               onClick={() => handleClick("poetry")}
             >
-              poetry
-            </span>
-            ,{" "}
+              {t("ABOUT_PAGE.LAST.PART_6")}
+            </span>{" "}
             <span
               style={{
                 borderBottom: "3px solid chartreuse",
@@ -109,9 +100,9 @@ function WhoMe() {
               onClick={() => handleClick("music")}
               className="pointer"
             >
-              old music
-            </span>
-            , and technology. I have a killer sense of{" "}
+              {t("ABOUT_PAGE.LAST.PART_7")}
+            </span>{" "}
+            {t("ABOUT_PAGE.LAST.PART_8")}
             <span
               style={{
                 borderBottom: "3px solid hotpink",
@@ -119,13 +110,13 @@ function WhoMe() {
               className="pointer"
               onClick={() => handleClick("humor")}
             >
-              humor
+              {t("ABOUT_PAGE.LAST.PART_9")}
             </span>
-            . So, if you're looking for a good laugh, hit me up!
+            {t("ABOUT_PAGE.LAST.PART_10")}
           </p>{" "}
           <br />
           <strong>
-            - Razia Akbari{" "}
+            - {t("ABOUT_PAGE.LAST.RAZIA_AKBARI")}{" "}
             <span ref={heart} style={{ display: "inline-block" }}>
               🖤
             </span>
@@ -137,27 +128,18 @@ function WhoMe() {
 
       <div className="container" style={{ marginBottom: "2rem" }}>
         <h2 style={{ textAlign: "center", marginBottom: "1rem" }}>
-          <span className="colorful">Experiences</span>
+          <span className="colorful">{t("ABOUT_PAGE.EXPERIENCE.TITLE")}</span>
         </h2>
-        <small className="small">
-          I've dabbled in so many professions, I could probably diagnose your
-          computer's HR issues while performing a web development surgery. Just
-          kidding... or am I?
-        </small>
+        <small className="small">{t("ABOUT_PAGE.EXPERIENCE.SUB_TITLE")}</small>
       </div>
       <TimeLine />
       <br />
       <br />
       <div className="container">
         <h2 style={{ textAlign: "center", margin: "1rem auto" }}>
-          <span className="colorful">Skills</span>
+          <span className="colorful">{t("ABOUT_PAGE.SKILL.TITLE")}</span>
         </h2>
-        <small className="small">
-          How about "I'm a self-taught expert in Googling solutions" or "like a
-          magician, except instead of pulling rabbits out of hats, I pull
-          solutions out of Stack Overflow"? Or maybe "I'm a master of Ctrl+C and
-          Ctrl+V, but don't tell anyone"?
-        </small>
+        <small className="small">{t("ABOUT_PAGE.SKILL.SUB_TITLE")}</small>
       </div>
       <Skill
         para={para3}

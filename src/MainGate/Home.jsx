@@ -5,7 +5,7 @@ import "./Home.css"
 import * as React from "react"
 import AkbariRazia from "../pages/components/Navbar/AkbariRazia/AkbariRazia"
 import Toggle from "../pages/components/Toggle"
-
+import ColorToggleButton from "../pages/components/LanguageToggle/LanToggle"
 export default function Home() {
   //the skulll movements
   const skull = useRef()
@@ -48,7 +48,7 @@ export default function Home() {
     <>
       <div className="toggle">
         <div className="container bar">
-          <AkbariRazia />
+          <ColorToggleButton />
           <Toggle />
         </div>
       </div>

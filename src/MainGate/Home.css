@@ -26,6 +26,7 @@
   align-items: center;
   pointer-events: auto;
   padding-top: 0.5rem;
+  text-align: left;
 }
 .bar :last-child {
   margin-right: 0;
