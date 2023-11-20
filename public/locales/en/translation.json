@@ -61,5 +61,19 @@
     }
   },
   "NAVBAR": { "WHAT": ".what()", "WHERE": ".where()", "WHO": ".who()" },
-  "CONTACT_PAGE": {}
+  "CONTACT_PAGE": {
+    "TITLE_1": "I FELL FROM ",
+    "HEAVEN": "HEAVEN",
+    "TITLE_2": "My Whereabouts",
+    "DESCRIPTION": "End of 2002, when I was dropped on earth and ever since want to go back. My friend, I'm stuck in between ",
+    "VM": "Venus and Mars",
+    "HEY": "But hey, there is an even easier way to get in touch with me.",
+    "LOCATION": "Exact Location",
+    "CONTACT": "Say Helloo!",
+    "NAME": "Your Name",
+    "EMAIL": "you@somewhere.smth",
+    "MESSAGE": "Your Message",
+    "MADE": "Made with ",
+    "YEAR": " in 2023"
+  }
 }

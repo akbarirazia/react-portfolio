@@ -2,8 +2,10 @@ import React, { useState } from "react"
 import "./ContactForm.css"
 import Button from "../components/Button.jsx"
 import CustomizedDialogs from "./CustomizedDialogs"
+import { useTranslation } from "react-i18next"
 
 function ContactForm({ username, useremail, msg }) {
+  const { t } = useTranslation()
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -44,7 +46,7 @@ function ContactForm({ username, useremail, msg }) {
       <input
         type="text"
         name="name"
-        placeholder="Your Name"
+        placeholder={t("CONTACT_PAGE.NAME", "Your Name")}
         ref={username}
         required
         onChange={handleChange}
@@ -63,7 +65,7 @@ function ContactForm({ username, useremail, msg }) {
         id=""
         cols="30"
         rows="13"
-        placeholder="Your message"
+        placeholder={t("CONTACT_PAGE.MESSAGE", "Your message")}
         ref={msg}
         onChange={handleChange}
         required

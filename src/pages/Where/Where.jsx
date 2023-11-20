@@ -6,8 +6,10 @@ import Map from "../Map/Map"
 import Spline from "@splinetool/react-spline"
 import ContactForm from "../ContactForm/ContactForm"
 import HeartBeatEffect from "../components animation/HeartBeatEffect"
+import { useTranslation } from "react-i18next"
 
 function Where() {
+  const { t } = useTranslation()
   const heaven = useRef(null)
   const back = useRef(null)
   const right = useRef(null)
@@ -35,30 +37,47 @@ function Where() {
           <div className="fell">
             <br />
             <h2 ref={heaven}>
-              I FELL FROM <span className="colorful">HEAVEN</span>
+              {t("CONTACT_PAGE.TITLE_1", "I FELL FROM")}
+              <span className="colorful">
+                {" "}
+                {t("CONTACT_PAGE.HEAVEN", "HEAVEN")}
+              </span>
             </h2>
             <Spline scene="https://prod.spline.design/VPOrxeUHegxoZgU4/scene.splinecode" />
           </div>
           <div className="mars">
             <h2 style={{ textAlign: "center", marginBottom: "1rem" }}>
-              <span className="colorful ">My Whereabouts</span>
+              <span className="colorful ">
+                {t("CONTACT_PAGE.TITLE_2", "My Whereabouts")}
+              </span>
             </h2>
             <small ref={back} className="small">
-              End of 2002, when I was dropped on earth and ever since want to go
-              back. My friend, I'm stuck in between
-              <span className="colorful"> Venus and Mars</span>{" "}
+              {t(
+                "CONTACT_PAGE.DESCRIPTION",
+                " End of 2002, when I was dropped on earth and ever since want to go back. My friend, I'm stuck in between"
+              )}
+              <span className="colorful">
+                {" "}
+                {t("CONTACT_PAGE.VM", "Venus and Mars")}
+              </span>{" "}
               <span style={{ fontSize: "1.1rem" }}>😑</span>
             </small>
             <small ref={left} className="small">
               {" "}
-              But hey, there is an even easier way to get in touch with me
+              {t(
+                "CONTACT_PAGE.HEY",
+                "But hey, there is an even easier way to get in touch with me."
+              )}
             </small>
           </div>
           <br />
           <div className="touch">
             <div className="contact div">
               <p ref={back}>
-                <span className="colorful">Say Helloo!</span>
+                <span className="colorful">
+                  {" "}
+                  {t("CONTACT_PAGE.CONTACT", "Say Helloo!")}
+                </span>
               </p>
               <br />
               <div className="inputs ">
@@ -67,7 +86,10 @@ function Where() {
             </div>
             <div className="map">
               <p ref={right}>
-                <span className="colorful">Exact Location</span>
+                <span className="colorful">
+                  {" "}
+                  {t("CONTACT_PAGE.LOCATION", "Exact Location")}
+                </span>
               </p>
               <div className="mapDiv">
                 <Map />
@@ -76,14 +98,14 @@ function Where() {
           </div>
           <br />
           <p style={{ textAlign: "center", marginTop: "1rem" }}>
-            Made with{" "}
+            {t("CONTACT_PAGE.MADE", "Made with")}{" "}
             <span
               ref={beat}
               style={{ display: "inline-block", color: "white" }}
             >
               🤍
             </span>{" "}
-            in 2023
+            {t("CONTACT_PAGE.YEAR", "in 2023")}
           </p>
           <div className="spacer"></div>
         </div>
