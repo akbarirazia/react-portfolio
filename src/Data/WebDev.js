@@ -5,13 +5,14 @@ import album from "../assets/album.JPG"
 import bookstore from "../assets/bookstore.JPG"
 import AyKash from "../assets/AyKash.jpg"
 import Avatar from "../assets/avatar.JPG"
+import i18n from "../i18n"
+import { useTranslation } from "react-i18next"
 
 export const projects = [
   {
-    title: "Ay Kash -Under The Starry Afghan Sky",
+    title: i18n.t("PROJECT_PAGE.PRO_1.TITLE"),
     imageSrc: AyKash,
-    description:
-      "Ay Kash is a theatre and art performance featuring the work of eleven young women from Afghanistan.",
+    description: i18n.t("PROJECT_PAGE.PRO_1.DESCRIPTION"),
     link: "http://www.underthestarryafghansky.com/",
     tags: ["Tailwindcss", "JS", "HTML"],
   },

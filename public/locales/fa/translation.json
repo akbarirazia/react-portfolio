@@ -75,5 +75,34 @@
     "MESSAGE": "پیغام شما",
     "MADE": "ساخته شده با",
     "YEAR": "در سال 2023"
+  },
+  "PROJECT_PAGE": {
+    "PRO_1": {
+      "TITLE": "Ay Kash -Under The Starry Afghan Sky",
+      "DESCRIPTION": "Ay Kash is a theatre and art performance featuring the work of eleven young women from Afghanistan."
+    },
+    "PRO_2": {
+      "TITLE": "Invoice App",
+      "DESCRIPTION": "Invoice App is a project that creates invoices for goods or services using Bootstrap for responsive design and JavaScript for functionality."
+    },
+    "PRO_3": {
+      "TITLE": "My Avatar",
+
+      "DESCRIPTION": "My Avatar is a 3D website portraying the creator's avatar using various 3D tools such as Blender, Three JS, and React JS."
+    },
+    "PRO_4": {
+      "TITLE": "Bookstore Landing Page",
+      "DESCRIPTION": "Bookstore Landing Page is a responsive landing page for book lovers worldwide, created using Tailwind CSS."
+    },
+    "PRO_5": {
+      "TITLE": "Personal Portfolio",
+
+      "DESCRIPTION": "Personal Portfolio is a portfolio page containing personal information and contact details, created using Tailwind CSS and JavaScript."
+    },
+    "PRO_6": {
+      "TITLE": "Rock, Paper, Scissors Game",
+
+      "DESCRIPTION": "Rock, Paper, Scissors Game is a classic hand gesture game using JavaScript to play against the computer."
+    }
   }
 }

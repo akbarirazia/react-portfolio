@@ -1,4 +1,4 @@
-import { useRef, useEffect, useState, Suspense } from "react"
+import { useRef, useEffect, useState } from "react"
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Links from "./Links/Links"
