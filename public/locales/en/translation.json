@@ -60,5 +60,6 @@
       "BUTTON": "Download Resume"
     }
   },
+  "NAVBAR": { "WHAT": ".what()", "WHERE": ".where()", "WHO": ".who()" },
   "CONTACT_PAGE": {}
 }
