@@ -6,49 +6,44 @@ import bookstore from "../assets/bookstore.JPG"
 import AyKash from "../assets/AyKash.jpg"
 import Avatar from "../assets/avatar.JPG"
 import i18n from "../i18n"
-import { useTranslation } from "react-i18next"
 
 export const projects = [
   {
-    title: !i18n.isInitialized ? "loading" : i18n.t("PROJECT_PAGE.PRO_1.TITLE"),
+    title: "PROJECT_PAGE.PRO_1.TITLE",
     imageSrc: AyKash,
-    description: i18n.t("PROJECT_PAGE.PRO_1.DESCRIPTION"),
+    description: "PROJECT_PAGE.PRO_1.DESCRIPTION",
     link: "http://www.underthestarryafghansky.com/",
     tags: ["Tailwindcss", "JS", "HTML"],
     dateOfBirth: "August 30, 2023",
   },
   {
-    title: "Invoice App",
+    title: "PROJECT_PAGE.PRO_2.TITLE",
     imageSrc: invoice,
-    description:
-      "Invoice App is a project that creates invoices for goods or services using Bootstrap for responsive design and JavaScript for functionality.",
+    description: "PROJECT_PAGE.PRO_2.DESCRIPTION",
     link: "https://akbarirazia.github.io/invoice-app/",
     tags: ["Vanilla", "Bootstrap", "JS"],
     dateOfBirth: "July 5, 2023",
   },
   {
-    title: "My Avatar",
+    title: "PROJECT_PAGE.PRO_3.TITLE",
     imageSrc: Avatar,
-    description:
-      "My Avatar is a 3D website portraying the creator's avatar using various 3D tools such as Blender, Three JS, and React JS.",
+    description: "PROJECT_PAGE.PRO_3.DESCRIPTION",
     link: "https://my-avatar-xi.vercel.app/",
     tags: ["ReactJS", "ThreeJS", "blender"],
     dateOfBirth: "Premature",
   },
   {
-    title: "Bookstore Landing Page",
+    title: "PROJECT_PAGE.PRO_4.TITLE",
     imageSrc: bookstore,
-    description:
-      "Bookstore Landing Page is a responsive landing page for book lovers worldwide, created using Tailwind CSS.",
+    description: "PROJECT_PAGE.PRO_4.DESCRIPTION",
     link: "https://akbarirazia.github.io/Bookstore-Landing-Page/",
     tags: ["Tailwindcss", "RWD", "HTML"],
     dateOfBirth: "July 15, 2023",
   },
   {
-    title: "Personal Portfolio",
+    title: "PROJECT_PAGE.PRO_5.TITLE",
     imageSrc: portfolio,
-    description:
-      "Personal Portfolio is a portfolio page containing personal information and contact details, created using Tailwind CSS and JavaScript.",
+    description: "PROJECT_PAGE.PRO_5.DESCRIPTION",
     link: "https://akbarirazia.github.io/portfolio/",
     tags: ["Tailwindcss", "HTML", "RWD"],
     dateOfBirth: "July 24, 2023",
@@ -63,10 +58,9 @@ export const projects = [
   // },
 
   {
-    title: "Rock, Paper, Scissors Game",
+    title: "PROJECT_PAGE.PRO_6.TITLE",
     imageSrc: game,
-    description:
-      "Rock, Paper, Scissors Game is a classic hand gesture game using JavaScript to play against the computer.",
+    description: "PROJECT_PAGE.PRO_6.DESCRIPTION",
     link: "https://3w17p8.csb.app/",
     tags: ["Game", "JavaScript", "HTML"],
     dateOfBirth: "July 30, 2023",

@@ -78,35 +78,36 @@
   },
   "PROJECT_PAGE": {
     "PRO_1": {
-      "TITLE": "Ay Kash -Under The Starry Afghan Sky",
-      "DESCRIPTION": "Ay Kash is a theatre and art performance featuring the work of eleven young women from Afghanistan."
+      "TITLE": "آی کش- زیر آسمان پر ستاره افغانستان",
+      "DESCRIPTION": "آی کش یک تئاتر و اجرای هنری است که آثار یازده زن جوان از افغانستان را به نمایش می گذارد."
     },
     "PRO_2": {
-      "TITLE": "Invoice App",
-      "DESCRIPTION": "Invoice App is a project that creates invoices for goods or services using Bootstrap for responsive design and JavaScript for functionality."
+      "TITLE": "برنامه فاکتور",
+      "DESCRIPTION": "Invoice App پروژه ای است که با استفاده از Bootstrap برای طراحی واکنشگرا و جاوا اسکریپت برای عملکرد، فاکتورهایی برای کالاها یا خدمات ایجاد می کند."
     },
     "PRO_3": {
-      "TITLE": "My Avatar",
+      "TITLE": "آواتار من",
 
-      "DESCRIPTION": "My Avatar is a 3D website portraying the creator's avatar using various 3D tools such as Blender, Three JS, and React JS."
+      "DESCRIPTION": "My Avatar یک وب سایت سه بعدی است که آواتار سازنده را با استفاده از ابزارهای سه بعدی مختلف مانند Blender، Three JS و React JS به تصویر می کشد."
     },
     "PRO_4": {
-      "TITLE": "Bookstore Landing Page",
-      "DESCRIPTION": "Bookstore Landing Page is a responsive landing page for book lovers worldwide, created using Tailwind CSS."
+      "TITLE": "صفحه فرود کتابفروشی",
+      "DESCRIPTION": "صفحه فرود کتابفروشی یک صفحه فرود پاسخگو برای دوستداران کتاب در سراسر جهان است که با استفاده از Tailwind CSS ایجاد شده است."
     },
     "PRO_5": {
-      "TITLE": "Personal Portfolio",
+      "TITLE": "پورتفولیو شخصی",
 
-      "DESCRIPTION": "Personal Portfolio is a portfolio page containing personal information and contact details, created using Tailwind CSS and JavaScript."
+      "DESCRIPTION": "Personal Portfolio یک صفحه نمونه کار حاوی اطلاعات شخصی و اطلاعات تماس است که با استفاده از Tailwind CSS و JavaScript ایجاد شده است."
     },
     "PRO_6": {
-      "TITLE": "Rock, Paper, Scissors Game",
+      "TITLE": "بازی سنگ، کاغذ، قیچی",
 
-      "DESCRIPTION": "Rock, Paper, Scissors Game is a classic hand gesture game using JavaScript to play against the computer."
+      "DESCRIPTION": "بازی Rock, Paper, Scissors یک بازی کلاسیک با حرکات دست با استفاده از جاوا اسکریپت برای بازی در برابر کمپیوتر است."
     },
     "GITHUB": {
       "TITLE": " سالنامه گتهاب",
       "DESCRIPTION": "Check out these muscles! Talk about a major flex! 🦾 It was May 2023 when I dumped Python and Java and fell head over heels for JavaScript! 😆"
-    }
+    },
+    "VIEW": "مشاهده پروژه"
   }
 }

@@ -3,10 +3,11 @@ import "./Cards.css"
 import Tags from "./Tags"
 import Animation from "../../components animation/Animation"
 import { HiOutlineLink } from "react-icons/hi"
+import { useTranslation } from "react-i18next"
 
 function Cards({ title, description, img, tags, link, delay, dateOfBirth }) {
   const isDark = localStorage.getItem("isDark") === "true"
-
+  const { t } = useTranslation()
   // const tagStyle = {
   //   color: "black",
   //   textShadow: "none",
@@ -22,11 +23,15 @@ function Cards({ title, description, img, tags, link, delay, dateOfBirth }) {
         <div className=" rounded overflow-hidden shadow-lg gray div">
           <img className="w-full" src={img} alt={title} />
           <div className="px-6 py-4">
-            <div className="font-bold text-xl mb-2 card colorful">{title}</div>
-            <p className="text-gray-700 text-base ">{description}</p>
+            <div className="font-bold text-xl mb-2 card colorful title">
+              {t(title, title)}
+            </div>
+            <p className="text-gray-700 text-base ">
+              {t(description, description)}
+            </p>
             <div>
-              <a href={link}>
-                <span>View Project </span>
+              <a href={link} className="title">
+                <span> {t("PROJECT_PAGE.VIEW", "View Project")} </span>
                 <span>
                   <HiOutlineLink />
                 </span>
