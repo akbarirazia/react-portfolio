@@ -14,7 +14,7 @@ import resume from "/src/assets/Razia Akbari's CV.pdf"
 import { TweenLite } from "gsap/gsap-core"
 import { TimelineMax } from "gsap/gsap-core"
 import { Power1 } from "gsap"
-import Button from "../Button"
+import Button from "../Button/Button"
 import CustomizedProgressBars from "../CustomizedProgressBars"
 import { useTranslation } from "react-i18next"
 

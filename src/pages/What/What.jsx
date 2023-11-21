@@ -64,6 +64,7 @@ function What() {
       img={data.imageSrc}
       tags={data.tags}
       delay={index}
+      dateOfBirth={data.dateOfBirth}
     />
   ))
   // console.log(finalProject.length)

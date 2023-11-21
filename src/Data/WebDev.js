@@ -10,11 +10,12 @@ import { useTranslation } from "react-i18next"
 
 export const projects = [
   {
-    title: i18n.t("PROJECT_PAGE.PRO_1.TITLE"),
+    title: !i18n.isInitialized ? "loading" : i18n.t("PROJECT_PAGE.PRO_1.TITLE"),
     imageSrc: AyKash,
     description: i18n.t("PROJECT_PAGE.PRO_1.DESCRIPTION"),
     link: "http://www.underthestarryafghansky.com/",
     tags: ["Tailwindcss", "JS", "HTML"],
+    dateOfBirth: "August 30, 2023",
   },
   {
     title: "Invoice App",
@@ -23,6 +24,7 @@ export const projects = [
       "Invoice App is a project that creates invoices for goods or services using Bootstrap for responsive design and JavaScript for functionality.",
     link: "https://akbarirazia.github.io/invoice-app/",
     tags: ["Vanilla", "Bootstrap", "JS"],
+    dateOfBirth: "July 5, 2023",
   },
   {
     title: "My Avatar",
@@ -31,6 +33,7 @@ export const projects = [
       "My Avatar is a 3D website portraying the creator's avatar using various 3D tools such as Blender, Three JS, and React JS.",
     link: "https://my-avatar-xi.vercel.app/",
     tags: ["ReactJS", "ThreeJS", "blender"],
+    dateOfBirth: "Premature",
   },
   {
     title: "Bookstore Landing Page",
@@ -39,6 +42,7 @@ export const projects = [
       "Bookstore Landing Page is a responsive landing page for book lovers worldwide, created using Tailwind CSS.",
     link: "https://akbarirazia.github.io/Bookstore-Landing-Page/",
     tags: ["Tailwindcss", "RWD", "HTML"],
+    dateOfBirth: "July 15, 2023",
   },
   {
     title: "Personal Portfolio",
@@ -47,6 +51,7 @@ export const projects = [
       "Personal Portfolio is a portfolio page containing personal information and contact details, created using Tailwind CSS and JavaScript.",
     link: "https://akbarirazia.github.io/portfolio/",
     tags: ["Tailwindcss", "HTML", "RWD"],
+    dateOfBirth: "July 24, 2023",
   },
   // {
   //   title: "Responsive Album",
@@ -64,5 +69,6 @@ export const projects = [
       "Rock, Paper, Scissors Game is a classic hand gesture game using JavaScript to play against the computer.",
     link: "https://3w17p8.csb.app/",
     tags: ["Game", "JavaScript", "HTML"],
+    dateOfBirth: "July 30, 2023",
   },
 ]

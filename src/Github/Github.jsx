@@ -1,8 +1,10 @@
 import GitHubCalendar from "react-github-calendar"
 import "./Github.css"
 import { useEffect, useState } from "react"
+import { useTranslation } from "react-i18next"
 
 export default function Github() {
+  const { t } = useTranslation()
   const isDark = localStorage.getItem("isDark") === "true"
   const [dark, setDark] = useState(isDark)
 
@@ -14,12 +16,15 @@ export default function Github() {
     <>
       <div className="container">
         <h2 style={{ textAlign: "center", marginBottom: "1rem" }}>
-          <span className="colorful">Github Calendar</span>
+          <span className="colorful">
+            {t("PROJECT_PAGE.GITHUB.TITLE", "Github Calendar")}
+          </span>
         </h2>
         <small className="small">
-          Check out these muscles! Talk about a major flex! 🦾 It was May 2023
-          when I dumped Python and Java and fell head over heels for JavaScript!
-          😆
+          {t(
+            "PROJECT_PAGE.GITHUB.DESCRIPTION",
+            "Check out these muscles! Talk about a major flex! 🦾 It was May 2023 when I dumped Python and Java and fell head over heels for JavaScript! 😆"
+          )}
         </small>
         <br /> <br />
         <div className="github">

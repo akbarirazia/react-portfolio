@@ -4,13 +4,13 @@ import Tags from "./Tags"
 import Animation from "../../components animation/Animation"
 import { HiOutlineLink } from "react-icons/hi"
 
-function Cards({ title, description, img, tags, link, delay }) {
+function Cards({ title, description, img, tags, link, delay, dateOfBirth }) {
   const isDark = localStorage.getItem("isDark") === "true"
 
-  const tagStyle = {
-    color: "black",
-    textShadow: "none",
-  }
+  // const tagStyle = {
+  //   color: "black",
+  //   textShadow: "none",
+  // }
   const card = useRef(null)
   useEffect(() => {
     Animation(card, 1, 0, "play", 100, 0, delay / 9, 0)
@@ -31,18 +31,16 @@ function Cards({ title, description, img, tags, link, delay }) {
                   <HiOutlineLink />
                 </span>
               </a>
+              <small className="birth">{dateOfBirth}</small>
               {/* <RadioGroupRating /> */}
             </div>
           </div>
-          <div className="px-6 py-4">
+          <div className="px-6 py-2">
             {tags.map((tag, index) => (
-              <Tags key={index} index={index} style={isDark ? tagStyle : {}}>
+              <Tags key={index} index={index}>
                 {tag}
               </Tags>
             ))}
-            {/* <Tags> Photography </Tags>
-              <Tags> Travel </Tags>
-              <Tags> Winter </Tags> */}
           </div>
         </div>
       </div>

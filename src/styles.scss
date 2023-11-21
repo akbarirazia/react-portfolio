@@ -100,9 +100,17 @@ body,
 }
 
 .dark-mode {
-  background-color: rgb(34, 34, 34);
+  background-color: rgb(46, 46, 46);
   color: #fdfdfb !important;
   transition: ease-out 1s;
+  .myBtn {
+    // background-color: #42424250;
+    color: white;
+    transition: 1s ease-in-out;
+  }
+  .tag {
+    color: white;
+  }
 }
 .dark {
   background-color: black !important;

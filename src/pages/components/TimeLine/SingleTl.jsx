@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react"
 import Animation from "../../components animation/Animation"
 
-function SingleTl({ cls, title, year, description }) {
+function SingleTl({ cls, title, year, description, index }) {
   const isDark = localStorage.getItem("isDark") === "true"
 
   const styleObj = {
@@ -9,7 +9,7 @@ function SingleTl({ cls, title, year, description }) {
   }
   const box9 = useRef(null)
   useEffect(() => {
-    Animation(box9, 3, 0, "play", 150)
+    Animation(box9, 0.5, 0, "play", 150, 0, index / 7, 0)
   }, [])
   return (
     <div className={`tl-container ${cls}`}>

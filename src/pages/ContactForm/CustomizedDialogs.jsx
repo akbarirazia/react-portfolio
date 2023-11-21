@@ -1,5 +1,5 @@
 import * as React from "react"
-import Button from "../components/Button"
+import Button from "../components/Button/Button"
 import meme from "/src/assets/meme.jpg"
 import { styled } from "@mui/material/styles"
 import Dialog from "@mui/material/Dialog"
