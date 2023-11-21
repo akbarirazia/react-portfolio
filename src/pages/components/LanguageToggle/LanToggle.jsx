@@ -6,8 +6,11 @@ import { useTranslation } from "react-i18next"
 
 export default function ColorToggleButton() {
   const { i18n } = useTranslation()
-  const storedLanguage = localStorage.getItem("language")
-  const [language, setLanguage] = useState(storedLanguage || "en")
+
+  // We can simplify the code by initializing the state directly to the value stored in localStorage (if it exists).
+  const [language, setLanguage] = useState(
+    localStorage.getItem("language") || "en"
+  )
 
   const handleLanguageChange = (lang) => {
     i18n.changeLanguage(lang)
@@ -17,6 +20,7 @@ export default function ColorToggleButton() {
 
   useEffect(() => {
     const body = document.body
+    // To check if the stored language is Persian, we need to use the language code 'fa' rather than the Persian word 'persian'.
     if (language === "fa") {
       body.classList.add("fa-font")
     } else {
@@ -30,6 +34,7 @@ export default function ColorToggleButton() {
         value={language}
         exclusive
         onChange={(event, newLanguage) => {
+          // We need to call handleLanguageChange with the language code 'en' or 'fa', not the flag emoji.
           handleLanguageChange(newLanguage)
         }}
         aria-label="Language"
