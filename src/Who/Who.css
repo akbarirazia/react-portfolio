@@ -20,7 +20,7 @@
   background-color: chartreuse;
   inset: 0;
   scale: 0 1;
-  transform-origin: top;
+  transform-origin: right;
   transition: scale 450ms;
 }
 .text-wrapper :first-child p::after {
@@ -31,7 +31,7 @@
 }
 .text-wrapper p:hover::after,
 .text-wrapper p:focus-visible::after {
-  transform-origin: bottom;
+  transform-origin: left;
   scale: 1 1;
 }
 /* .text-wrapper p:hover {

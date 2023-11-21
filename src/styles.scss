@@ -27,7 +27,8 @@ body,
   line-height: 1.5rem;
   p,
   small,
-  h2 {
+  h2,
+  .small {
     direction: rtl;
   }
 }
@@ -110,6 +111,10 @@ body,
   }
   .tag {
     color: white;
+  }
+  .lanToggle {
+    color: rgb(172, 169, 169) !important;
+    border: solid 1px;
   }
 }
 .dark {

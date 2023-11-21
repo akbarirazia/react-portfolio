@@ -12,6 +12,7 @@ function Where() {
   const { t } = useTranslation()
   const heaven = useRef(null)
   const back = useRef(null)
+  const back_2 = useRef(null)
   const right = useRef(null)
   const left = useRef(null)
   const beat = useRef(null)
@@ -22,6 +23,7 @@ function Where() {
     Animation(heaven, 1, 0, "play", -200, 100)
     Animation(heaven, 2, 0, "play", 100, 0, 1, 1)
     Animation(back, 3, -150)
+    Animation(back_2, 3, 50)
     Animation(right, 3, 150)
     Animation(left, 3, -50)
     HeartBeatEffect(beat)
@@ -51,24 +53,34 @@ function Where() {
                 {t("CONTACT_PAGE.TITLE_2", "My Whereabouts")}
               </span>
             </h2>
-            <small ref={back} className="small">
-              {t(
-                "CONTACT_PAGE.DESCRIPTION",
-                " End of 2002, when I was dropped on earth and ever since want to go back. My friend, I'm stuck in between"
-              )}
-              <span className="colorful">
+            <div className="small">
+              <small
+                ref={back_2}
+                // className="small"
+                style={{ display: "inline-block" }}
+              >
+                {t(
+                  "CONTACT_PAGE.DESCRIPTION",
+                  " End of 2002, when I was dropped on earth and ever since want to go back. My friend, I'm stuck in between"
+                )}
+                <span className="colorful">
+                  {" "}
+                  {t("CONTACT_PAGE.VM", "Venus and Mars")}
+                </span>{" "}
+                <span style={{ fontSize: "1.1rem" }}>😑</span>
+              </small>
+              <small
+                ref={left}
+                // className="small"
+                style={{ display: "inline-block" }}
+              >
                 {" "}
-                {t("CONTACT_PAGE.VM", "Venus and Mars")}
-              </span>{" "}
-              <span style={{ fontSize: "1.1rem" }}>😑</span>
-            </small>
-            <small ref={left} className="small">
-              {" "}
-              {t(
-                "CONTACT_PAGE.HEY",
-                "But hey, there is an even easier way to get in touch with me."
-              )}
-            </small>
+                {t(
+                  "CONTACT_PAGE.HEY",
+                  "But hey, there is an even easier way to get in touch with me."
+                )}
+              </small>
+            </div>
           </div>
           <br />
           <div className="touch">
@@ -109,7 +121,7 @@ function Where() {
           </p>
           <p style={{ textAlign: "center", marginTop: ".1rem" }}>
             {" "}
-            Razia Akbari{" "}
+            {t("ABOUT_PAGE.LAST.RAZIA_AKBARI")}{" "}
           </p>
           <div className="spacer"></div>
         </div>

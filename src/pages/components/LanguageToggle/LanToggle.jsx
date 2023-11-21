@@ -35,9 +35,16 @@ export default function ColorToggleButton() {
         aria-label="Language"
         color="primary"
         size="small"
+        // style={{
+        //   backgroundColor: "#682ae9",
+        // }}
       >
-        <ToggleButton value="en">🇺🇸</ToggleButton>
-        <ToggleButton value="fa">🇦🇫</ToggleButton>
+        <ToggleButton value="en" className="lanToggle">
+          🇺🇸
+        </ToggleButton>
+        <ToggleButton value="fa" className="lanToggle">
+          🇦🇫
+        </ToggleButton>
       </ToggleButtonGroup>
     </div>
   )

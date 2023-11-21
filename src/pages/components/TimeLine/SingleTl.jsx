@@ -9,7 +9,7 @@ function SingleTl({ cls, title, year, description, index }) {
   }
   const box9 = useRef(null)
   useEffect(() => {
-    Animation(box9, 0.5, 0, "play", 150, 0, index / 7, 0)
+    Animation(box9, 1, 0, "play", 150, 0, index / 7, 0)
   }, [])
   return (
     <div className={`tl-container ${cls}`}>
