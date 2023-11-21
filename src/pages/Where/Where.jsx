@@ -107,6 +107,10 @@ function Where() {
             </span>{" "}
             {t("CONTACT_PAGE.YEAR", "in 2023")}
           </p>
+          <p style={{ textAlign: "center", marginTop: ".1rem" }}>
+            {" "}
+            Razia Akbari{" "}
+          </p>
           <div className="spacer"></div>
         </div>
       </div>
