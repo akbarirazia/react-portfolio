@@ -2,7 +2,7 @@ import React from "react"
 
 function SingleWho({ text, subtext, onClick, refs }) {
   return (
-    <p onClick={onClick} ref={refs}>
+    <p onClick={onClick} ref={refs} className="who">
       {text} <br />
       <sub
         style={{
