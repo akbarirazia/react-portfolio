@@ -20,7 +20,7 @@ export default function ColorToggleButton() {
 
   useEffect(() => {
     const body = document.body
-    // To check if the stored language is Persian, we need to use the language code 'fa' rather than the Persian word 'persian'.
+
     if (language === "fa") {
       body.classList.add("fa-font")
     } else {

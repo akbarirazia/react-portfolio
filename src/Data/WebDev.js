@@ -5,7 +5,6 @@ import album from "../assets/album.JPG"
 import bookstore from "../assets/bookstore.JPG"
 import AyKash from "../assets/AyKash.jpg"
 import Avatar from "../assets/avatar.JPG"
-import i18n from "../i18n"
 
 export const projects = [
   {
