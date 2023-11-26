@@ -7,6 +7,7 @@ import Spline from "@splinetool/react-spline"
 import ContactForm from "../ContactForm/ContactForm"
 import HeartBeatEffect from "../components animation/HeartBeatEffect"
 import { useTranslation } from "react-i18next"
+import skull from "../../assets/skull.png"
 
 function Where() {
   const { t } = useTranslation()
@@ -121,7 +122,8 @@ function Where() {
           </p>
           <p style={{ textAlign: "center", marginTop: ".1rem" }}>
             {" "}
-            {t("ABOUT_PAGE.LAST.RAZIA_AKBARI")}{" "}
+            {t("ABOUT_PAGE.LAST.RAZIA_AKBARI")} <br />
+            <img src={skull} alt="skill" width="5%" height="5%" />
           </p>
           <div className="spacer"></div>
         </div>
