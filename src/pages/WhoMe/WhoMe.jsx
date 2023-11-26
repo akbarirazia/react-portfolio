@@ -115,7 +115,7 @@ function WhoMe() {
             {t("ABOUT_PAGE.LAST.PART_10")}
           </p>{" "}
           <br />
-          <strong>
+          <strong className="title">
             - {t("ABOUT_PAGE.LAST.RAZIA_AKBARI")}{" "}
             <span ref={heart} style={{ display: "inline-block" }}>
               🖤
