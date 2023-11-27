@@ -13,8 +13,11 @@ export default function ColorToggleButton() {
   )
 
   const handleLanguageChange = (lang) => {
+    if (lang !== null) {
+      setLanguage(lang)
+    }
     i18n.changeLanguage(lang)
-    setLanguage(lang)
+    // setLanguage(lang)
     localStorage.setItem("language", lang)
   }
 
