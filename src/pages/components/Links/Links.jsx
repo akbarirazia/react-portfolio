@@ -6,7 +6,7 @@ import { FaTelegram } from "react-icons/fa6"
 import { SiGmail } from "react-icons/si"
 import "./Links.css"
 import { Link } from "react-router-dom"
-import skull from "../assets/skull.png"
+import skull from "../../../assets/skull.png"
 
 function Links() {
   return (

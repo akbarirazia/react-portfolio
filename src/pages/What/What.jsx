@@ -8,7 +8,7 @@ import "./What.css"
 import SearchBar from "../components/FilterBar/SearchBar"
 import Cards from "../components/Cards/Cards"
 import DropDown from "../components/FilterBar/DropDown"
-import Github from "../../Github/Github"
+import Github from "../components/Github/Github"
 
 function What() {
   const combinedData = [...medicalportfolio, ...projects]

@@ -1,11 +1,11 @@
 import { useRef, useEffect, useState } from "react"
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-import Links from "./Links/Links"
+import Links from "./pages/components/Links/Links"
 import WhoMe from "./pages/WhoMe/WhoMe"
 import What from "./pages/What/What"
 import Where from "./pages/Where/Where"
-import Home from "./MainGate/Home"
+import Home from "./pages/MainGate/Home"
 import { CircularProgress } from "@mui/material"
 
 export default function App() {

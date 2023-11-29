@@ -1,11 +1,11 @@
 import Spline from "@splinetool/react-spline"
 import { useRef, useEffect } from "react"
-import Who from "../Who/Who"
+import Who from "../../Who/Who"
 import "./Home.css"
 import * as React from "react"
-import AkbariRazia from "../pages/components/Navbar/AkbariRazia/AkbariRazia"
-import Toggle from "../pages/components/Toggle"
-import ColorToggleButton from "../pages/components/LanguageToggle/LanToggle"
+import AkbariRazia from "../components/Navbar/AkbariRazia/AkbariRazia"
+import Toggle from "../components/Toggle"
+import ColorToggleButton from "../components/LanguageToggle/LanToggle"
 export default function Home() {
   //the skulll movements
   const skull = useRef()

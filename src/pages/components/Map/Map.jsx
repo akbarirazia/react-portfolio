@@ -4,7 +4,7 @@ import "leaflet/dist/leaflet.css"
 import "./Map.css"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/all"
-import { Rotation } from "../components animation/Rotation"
+import { Rotation } from "../../components animation/Rotation"
 
 export default function Map() {
   const map = useRef(null)
