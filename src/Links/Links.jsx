@@ -6,13 +6,17 @@ import { FaTelegram } from "react-icons/fa6"
 import { SiGmail } from "react-icons/si"
 import "./Links.css"
 import { Link } from "react-router-dom"
+import skull from "../assets/skull.png"
 
 function Links() {
   return (
     <div className="links-wrapper ">
       <div className="container flex justify-between">
         <Link to="/" className="link">
-          <p>WoMan.of.God</p>
+          <p>
+            {/* WoMan.of.God */}
+            <img src={skull} className="skull" />
+          </p>
         </Link>
         <div className="links flex gap-1x">
           <a

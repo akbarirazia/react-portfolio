@@ -13,6 +13,24 @@
   padding: 0 0.5rem;
   border-radius: 25px;
 }
+
+.skull {
+  height: 3rem;
+  filter: grayscale(1);
+
+  /* transition: ease-in-out 2s; */
+  display: block;
+}
+@media (max-width: 786px) {
+  .skull {
+    height: 2.2rem;
+  }
+}
+.skull:hover {
+  filter: grayscale(0);
+  /* transition: ease-in-out 2s; */
+  /* filter: brightness(1.2); */
+}
 .links-wrapper > * {
   margin: 0;
   font-size: xx-large;
@@ -60,7 +78,4 @@
   .links-wrapper div {
     border-radius: 0px;
   }
-}
-
-@media only screen and (min-width: 768px) {
 }

@@ -10,7 +10,7 @@ import { CircularProgress } from "@mui/material"
 
 export default function App() {
   const [loading, setLoading] = useState(true)
-  // const location = useLocation()
+
   window.onload = () => {
     setLoading(false)
   }
