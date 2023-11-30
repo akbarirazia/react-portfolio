@@ -1,7 +1,7 @@
 .text-wrapper p {
-  font-size: 5rem;
+  font-size: 4rem;
   color: white;
-  font-family: "Kanit", sans-serif;
+  font-family: "Homemade Apple";
   text-shadow: 0px 0px 5px black;
   line-height: 1rem;
   /* transition-behavior: normal; */
@@ -51,7 +51,7 @@
 @media only screen and (max-width: 767px) {
   .text-wrapper {
     position: absolute;
-    top: 25%;
+    top: 30%;
     pointer-events: none;
     display: inline-flex;
     flex-direction: column;
@@ -69,7 +69,7 @@
 @media only screen and (min-width: 768px) {
   .text-wrapper {
     position: relative;
-    top: -55%;
+    top: -53%;
     padding: 0;
     gap: 9rem;
     flex-wrap: wrap;

@@ -20,7 +20,7 @@ function Cards({ title, description, img, tags, link, delay, dateOfBirth }) {
     <>
       <div className="cont max-w-sm" ref={card}>
         {/* <div className="grad"> */}
-        <div className=" rounded overflow-hidden shadow-lg gray div">
+        <div className="rounded overflow-hidden shadow-lg gray div">
           <img className="w-full" src={img} alt={title} />
           <div className="px-6 py-4">
             <div className="font-bold text-xl mb-2 card colorful title">

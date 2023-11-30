@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
 import ToggleButton from "@mui/material/ToggleButton"
 import ToggleButtonGroup from "@mui/material/ToggleButtonGroup"
+
 import { useTranslation } from "react-i18next"
 // import "./styles.scss" // CSS styles file
 
@@ -48,10 +49,10 @@ export default function ColorToggleButton() {
         // }}
       >
         <ToggleButton value="en" className="lanToggle">
-          🇺🇸
+          us
         </ToggleButton>
         <ToggleButton value="fa" className="lanToggle">
-          🇦🇫
+          af
         </ToggleButton>
       </ToggleButtonGroup>
     </div>
