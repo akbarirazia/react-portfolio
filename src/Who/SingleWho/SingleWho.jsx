@@ -11,7 +11,6 @@ function SingleWho({ text, subtext, onClick, refs }) {
           color: "black",
           textShadow: "none",
         }}
-        // className="colorful"
       >
         {subtext}
       </sub>

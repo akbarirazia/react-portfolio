@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import "./Navbar.css"
-import AkbariRazia from "./AkbariRazia/AkbariRazia.jsx"
+
 import Toggle from "../Toggle"
 import { useTranslation } from "react-i18next"
 
@@ -10,10 +10,6 @@ function Navbar({ option }) {
   return (
     <div className="navbar container">
       <Toggle option={option} />
-      {/* <AkbariRazia /> */}
-      {/* <p>
-        <Link to="/">akbarirazia()</Link>
-      </p> */}
       <ul>
         <li>
           <Link to="/pages/what">{t("NAVBAR.WHAT", ".what()")}</Link>

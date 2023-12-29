@@ -23,8 +23,6 @@ export default function App() {
     } else {
       body.classList.remove("dark-mode")
     }
-
-    // localStorage.setItem("isDark", isDark)
   }, [])
 
   return (
@@ -45,9 +43,6 @@ export default function App() {
           <Links />
         </Router>
       )}
-      {/* {loading && (
-        
-      )} */}
     </>
   )
 }
