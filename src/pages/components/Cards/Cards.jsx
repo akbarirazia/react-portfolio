@@ -6,12 +6,8 @@ import { HiOutlineLink } from "react-icons/hi"
 import { useTranslation } from "react-i18next"
 
 function Cards({ title, description, img, tags, link, delay, dateOfBirth }) {
-  const isDark = localStorage.getItem("isDark") === "true"
   const { t } = useTranslation()
-  // const tagStyle = {
-  //   color: "black",
-  //   textShadow: "none",
-  // }
+
   const card = useRef(null)
   useEffect(() => {
     Animation(card, 1, 0, "play", 100, 0, delay / 9, 0)

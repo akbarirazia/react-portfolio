@@ -9,9 +9,11 @@ import SearchBar from "../components/FilterBar/SearchBar"
 import Cards from "../components/Cards/Cards"
 import DropDown from "../components/FilterBar/DropDown"
 import Github from "../components/Github/Github"
+import { useTranslation } from "react-i18next"
 
 function What() {
   const combinedData = [...medicalportfolio, ...projects]
+  const { t } = useTranslation()
   function shuffle(array) {
     let currentIndex = array.length,
       randomIndex
@@ -50,7 +52,7 @@ function What() {
   const filteredProjects = useMemo(
     () =>
       array.filter((project) =>
-        project.title.toLowerCase().includes(query.toLowerCase())
+        t(project.title).toLowerCase().includes(query.toLowerCase())
       ),
     [array, query]
   )
