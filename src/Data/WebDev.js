@@ -5,6 +5,7 @@ import album from "../assets/album.JPG"
 import bookstore from "../assets/bookstore.JPG"
 import AyKash from "../assets/AyKash.jpg"
 import Avatar from "../assets/avatar.JPG"
+import Movie from "../assets/movie.JPG"
 
 export const projects = [
   {
@@ -32,6 +33,13 @@ export const projects = [
     dateOfBirth: "Premature",
   },
   {
+    title: "PROJECT_PAGE.PRO_7.TITLE",
+    imageSrc: Movie,
+    description: "PROJECT_PAGE.PRO_7.DESCRIPTION",
+    link: "https://movie-searching-app-six.vercel.app/",
+    tags: ["ReactJS", "Tailwindcss", "API"],
+  },
+  {
     title: "PROJECT_PAGE.PRO_4.TITLE",
     imageSrc: bookstore,
     description: "PROJECT_PAGE.PRO_4.DESCRIPTION",
@@ -47,21 +55,13 @@ export const projects = [
     tags: ["Tailwindcss", "HTML", "RWD"],
     dateOfBirth: "July 24, 2023",
   },
-  // {
-  //   title: "Responsive Album",
-  //   imageSrc: album,
-  //   description:
-  //     "A responsive static album with Bootstrap is a web page that showcases a collection of images or media in an organized and visually appealing manner. It is built using the Bootstrap framework, which provides a set of pre-designed CSS and JavaScript components for creating responsive and mobile-friendly websites.",
-  //   link: "https://akbarirazia.github.io/responsive-album-bootstrap/",
-  //   tags: ["Bootstrap", "Clone", "HTML"],
-  // },
 
-  {
-    title: "PROJECT_PAGE.PRO_6.TITLE",
-    imageSrc: game,
-    description: "PROJECT_PAGE.PRO_6.DESCRIPTION",
-    link: "https://3w17p8.csb.app/",
-    tags: ["Game", "JavaScript", "HTML"],
-    dateOfBirth: "July 30, 2023",
-  },
+  // {
+  //   title: "PROJECT_PAGE.PRO_6.TITLE",
+  //   imageSrc: game,
+  //   description: "PROJECT_PAGE.PRO_6.DESCRIPTION",
+  //   link: "https://3w17p8.csb.app/",
+  //   tags: ["Game", "JavaScript", "HTML"],
+  //   dateOfBirth: "July 30, 2023",
+  // },
 ]

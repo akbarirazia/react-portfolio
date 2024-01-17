@@ -106,6 +106,11 @@
 
       "DESCRIPTION": "Rock, Paper, Scissors Game is a classic hand gesture game using JavaScript to play against the computer."
     },
+
+    "PRO_7": {
+      "TITLE": "Movie Searching App",
+      "DESCRIPTION": "This web app is created using ReactJS and tailwindcss. It utilizes OMDB API to get information about the searched Movie"
+    },
     "GITHUB": {
       "TITLE": "Github Calender",
       "DESCRIPTION": "Check out these muscles! Talk about a major flex! 🦾 It was May 2023 when I dumped Python and Java and fell head over heels for JavaScript! 😆"
