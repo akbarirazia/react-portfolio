@@ -18,13 +18,9 @@ function What() {
     let currentIndex = array.length,
       randomIndex
 
-    // While there remain elements to shuffle.
     while (currentIndex > 0) {
-      // Pick a remaining element.
       randomIndex = Math.floor(Math.random() * currentIndex)
       currentIndex--
-
-      // And swap it with the current element.
       ;[array[currentIndex], array[randomIndex]] = [
         array[randomIndex],
         array[currentIndex],
@@ -35,8 +31,6 @@ function What() {
   }
   shuffle(combinedData)
   const [array, setArray] = useState(projects)
-  // const [array, setArray] = useState(medicalportfolio)
-
   function handleFilter(option) {
     console.log(option)
     if (option === "All Portfolios") {
