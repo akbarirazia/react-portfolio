@@ -54,7 +54,7 @@ function Toggle({ option }) {
   }))
   //function for toggling off the dark mode
   const [isDark, setIsDark] = useState(
-    localStorage.getItem("isDark") === "false" || true
+    localStorage.getItem("isDark") === "true" || false
   )
 
   useEffect(() => {
