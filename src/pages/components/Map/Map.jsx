@@ -1,9 +1,8 @@
 import { useEffect, useRef } from "react"
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet"
+
 import "leaflet/dist/leaflet.css"
 import "./Map.css"
-import { gsap } from "gsap"
-import { ScrollTrigger } from "gsap/all"
+
 import { Rotation } from "../../components animation/Rotation"
 
 export default function Map() {
@@ -12,8 +11,6 @@ export default function Map() {
   useEffect(() => {
     Rotation(map)
   }, [])
-
-  const position = [34.52604146664417, 69.1510697312263]
 
   return (
     <iframe
