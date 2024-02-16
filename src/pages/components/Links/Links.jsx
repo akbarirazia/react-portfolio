@@ -2,8 +2,8 @@ import React from "react"
 import { FaGithub } from "react-icons/fa6"
 import { FaDiscord } from "react-icons/fa6"
 import { FaXTwitter } from "react-icons/fa6"
-import { FaTelegram } from "react-icons/fa6"
 import { SiGmail } from "react-icons/si"
+import { FaLinkedinIn } from "react-icons/fa"
 import "./Links.css"
 import { Link } from "react-router-dom"
 import skull from "../../../assets/skull.png"
@@ -39,8 +39,11 @@ function Links() {
           <a href="https://twitter.com/akbari_razia" target="_blank">
             <FaXTwitter />
           </a>
-          <a href="https://t.me/eccedentesiast_ra" className="green">
-            <FaTelegram />
+          <a
+            href="https://www.linkedin.com/in/razia-akbari-19b5271b0/"
+            className="green"
+          >
+            <FaLinkedinIn />
           </a>
         </div>
       </div>
