@@ -104,7 +104,7 @@
     "PRO_6": {
       "TITLE": "HumorHub",
 
-      "DESCRIPTION": "A blog app where you could post, update, delete, view jokes."
+      "DESCRIPTION": "A blog app where you could post, update, delete, view jokes. It was created using TypeScript and React in the frontend and Express.JS for the backend."
     },
 
     "PRO_7": {

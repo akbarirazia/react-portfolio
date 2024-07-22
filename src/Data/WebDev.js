@@ -21,7 +21,7 @@ export const projects = [
     imageSrc: game,
     description: "PROJECT_PAGE.PRO_6.DESCRIPTION",
     link: "https://blog-project-2-nu.vercel.app/",
-    tags: ["Nod.js", "React.js", "Spline"],
+    tags: ["Express.js", "React.js", "Spline"],
     dateOfBirth: "May 30, 2024",
   },
 
