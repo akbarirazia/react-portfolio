@@ -36,12 +36,12 @@
       "TITLE": "Experience",
       "SUB_TITLE": "I've dabbled in so many professions, I could probably diagnose your computer's HR issues while performing a web development surgery. Just kidding... or am I?",
       "EX_1": {
-        "TITLE": "Web developer",
-        "DESCRIPTION": "During my tenure as a Web Developer at Cosmino Productions, I played a critical role in desigining, building, maintaining, and deploying their website for one of their projects. Employing my expertise development, I ensured that the website boasted a responsive design, delivering seamless user experiences across multiple devices."
+        "TITLE": "Frontend Developer",
+        "DESCRIPTION": "In my role as a frontend web developer at Honarestan, I have implemented and translated the figma designs into nice webpages. The stack I used were mainly Next.JS & TypeScript. I have also conducted System Testing and helped address the issues."
       },
       "EX_2": {
-        "TITLE": "HR Team Leader",
-        "DESCRIPTION": "In my role at Gao Tek Inc., I handle HR tasks such as recruitment, employee records, new hire orientations, performance management, and employee relations. I also respond to employee inquiries, coordinate training programs, and provide administrative support to the HR department. Additionally, I ensure compliance with HR policies and assist with projects as needed."
+        "TITLE": "Web developer",
+        "DESCRIPTION": "During my tenure as a Web Developer at Cosmino Productions, I played a critical role in desigining, building, maintaining, and deploying their website for one of their projects. Employing my expertise development, I ensured that the website boasted a responsive design, delivering seamless user experiences across multiple devices."
       },
       "EX_3": {
         "TITLE": "Medical Intern",
@@ -102,9 +102,9 @@
       "DESCRIPTION": "Personal Portfolio is a portfolio page containing personal information and contact details, created using Tailwind CSS and JavaScript."
     },
     "PRO_6": {
-      "TITLE": "Rock, Paper, Scissors Game",
+      "TITLE": "HumorHub",
 
-      "DESCRIPTION": "Rock, Paper, Scissors Game is a classic hand gesture game using JavaScript to play against the computer."
+      "DESCRIPTION": "A blog app where you could post, update, delete, view jokes."
     },
 
     "PRO_7": {

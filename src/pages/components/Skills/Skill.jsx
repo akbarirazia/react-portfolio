@@ -4,11 +4,11 @@ import html from "/src/assets/html.png"
 import css from "/src/assets/css.png"
 import js from "/src/assets/Js.png"
 import react from "/src/assets/react.png"
-import git from "/src/assets/git.png"
+import node from "/src/assets/node.png"
 import tailwindcss from "/src/assets/tailwindcss.png"
 import bootstrap from "/src/assets/bootstrap.png"
 import spline from "/src/assets/spline.png"
-import java from "/src/assets/Java.png"
+import post from "/src/assets/postgres.png"
 import github from "/src/assets/github.png"
 import resume from "/src/assets/Razia Akbari's CV.pdf"
 import { TweenLite } from "gsap/gsap-core"
@@ -69,7 +69,7 @@ function Skill({ para, firstBlock, secondBlock, thirdBlock, para1 }) {
       setValue(85)
     } else if (item == "react") {
       setValue(60)
-    } else if (item == "git") {
+    } else if (item == "node") {
       setValue(80)
     } else if (item == "tailwindcss") {
       setValue(90)
@@ -77,7 +77,7 @@ function Skill({ para, firstBlock, secondBlock, thirdBlock, para1 }) {
       setValue(70)
     } else if (item == "spline") {
       setValue(40)
-    } else if (item == "java") {
+    } else if (item == "post") {
       setValue(66)
     } else if (item == "github") {
       setValue(85)
@@ -129,8 +129,8 @@ function Skill({ para, firstBlock, secondBlock, thirdBlock, para1 }) {
             </span>
             <span className="purple span">
               <img
-                src={git}
-                alt="git"
+                src={node}
+                alt="node"
                 onMouseOver={handleMouseOver}
                 onMouseOut={handleMouseOut}
               />
@@ -165,8 +165,8 @@ function Skill({ para, firstBlock, secondBlock, thirdBlock, para1 }) {
             </span>
             <span className="span">
               <img
-                src={java}
-                alt="java"
+                src={post}
+                alt="post"
                 onMouseOver={handleMouseOver}
                 onMouseOut={handleMouseOut}
               />
