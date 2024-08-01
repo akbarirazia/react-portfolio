@@ -6,15 +6,6 @@
   align-items: center;
 }
 
-.max-w-sm {
-  max-width: 21rem;
-}
-@media screen and (max-width: 786px) {
-  .max-w-sm {
-    max-width: 90% !important;
-  }
-}
-
 .rounded {
   border-radius: 0.25rem;
 }
@@ -121,7 +112,7 @@
 
 .cont {
   padding: 2px;
-  max-width: 21rem;
+  min-width: 21rem;
   border-radius: 5px;
 }
 .cont:hover {

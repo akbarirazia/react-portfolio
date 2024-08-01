@@ -1,10 +1,8 @@
-import React, { useEffect, useMemo, useState } from "react"
+import React, { useMemo, useState } from "react"
 import Navbar from "../components/Navbar/Navbar"
 import { medicalportfolio } from "../../Data/MedicalPort"
 import { projects } from "../../Data/WebDev"
-
 import "./What.css"
-
 import SearchBar from "../components/FilterBar/SearchBar"
 import Cards from "../components/Cards/Cards"
 import DropDown from "../components/FilterBar/DropDown"
@@ -14,6 +12,7 @@ import { useTranslation } from "react-i18next"
 function What() {
   const combinedData = [...medicalportfolio, ...projects]
   const { t } = useTranslation()
+
   function shuffle(array) {
     let currentIndex = array.length,
       randomIndex
@@ -29,10 +28,11 @@ function What() {
 
     return array
   }
+
   shuffle(combinedData)
   const [array, setArray] = useState(projects)
+
   function handleFilter(option) {
-    console.log(option)
     if (option === "All Portfolios") {
       setArray(combinedData)
     } else if (option === "Web Development") {
@@ -41,6 +41,7 @@ function What() {
       setArray(medicalportfolio)
     }
   }
+
   const [query, setQuery] = useState("")
 
   const filteredProjects = useMemo(
@@ -48,7 +49,7 @@ function What() {
       array.filter((project) =>
         t(project.title).toLowerCase().includes(query.toLowerCase())
       ),
-    [array, query]
+    [array, query, t]
   )
 
   const finalProject = filteredProjects.map((data, index) => (
@@ -63,31 +64,18 @@ function What() {
       dateOfBirth={data.dateOfBirth}
     />
   ))
-  // console.log(finalProject.length)
+
   return (
     <div>
       <Navbar option={handleFilter} />
-
       <div className="container">
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            marginTop: "1.5rem",
-            padding: "0",
-          }}
-          className="filter"
-        >
+        <div className="filter">
           <SearchBar onchange={(e) => setQuery(e.target.value)} value={query} />
           <DropDown onFilter={handleFilter} />
         </div>
 
-        <div
-          className="flex flex-wrap gap-2x card-container"
-          style={{ justifyContent: "space-evenly" }}
-        >
-          {finalProject.length == 0 ? (
+        <div className="card-container">
+          {finalProject.length === 0 ? (
             <div style={{ marginTop: "2rem" }}>No Project Found</div>
           ) : (
             finalProject
